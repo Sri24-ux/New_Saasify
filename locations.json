@@ -1,0 +1,42 @@
+{
+  "registeredOffices": [
+    {
+      "city": "Chennai",
+      "image": "images/Chennai.jpg",
+      "address": "No.2/4, 6th Floor, Center Point, Mount Poonamallee High Road, Manapakkam, Chennai, Tamilnadu - 600089",
+      "email": "sales@saasifysolutions.com",
+      "hours": "Mon - Fri: 9.30 AM to 6.30 PM",
+      "phone": "+91-95510 62198"
+    },
+    {
+      "city": "Bengaluru",
+      "image": "images/Bangalore.jpg",
+      "address": "ZED PINNACLE, No 77/A, 403, 4th Floor, Koramangala Industrial Layout, Koramangala, Bengaluru, Karnataka - 560095",
+      "email": "sales@saasifysolutions.com",
+      "hours": "Mon - Fri: 9.30 AM to 6.30 PM",
+      "phone": "+91-95510 62198"
+    }
+  ],
+  "remoteLocations": [
+    {
+      "city": "Coimbatore",
+      "image": "images/coimbatore.jpg",
+      "address": "Remote Office – Coimbatore, Tamil Nadu"
+    },
+    {
+      "city": "Hyderabad",
+      "image": "images/telangana.jpg",
+      "address": "Remote Office – Hyderabad, Telangana"
+    },
+    {
+      "city": "Kerala",
+      "image": "images/kerala.jpg",
+      "address": "Remote Office – Kochi, Kerala"
+    },
+    {
+      "city": "Mumbai",
+      "image": "images/mumbai.jpg",
+      "address": "Remote Office – Mumbai"
+    }
+  ]
+}

@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Saasify Solutions</title>
+    <link rel="icon" type="Saasify" href="Images/saasify.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+     
+<style>
+ body {
+    font-family: 'Poppins', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: #ffffff;
+    color: #2a2a2a;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden !important;
+    overscroll-behavior-y: none;
+}
+ 
+.sub-heading {
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  color: #7a76a3;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.main-heading {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #0a1f44;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  transition: background-color 0.3s ease !important;
+}
+
+  .cta-button,
+button[type="submit"] {
+  background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+ /* Hero Section */
+.hero-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.5);
+  animation: zoomOut 6s ease-out forwards;
+}
+
+@keyframes zoomOut {
+  to {
+    transform: scale(1);
+  }
+}
+
+.hero {
+  position: relative;
+  height: 100vh; 
+  display: flex;
+  align-items: flex-start; /* Top align */
+  justify-content: flex-start; /* Left align */
+  padding-top: 120px; /* Adjust this to match TCS vertical spacing */
+  padding-left: 10%;  /* Adds left offset */
+  color: white;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px; /* Keeps text from stretching too far */
+}
+.hero-content h1{
+    font-size: 3rem;
+    line-height: 4rem;
+}
+.subtitle {
+  font-size: 20px;
+  line-height: 1.5;
+  border-bottom: 0.0625rem solid hsla(0, 0%, 100%, .3);
+  padding-bottom: 10px;
+}
+
+.hero-description{
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+    letter-spacing: .03125rem;
+    color: #f4f3f9;
+    margin-bottom: 1rem;
+    text-transform: none;
+    width: 70%;
+}
+.overlay {
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+}
+
+.content {
+  background: white;
+  position: relative;
+  z-index: 3;
+}
+
+/* Contact Section */
+ .contact-form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+    
+.form-group input,
+.form-group select,
+.form-group textarea {
+  min-height: 45px;
+  font-size: 15px;
+}
+
+input, select, textarea {
+  width: 100%;
+  max-width: 100%; 
+  box-sizing: border-box;
+}
+
+.green-card {
+    background-color: #0a1f44;
+    width: 76%;
+    max-width: 1380px;
+    height: 363px;
+    border-radius: 0 50px 50px 0;
+    display: flex;
+    align-items: center;
+    margin-left: 37px;
+}
+ 
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+.form-group label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #0a1f44;
+}
+input, select, textarea {
+  padding: 10px;
+  border: 0.1rem solid #aeb0b2;
+  border-radius: 0.3rem;
+}
+textarea {
+  resize: vertical;
+}
+
+ @media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  .form-group.full {
+    grid-column: span 1;
+  }
+ 
+} 
+ 
+.contact-section {
+  position: relative;
+  padding: 161px 20px;
+  background-image: url('images/preview.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+}
+
+.curved-card {
+  position: relative;
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 8px;
+  width: 81%;
+  max-width: 960px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+.curved-card::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -97px;
+    transform: translateY(-50%);
+    width: 164px;
+    height: 189px;
+    background-color: #0a1f44;
+    border-radius: 91px;
+    background-image: url(images/handshake.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 97px;
+    box-shadow: inset 20px 0 24px -14px rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .curved-card::after {
+    display: none;
+  }
+}
+.contact-form .form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 80%;
+}
+
+.form-group.full {
+  grid-column: span 2;
+}
+@media (max-width: 768px) {
+   .contact-form .form-grid {
+    width: auto !important; 
+   }
+  .green-card {
+    background: none !important;
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block; 
+  }
+
+  .contact-section {
+    padding: 40px 15px !important;
+    background-image: none;
+  }
+
+  .curved-card {
+    width: 100% !important;
+    padding: 20px !important;
+    border-radius: 8px !important;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .curved-card {
+    width: 82%; 
+  }
+  .green-card {
+    background-color: #0a1f44;
+    width: 92%;
+    max-width: 1380px;
+    height: 363px;
+    border-radius: 0 50px 50px 0;
+    display: flex;
+    align-items: center;
+    margin-left: 37px;
+  }
+}
+   
+.breadcrumb {
+  padding: 15px 40px;
+  font-size: 0.95rem;
+  color: #333;
+  z-index: 1;
+  position: relative;
+  background-color: #fff;
+}
+
+.breadcrumb-container a {
+  text-decoration: none;
+  color: #0a1f44;
+  margin-right: 5px;
+}
+
+.breadcrumb-container span {
+  color: #666;
+  font-weight: 500;
+}
+
+.why-itom-section {
+  padding: 60px 20px;
+  background-color: #0b1d3a;
+  color: #ffffff;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 50px;
+  color: #ffffff;
+  border-bottom: 3px solid #00e0d0;
+  display: inline-block;
+}
+
+.why-itom-zigzag {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  max-width: 973px;
+  margin: 0 auto;
+}
+
+/* Alternate background */
+.zigzag-item:nth-child(even) {
+  background-color: #ffffff;
+}
+.zigzag-item:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.zigzag-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0px;
+  flex-wrap: wrap;
+  border-radius: 12px;
+  padding: 18px;
+  transition: transform 0.3s ease;
+}
+
+.zigzag-item:hover {
+  transform: translateY(-5px);
+}
+
+.zigzag-item.reverse {
+  flex-direction: row-reverse;
+}
+
+.zigzag-image {
+  flex: 1 1 23%;
+  text-align: center;
+}
+
+.zigzag-image img {
+  max-width: 100%;
+  height: auto;
+  max-height: 150px;
+  object-fit: contain;
+}
+
+.zigzag-content {
+  flex: 1 1 55%;
+  text-align: center;
+}
+
+.zigzag-content h3 {
+  font-size: 22px;
+  color: #00e0d0;
+  margin-bottom: 15px;
+}
+
+.zigzag-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  color: #0a1f44;
+}
+
+.zigzag-content strong {
+  color: #0a1f44;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .zigzag-item,
+  .zigzag-item.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .zigzag-content {
+    text-align: left;
+  }
+}
+
+.itom-capabilities-section {
+  padding: 1px 40px;
+  padding-bottom: 20px;
+}
+
+.heading-wrapper {
+  margin-bottom: 50px;
+}
+
+.capabilities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 50px auto;
+}
+/* Responsive */
+@media (max-width: 768px) {
+.capabilities-grid {
+  margin: 0 auto;
+}
+}
+.capability-card {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: transform, opacity;
+  text-align: center;
+}
+
+/* Revealed state */
+.capability-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Optional: reduce motion respect */
+@media (prefers-reduced-motion: reduce) {
+  .capability-card {
+    transition: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.capability-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 8px 30px rgba(0, 43, 92, 0.15);
+}
+
+.capability-icon {
+  font-size: 42px;
+  margin-bottom: 18px;
+  color: #0056b3;
+}
+
+.capability-card h3 {
+  font-size: 20px;
+  color: #002b5c;
+  margin-bottom: 12px;
+}
+
+.capability-card p {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.highlight-section {
+  background-image: url('images/section-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.highlight-overlay {
+  background-color: rgba(10, 31, 68, 0.85);
+  padding: 60px 20px;
+}
+
+.highlight-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
+}
+
+.highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.highlight-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.highlight-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  color: #2a2a2a;
+  text-align: left; /* Professional left-aligned text */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.highlight-card h3 {
+  color: #0a1f44;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.highlight-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 6px 0;
+  text-align: justify;
+}
+
+.highlight-card p strong {
+  color: #0a1f44;
+  font-weight: 600;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .highlight-overlay {
+    padding: 40px 15px;
+  }
+  .highlight-card {
+    padding: 20px 15px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .highlight-overlay {
+    padding: 40px 16px;
+  }
+}
+
+.key-analysis-section {
+  background-color: #ffffff;
+  padding: 60px 40px;
+}
+
+.key-analysis-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+}
+
+.key-analysis-left {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.key-analysis-left img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.key-analysis-right {
+  flex: 1 1 55%;
+}
+
+.analysis-item p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+.analysis-item h3 {
+  font-size: 1.2rem;
+  color: #0a1f44;
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 20px; /* Space for bullet */
+}
+
+.analysis-item h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background-color:#00c896;
+  border-radius: 50%;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .key-analysis-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .key-analysis-left,
+  .key-analysis-right {
+    flex: 1 1 100%;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/Saasify logo.png" alt="Saasify Logo" />
+            </a>
+        </div>
+        <div class="hamburger" id="hamburgerIcon" onclick="toggleMobileMenu()">☰</div>
+
+        <nav>
+           <div class="dropdown">
+            <span style="color: white;">ManageEngine Expertise </span>
+            <svg xmlns="http://www.w3.org/2000/svg" 
+                fill="none" viewBox="0 0 24 24" stroke="white" 
+                style="width: 16px; height: 16px; vertical-align: middle; margin-left: 6px;">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                    d="M19 9l-7 7-7-7" />
+            </svg>   
+            <div class="dropdown-content expertise-dropdown">
+              <h4>Expertise</h4>
+              <div class="two-column-dropdown">
+                <ul>
+                  <li>
+                    <a href="IAM.html">IAM</a>
+                    <span class="desc">Manage, govern, and secure digital identities and privileged access.</span>
+                  </li>
+                  <li>
+                    <a href="ITSM.html">ITSM/ESM</a>
+                    <span class="desc">Design, automate, deliver, and manage IT and business services.</span>
+                  </li>
+                  <li>
+                    <a href="UEM.html">UEMS</a>
+                   <span class="desc">Secure and manage endpoints to protect your IT assets effectively.</span>
+                 </li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href="ITOM.html">ITOM</a>
+                     <span class="desc">Achieve end-to-end visibility, proactive issue resolution, and enhanced security across the IT Infrastructure.</span>
+                  </li>
+                  <li>
+                    <a href="SIEM.html">SIEM</a>
+                    <span class="desc">Secure your network from cyberattacks and ensure compliance.</span>
+                  </li>
+                  <li>
+                    <a href="IT-Analysis.html">IT Analytics</a>
+                    <span class="desc">Visualize IT data and gain actionable insights into IT operations.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+                <span style="color: white;">Services</span>
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                  fill="none" viewBox="0 0 24 24" stroke="white" 
+                  style="width: 16px; height: 16px; vertical-align: middle; margin-left: 6px;">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                      d="M19 9l-7 7-7-7" />
+              </svg>
+              
+                <div class="dropdown-content" style="min-width: 200px !important;">
+                   <div class="dropdown-column">
+                      <h4>Services</h4>
+                        <ul>
+                            <li><a href="consulting-services.html">Consulting</a></li>
+                            <li><a href="evaluation-assistance.html">Evaluation Assistance</a></li>
+                            <li><a href="Imp-Cust-service.html">Implementation and Customisation</a></li>
+                            <li><a href="training-services.html">Training & Enablement</a></li>
+                            <li><a href="Ongoing_support.html">Ongoing Support</a></li>
+                            <li><a href="managed-services.html">Managed Services</a></li>
+                          </ul>
+                    </div>
+                </div>
+             </div>
+
+            <div class="dropdown">
+                <div class="dropdown-trigger">
+                  <span>Company Overview</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" 
+                      fill="none" viewBox="0 0 24 24" stroke="white" 
+                      style="width: 16px; height: 16px; vertical-align: middle; margin-left: 6px;">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                          d="M19 9l-7 7-7-7" />
+                  </svg>
+                </div>
+                <div class="dropdown-content" style="min-width: 200px !important;">
+                   <div class="dropdown-column">
+                      <h4>About</h4>
+                    <ul>
+                        <li><a href="about_us.html">About Saasify</a></li>
+                        <li><a href="our-presence.html">Our Presence</a></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            
+            <ul>
+                <li><a href="saasify-careers.html" style="color: white;">Careers</a></li>
+            </ul>
+            <ul>
+                <li><a href="insight-page.html" style="color: white;">Insights</a></li>
+            </ul>
+        </nav>
+        <div class="contact-button desktop-only">
+            <a href="contact_us_page.html">
+                <button>Contact Us</button>
+            </a>
+        </div>
+</header>
+   
+<div id="overlay" class="overlay" onclick="toggleMobileMenu()"> </div>
+
+<div id="mobileMenu">
+      <!-- Platform Proficiency -->
+      
+       <div class="submenu-toggle" onclick="toggleSubmenu(this)"> ManageEngine Expertise 
+            <img src="images/Arrow.png" alt="Arrow" style=" height: 24px;" />
+       </div>
+        <div class="submenu">
+            <a href="IAM.html">IAM</a>
+            <a href="ITSM.html">ITSM/ESM</a>
+            <a href="UEM.html">UEM</a>
+            <a href="ITOM.html">ITOM</a>
+            <a href="SIEM.html">SIEM</a>
+            <a href="IT-Analysis.html">IT Analytics</a>
+        </div>
+
+        <!-- Services -->
+        <div class="submenu-toggle" onclick="toggleSubmenu(this)">Services 
+           <img src="images/Arrow.png" alt="Arrow" style=" height: 24px;" />
+        </div>
+        <div class="submenu">
+            <a href="consulting-services.html">Consulting</a>
+            <a href="evaluation-assistance.html">Evaluation Assistance</a>
+            <a href="Imp-Cust-service.html">Implementation and Customisation</a>
+            <a href="training-services.html">Training & Enablement</a>
+            <a href="Ongoing_support.html">Ongoing Support</a>
+            <a href="managed-services.html">Managed Services</a>
+        </div>
+
+        <!-- Company Overview -->
+        <div class="submenu-toggle" onclick="toggleSubmenu(this)">Company Overview 
+           <img src="images/Arrow.png" alt="Arrow" style=" height: 24px;" />
+        </div>
+        <div class="submenu">
+            <a href="about_us.html">About Saasify</a>
+            <a href="our-presence.html">Our Presence</a>
+        </div>
+
+        <!-- Careers -->
+        <div class="submenu-toggle">
+            <a href="saasify-careers.html" style="display:block;">Careers</a>
+        </div>   
+
+        <!-- Insights -->
+        <div class="submenu-toggle">
+            <a href="insight-page.html" style="display:block;">Insights</a>
+        </div>
+        <!-- Contact Us -->
+        <div class="right-icons">
+            <a href="contact_us_page.html">
+                <button>Contact Us</button>
+            </a>
+        </div>
+</div>
+
+<div class="hero-image">
+  <img src="images/IT-operation_img_optimized.webp" alt="ITOperation" loading="lazy">
+</div>
+
+<section class="hero">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <p class="subtitle">IT Operations Management</p>
+    <h1>Optimize IT Operations with ITOM Solutions</h1>
+    <a href="contact_us_page.html">
+      <button class="cta-button">Book a Demo</button>
+    </a>
+  </div>
+</section>
+
+<main class="content">
+<section class="breadcrumb">
+  <div class="breadcrumb-container">
+    <a href="index.html">Home</a> &gt;
+      <a href="#">Platform Proficiency</a> &gt;
+      <span>ITOM</span>
+  </div>
+</section>
+
+<section class="intro-section">
+  <div class="glass-card">
+    <div class="intro-content">
+      <p class="sub-heading">Unified Monitoring</p>
+      <h2 class="main-heading">
+        Run proactive and secure digital operations with<span style="color: #00c896"> IT Operations Management</span>
+      </h2>
+       <p>
+     At Saasify Solutions, we help organizations overcome critical challenges in managing enterprise IT infrastructure, service delivery, security, business analytics, and process automation. We begin by understanding your current ecosystem, digital vision, and transformation roadmap. As a trusted ManageEngine partner, we bridge gaps, uncover opportunities, and implement industry-leading solutions that accelerate your digital journey — empowering you to deliver smarter, faster, and more secure business outcomes.
+    </p>
+    </div>
+  </div>
+</section>
+
+<section class="highlight-section">
+  <div class="highlight-overlay">
+    <div class="highlight-content">
+      <p class="sub-heading">Unified IT Control</p>
+      <h2 class="main-heading" style="color: #ffffff">
+        Why ITOM Matters for <span style="color: #00c896">Your Business ?</span>
+      </h2>
+
+      <div class="highlight-grid">
+        <div class="highlight-card">
+          <h3>Minimize Revenue Loss</h3>
+          <p>
+            ITOM accelerates IT issue resolution, reducing downtime and minimizing missed sales opportunities. By resolving issues faster, organizations can protect revenue streams and maintain business continuity.
+          </p>
+        </div>
+        <div class="highlight-card">
+          <h3>Enhance Customer Satisfaction</h3>
+          <p>
+            By ensuring a disruption-free IT environment, ITOM helps maintain seamless customer experiences. Increased reliability leads to higher customer satisfaction and long-term loyalty, strengthening business relationships.
+          </p>
+        </div>
+        <div class="highlight-card">
+          <h3>Ensure Productivity</h3>
+          <p>
+            Preventing IT interruptions for employees, ITOM keeps teams productive and efficient. Continuous monitoring and proactive issue resolution ensure that work processes remain smooth, optimizing overall employee performance.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="key-analysis-section">
+  <p class="sub-heading">Reliable. Efficient. Scalable.</p>
+  <h2 class="main-heading">
+    Key Benefits of <span style="color: #00c896">IT Operations Management</span>
+  </h2>
+  
+  <div class="key-analysis-wrapper">
+  <!-- Left Image -->
+    <div class="key-analysis-left">
+      <img src="images/ITOM_benefit_resize.webp" alt="ITSM and ESM Benefits Illustration" />
+    </div>
+
+  <!-- Right Content -->
+    <div class="key-analysis-right">
+
+      <div class="analysis-item">
+        <h3>Improve Service Availability</h3>
+        <p>Prevent downtime with proactive monitoring and quick fault detection.</p>
+     </div>
+
+      <div class="analysis-item">
+        <h3>Lower Operational Costs</h3>
+        <p>Automate repetitive IT tasks to save resources and increase efficiency.</p>
+     </div>
+
+      <div class="analysis-item">
+        <h3>Enable Scalable Growth</h3>
+        <p>Handle complex, growing IT infrastructures with ease and flexibility.</p>
+     </div>
+
+      <div class="analysis-item">
+        <h3>Faster Incident Response</h3>
+        <p>Speed up problem resolution to improve SLAs and end-user satisfaction.</p>
+     </div>
+    </div>
+  </div>
+</section>
+
+<section class="itom-capabilities-section">
+  <div class="heading-wrapper">
+    <p class="sub-heading">Capabilities</p>
+    <h2 class="main-heading">
+      Key Capabilities of <span style="color: #00c896">IT Operations Management</span>
+    </h2>
+  </div>
+
+  <div class="capabilities-grid">
+  <div class="capability-card">
+    <div class="capability-icon"><i class="fa-solid fa-network-wired"></i></div>
+    <h3>Infrastructure Discovery</h3>
+    <p>Automatically detect devices, applications, and services across your IT network, ensuring full visibility.</p>
+  </div>
+  
+  <div class="capability-card">
+    <div class="capability-icon"><i class="fa-solid fa-microchip"></i></div>
+    <h3>Event Correlation & Root Cause Analysis</h3>
+    <p>Reduce alert noise and identify the true root cause faster using advanced AI-powered analytics.</p>
+  </div>
+  
+  <div class="capability-card">
+    <div class="capability-icon"><i class="fa-solid fa-gears"></i></div>
+    <h3>Automation & Orchestration</h3>
+    <p>Automate frequent incidents and standard IT workflows for faster, error-free operations.</p>
+  </div>
+  
+  <div class="capability-card">
+    <div class="capability-icon"><i class="fa-solid fa-chart-line"></i></div>
+    <h3>Operational Dashboards</h3>
+    <p>Gain insights into performance, availability, and trends with real-time, customizable dashboards.</p>
+  </div>
+</div>
+
+</section>
+
+<div id="contact-form-placeholder"></div>
+
+<script>
+  fetch('contact-form.html')
+    .then(response => response.text())
+    .then(html => {
+      const container = document.getElementById('contact-form-placeholder');
+      container.innerHTML = html;
+
+      // Extract and evaluate any scripts from the loaded HTML
+      const tempDiv = document.createElement('div');
+      tempDiv.innerHTML = html;
+      const scripts = tempDiv.querySelectorAll('script');
+      scripts.forEach(script => {
+        const newScript = document.createElement('script');
+        if (script.src) {
+          newScript.src = script.src;
+        } else {
+          newScript.textContent = script.textContent;
+        }
+        document.body.appendChild(newScript);
+      });
+    })
+    .catch(error => console.error('Failed to load contact form:', error));
+
+
+
+fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer-placeholder').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading footer:', error));
+</script>
+
+<div id="footer-placeholder"></div>
+</main>
+<script>
+  window.addEventListener('scroll', function () {
+    const header = document.querySelector('header');
+    if (window.scrollY > 50) {
+      header.classList.remove('transparent');
+      header.classList.add('scrolled');
+    } else {
+      header.classList.add('transparent');
+      header.classList.remove('scrolled');
+    }
+  });
+
+  // Run once on load in case page starts scrolled
+  window.dispatchEvent(new Event('scroll'));
+
+(function () {
+    const sections = document.querySelectorAll('.itom-capabilities-section');
+
+    sections.forEach(section => {
+      const cards = section.querySelectorAll('.capability-card');
+
+      // Stagger reveal delays
+      cards.forEach((card, i) => {
+        card.style.setProperty('--reveal-delay', `${i * 120}ms`);
+      });
+
+      // Fallback if IntersectionObserver unsupported
+      if (!('IntersectionObserver' in window)) {
+        cards.forEach(c => c.classList.add('show'));
+        return;
+      }
+
+      // Observe each card individually
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            obs.unobserve(entry.target); // animate once
+          }
+        });
+      }, {
+        root: null,
+        threshold: 0.15,
+        rootMargin: '0px 0px -10% 0px' // reveal a bit before fully in view
+      });
+
+      cards.forEach(card => observer.observe(card));
+    });
+  })();
+</script>
+
+<script src="js/main.js"></script>
+</body>
+</html>

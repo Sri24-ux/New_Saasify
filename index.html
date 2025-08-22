@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saasify Solutions</title>
+    <link rel="icon" type="Saasify" href="Images/saasify.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+  <style>
+ body {
+    font-family: 'Poppins', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: #ffffff;
+    color: #2a2a2a;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden !important;
+    overscroll-behavior-y: none;
+}
+
+ .sub-heading {
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  color: #7a76a3;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.main-heading {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #0a1f44;
+}
+       
+ 
+.hero-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.hero-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero {
+  position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 120px;
+    padding-left: 10%;
+    color: white;
+}
+
+.overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px; /* Keeps text from stretching too far */
+}
+.hero-content h1{
+    font-size: 3rem;
+    line-height: 4rem;
+}
+.subtitle {
+  font-size: 20px;
+  line-height: 1.5;
+  border-bottom: 0.0625rem solid hsla(0, 0%, 100%, .3);
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.hero-description {
+  font-size: 1.5rem;
+  line-height: 2.1rem;
+  letter-spacing: .03125rem;
+  color: #f4f3f9; 
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-transform: none;
+  width: 90%;    /* Wider so it doesn’t look boxed */
+  text-align: left;
+}
+
+.content {
+  background: white;
+  position: relative;
+  z-index: 3;
+}
+
+.trusted-by {
+  overflow: hidden;
+  padding: 50px 30px;
+  background-color: #ddfff2;
+}
+
+.logo-slider-row {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 54px;
+  padding-bottom: 26px;
+}
+
+.logo-slider {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  width: max-content;
+}
+
+.logo-slider img {
+  height: 60px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* Left to right animation */
+.left-to-right {
+  animation: scroll-left 30s linear infinite;
+}
+
+/* Right to left animation */
+.right-to-left {
+  animation: scroll-right 30s linear infinite;
+  margin-top: 43px;
+}
+
+/* Keyframes */
+@keyframes scroll-left {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes scroll-right {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .logo-slider img {
+    height: 50px;
+  }
+}
+
+.client-stories {
+  padding: 40px 40px;
+  background: #ddfff2;
+}
+
+.client-stories h2 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.client-stories .subtitle {
+  color: #666;
+  margin-bottom: 32px;
+}
+
+.story-placeholder {
+  border: 2px dashed #ccc;
+  border-radius: 12px;
+  padding: 40px;
+  font-size: 1.2rem;
+  color: #444;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.key-stats-section {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.7),  /* Black with 70% opacity */
+      rgba(0, 0, 0, 0.7)
+    ),
+    url('images/future-visions-business-technology-concept.jpg') center/cover no-repeat;
+  color: white;
+  padding: 80px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+.stats-content {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.stats-left {
+  flex: 1 1 45%;
+}
+
+.stats-left h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.stats-left .highlight {
+  color: #f4c300;
+  font-weight: bold;
+}
+
+.stats-left p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.stats-right {
+  flex: 1 1 45%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.stat-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  backdrop-filter: blur(6px);
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.stat-label {
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stats-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .stats-left,
+  .stats-right {
+    flex: 1 1 100%;
+  }
+
+  .stats-right {
+    grid-template-columns: 1fr;
+  }
+}
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.stat-suffix {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+/* Contact Section */
+ .contact-form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+    
+.form-group input,
+.form-group select,
+.form-group textarea {
+  min-height: 45px;
+  font-size: 15px;
+}
+
+input, select, textarea {
+  width: 100%;
+  max-width: 100%; 
+  box-sizing: border-box;
+}
+
+.green-card {
+    background-color: #0a1f44;
+    width: 76%;
+    max-width: 1380px;
+    height: 363px;
+    border-radius: 0 50px 50px 0;
+    display: flex;
+    align-items: center;
+    margin-left: 37px;
+}
+ 
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+.form-group label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #0a1f44;
+}
+input, select, textarea {
+  padding: 10px;
+  border: 0.1rem solid #aeb0b2;
+  border-radius: 0.3rem;
+}
+textarea {
+  resize: vertical;
+}
+
+ @media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  .form-group.full {
+    grid-column: span 1;
+  }
+ 
+} 
+ 
+.contact-section {
+  position: relative;
+  padding: 161px 20px;
+  background-image: url('images/preview.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+}
+
+.curved-card {
+  position: relative;
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 8px;
+  width: 81%;
+  max-width: 960px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+.curved-card::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -97px;
+    transform: translateY(-50%);
+    width: 164px;
+    height: 189px;
+    background-color: #0a1f44;
+    border-radius: 91px;
+    background-image: url(images/handshake.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 97px;
+    box-shadow: inset 20px 0 24px -14px rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .curved-card::after {
+    display: none;
+  }
+}
+.contact-form .form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 80%;
+}
+
+.form-group.full {
+  grid-column: span 2;
+}
+@media (max-width: 768px) {
+   .contact-form .form-grid {
+    width: auto !important; 
+   }
+  .green-card {
+    background: none !important;
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block; 
+  }
+
+  .contact-section {
+    padding: 40px 15px !important;
+    background-image: none;
+  }
+
+  .curved-card {
+    width: 100% !important;
+    padding: 20px !important;
+    border-radius: 8px !important;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .curved-card {
+    width: 82%; 
+  }
+  .green-card {
+    background-color: #0a1f44;
+    width: 92%;
+    max-width: 1380px;
+    height: 363px;
+    border-radius: 0 50px 50px 0;
+    display: flex;
+    align-items: center;
+    margin-left: 37px;
+  }
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  transition: background-color 0.3s ease !important;
+}
+
+.desc{
+  font-size: 0.85rem;
+  color: #0a1f44;
+  margin: 4px 0 0;
+  padding-top: 20px;
+}
+
+.why-saasify-section {
+  background: #fff;
+  padding: 60px 40px;
+}
+
+.why-saasify-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.why-saasify-text {
+  flex: 1 1 500px;
+}
+
+.why-point {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.why-number {
+  margin-right: 8px;
+  font-weight: bold;
+  margin-top: 3px;
+  color: #0a1f44;
+}
+
+
+.why-point h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #0a1f44;
+}
+
+.why-point p {
+  margin-top: 11px;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.why-icon {
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+}
+
+/* Image column */
+.why-saasify-image {
+  flex: 1 1 500px;
+  text-align: center;
+}
+
+.why-saasify-image img {
+  width: 94%;
+  max-width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  opacity: 0;                   
+  transform: translateY(50px);  
+  transition: opacity 1.5s ease, transform 3s ease;
+  /* ⬅ increased from 0.8s to 2s */
+}
+
+.why-saasify-image img.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .why-saasify-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .why-point {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .why-point div {
+    text-align: center;
+  }
+  .why-saasify-image {
+    flex: unset;         
+    max-width: 100%;    
+    margin: 0 auto;      
+  }
+  .why-saasify-image img {
+    max-width: 100%; 
+    height: auto;
+  }
+}
+.cta-strip {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9fafb;
+  padding: 60px 40px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cta-left h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0a1f44;
+  margin-bottom: 8px;
+}
+
+.cta-left p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .cta-strip {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta-left h2 {
+    font-size: 1.5rem;
+  }
+
+  .cta-button {
+    margin-top: 15px;
+  }
+}
+.insight-section {
+  padding: 1px 40px;
+  padding-bottom: 40px;
+  background: #fff;
+}
+
+.insight-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.insight-overlay {
+  position: relative;
+  padding: 20px;
+  color: white;
+  z-index: 1;
+}
+
+.insight-overlay h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.insight-overlay p {
+  font-size: 1.115rem;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.insight-overlay a {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.insight-overlay a:hover {
+  text-decoration: underline;
+}
+
+.insight-card {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+  min-height: 400px;
+  display: flex;
+  align-items: flex-end;
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.insight-card:hover {
+  transform: scale(1.05); /* slight zoom */
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35); /* depth */
+}
+
+.insight-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.1));
+  transition: background 0.4s ease;
+}
+
+.insight-card:hover::before {
+  background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.2)); /* darker overlay */
+}
+.insights-header {
+  display: flex;
+  align-items: center;     
+  justify-content: space-between; 
+  gap: 20px;               
+}
+    </style>
+</head>
+
+<body>
+<header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/Saasify logo.png" alt="Saasify Logo" />
+            </a>
+        </div>
+        <div class="hamburger" id="hamburgerIcon" onclick="toggleMobileMenu()" style="display:none">☰</div>
+
+        <nav>
+           <div class="dropdown">
+            <span style="color: white;">ManageEngine Expertise </span>
+            <svg xmlns="http://www.w3.org/2000/svg" 
+                fill="none" viewBox="0 0 24 24" stroke="white" 
+                style="width: 16px; height: 16px; vertical-align: middle; margin-left: 6px;">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                    d="M19 9l-7 7-7-7" />
+            </svg>   
+            <div class="dropdown-content expertise-dropdown">
+              <h4>Expertise</h4>
+              <div class="two-column-dropdown">
+                <ul>
+                  <li>
+                    <a href="IAM.html">IAM</a>
+                    <span class="desc">Manage, govern, and secure digital identities and privileged access.</span>
+                  </li>
+                  <li>
+                    <a href="ITSM.html">ITSM/ESM</a>
+                    <span class="desc">Design, automate, deliver, and manage IT and business services.</span>
+                  </li>
+                  <li>
+                    <a href="UEM.html">UEMS</a>
+                    <span class="desc">Secure and manage endpoints to protect your IT assets effectively.</span>
+                 </li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href="ITOM.html">ITOM</a>
+                     <span class="desc">Achieve end-to-end visibility, proactive issue resolution, and enhanced security across the IT Infrastructure.</span>
+                   </li>
+                  <li>
+                    <a href="SIEM.html">SIEM</a>
+                    <span class="desc">Secure your network from cyberattacks and ensure compliance.</span>
+                  </li>
+                  <li>
+                    <a href="IT-Analysis.html">IT Analytics</a>
+                    <span class="desc">Visualize IT data and gain actionable insights into IT operations.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+                <span style="color: white;">Services</span>
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                  fill="none" viewBox="0 0 24 24" stroke="white" 
+                  style="width: 16px; height: 16px; vertical-align: middle; margin-left: 6px;">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                      d="M19 9l-7 7-7-7" />
+              </svg>
+              
+                <div class="dropdown-content" style="min-width: 200px !important;">
+                   <div class="dropdown-column">
+                      <h4>Services</h4>
+                        <ul>
+                            <li><a href="consulting-services.html">Consulting</a></li>
+                            <li><a href="evaluation-assistance.html">Evaluation Assistance</a></li>
+                            <li><a href="Imp-Cust-service.html">Implementation and Customisation</a></li>
+                            <li><a href="training-services.html">Training & Enablement</a></li>
+                            <li><a href="Ongoing_support.html">Ongoing Support</a></li>
+                            <li><a href="managed-services.html">Managed Services</a></li>
+                          </ul>
+                    </div>
+                </div>
+             </div>
+
+            <div class="dropdown">
+                <div class="dropdown-trigger">
+                  <span>Company Overview</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" 
+                      fill="none" viewBox="0 0 24 24" stroke="white" 
+                      style="width: 16px; height: 16px; vertical-align: middle; margin-left: 6px;">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                          d="M19 9l-7 7-7-7" />
+                  </svg>
+                </div>
+                <div class="dropdown-content" style="min-width: 200px !important;">
+                   <div class="dropdown-column">
+                      <h4>About</h4>
+                    <ul>
+                        <li><a href="about_us.html">About Saasify</a></li>
+                        <li><a href="our-presence.html">Our Presence</a></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            
+            <ul>
+                <li><a href="saasify-careers.html" style="color: white;">Careers</a></li>
+            </ul>
+            <ul>
+                <li><a href="insight-page.html" style="color: white;">Insights</a></li>
+            </ul>
+        </nav>
+        <div class="contact-button desktop-only">
+            <a href="contact_us_page.html">
+                <button>Contact Us</button>
+            </a>
+        </div>
+</header>
+   
+<div id="overlay" class="overlay" onclick="toggleMobileMenu()"> </div>
+
+<div id="mobileMenu">
+      <!-- Platform Proficiency -->
+      
+       <div class="submenu-toggle" onclick="toggleSubmenu(this)"> ManageEngine Expertise 
+            <img src="images/Arrow.png" alt="Arrow" style=" height: 24px;" />
+       </div>
+        <div class="submenu">
+            <a href="IAM.html">IAM</a>
+            <a href="ITSM.html">ITSM/ESM</a>
+            <a href="UEM.html">UEMS</a>
+            <a href="ITOM.html">ITOM</a>
+            <a href="SIEM.html">SIEM</a>
+            <a href="IT-Analysis.html">IT Analytics</a>
+        </div>
+
+        <!-- Services -->
+        <div class="submenu-toggle" onclick="toggleSubmenu(this)">Services 
+           <img src="images/Arrow.png" alt="Arrow" style=" height: 24px;" />
+        </div>
+        <div class="submenu">
+            <a href="consulting-services.html">Consulting</a>
+            <a href="evaluation-assistance.html">Evaluation Assistance</a>
+            <a href="Imp-Cust-service.html">Implementation and Customisation</a>
+            <a href="training-services.html">Training & Enablement</a>
+            <a href="Ongoing_support.html">Ongoing Support</a>
+            <a href="managed-services.html">Managed Services</a>
+        </div>
+
+        <!-- Company Overview -->
+        <div class="submenu-toggle" onclick="toggleSubmenu(this)">Company Overview 
+           <img src="images/Arrow.png" alt="Arrow" style=" height: 24px;" />
+        </div>
+        <div class="submenu">
+            <a href="about_us.html">About Saasify</a>
+            <a href="our-presence.html">Our Presence</a>
+        </div>
+
+        <!-- Careers -->
+        <div class="submenu-toggle">
+            <a href="saasify-careers.html" style="display:block;">Careers</a>
+        </div>   
+
+        <!-- Insights -->
+        <div class="submenu-toggle">
+            <a href="insight-page.html" style="display:block;">Insights</a>
+        </div>
+        <!-- Contact Us -->
+        <div class="right-icons">
+            <a href="contact_us_page.html">
+                <button>Contact Us</button>
+            </a>
+        </div>
+</div>
+
+<div class="hero-video">
+  <video autoplay muted loop playsinline>
+    <source src="videos/hand_video_1080p.webm" type="video/mp4">
+  </video>
+</div>
+
+<section class="hero">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <p class="subtitle">Your Trusted ManageEngine Partner</p>
+    <h1>Purpose-Built Intelligence for Modern Enterprises</h1>
+    <a href="contact_us_page.html">
+      <button class="cta-button">Get in Touch</button>
+    </a>
+  </div>
+</section>
+<main class="content">
+
+<section class="why-saasify-section">
+  <div class="why-saasify-container">
+    <!-- Text Column -->
+    <div class="why-saasify-text">
+      <p class="sub-heading">What Sets Us Apart?</p>
+      <h2 class="main-heading">Experience the <span style="color: #00c896">Saasify Edge</span></h2>
+
+      <div class="why-point">
+        <span class="why-number">1.</span>
+        <div>
+          <h4>Access to Industry-Leading IT Solutions</h4>
+          <p>As specialized <strong>ManageEngine</strong> partners, we implement and support tools like ServiceDesk Plus, OpManager, Endpoint Central, and Others. Our focus is helping businesses maximize value from these solutions.</p>
+        </div>
+      </div>
+
+      <div class="why-point">
+        <span class="why-number">2.</span>
+         <div>
+          <h4>Certified Expertise & Priority Support</h4>
+          <p>Saasify delivers certified expertise backed by <strong>ManageEngine</strong> partner training and resources. We ensure seamless deployment and priority support for your IT solutions.</p></div>
+      </div>
+
+      <div class="why-point">
+       <span class="why-number">3.</span> 
+       <div>
+          <h4>End-to-End Service Delivery</h4>
+          <p>We handle the complete lifecycle—implementation, customization, integration, training, and ongoing support—ensuring your <strong>ManageEngine</strong> solutions deliver maximum value with minimal complexity.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Image Column -->
+    <div class="why-saasify-image">
+      <img src="images/team-img-check.jpg" alt="Saasify Team">
+    </div>
+  </div>
+</section>
+
+<section class="trusted-by">
+  <p class="sub-heading">CUSTOMERS</p>
+  <h2 class="main-heading">Empowering Businesses with <span style="color: #00c896">ManageEngine Services</span></h2>
+   <div class="logo-slider-row">
+    <div class="logo-slider left-to-right" id="logos-row-1"></div>
+    <div class="logo-slider right-to-left" id="logos-row-2"></div>
+  </div>
+</section>
+
+<section class="key-stats-section">
+  <div class="stats-content">
+    <div class="stats-left">
+       <p class="sub-heading">KEY STATISTICS</p>
+      <h2>Our stats tell the story of <span style="color: #00c896">Saasify’s impact</span></h2>
+      <p>Trusted by 100+ customers worldwide — delivering consistent value and long-term success.</p>
+    </div>
+
+    <div class="stats-right" id="statsGrid">
+      <!-- Boxes will be added here dynamically -->
+    </div>
+  </div>
+</section>
+
+<section class="client-stories">
+  <div class="container">
+    <p class="sub-heading">Our Client Stories</p>
+      <h2>Real experiences. Real impact. <span style="color: #00c896"> Coming soon!</span></h2>
+  </div>
+</section>
+
+<section class="insight-section">
+  <p class="sub-heading">RESOURCES</p>
+  <div class="insights-header">
+      <h2 class="main-heading">
+        Stay Informed with <span style="color: #00c896">Saasify’s Latest Insights</span>
+      </h2>
+      <a href="insight-page.html">
+        <button class="cta-button">View All</button>
+      </a>
+  </div>
+  <div class="insight-grid">
+
+  <div class="insight-card" style="background-image: url('images/ITSM_benefit_optimized.webp');">
+    <div class="insight-overlay"> 
+      <h3 class="hover-underline">5 Ways to Improve IT Operations</h3>
+        <p>Discover strategies that elevate your IT management to the next level.</p>
+       </div>
+  </div>
+
+  <div class="insight-card" style="background-image: url('images/ITSM_benefit_optimized.webp');">
+    <div class="insight-overlay">
+      <h3 class="hover-underline">Case Study: Optimizing BPM</h3>
+        <p>Read how Saasify helped a client streamline their business processes effectively.</p>
+       </div>
+  </div>
+
+  <div class="insight-card" style="background-image: url('images/ITSM_benefit_optimized.webp');">
+    <div class="insight-overlay">
+     <h3 class="hover-underline">Security Trends 2025</h3>
+        <p>Explore the future of cybersecurity and how your company can prepare.</p>
+      </div>
+  </div>
+   <div class="insight-card" style="background-image: url('images/ITSM_benefit_optimized.webp');">
+    <div class="insight-overlay">
+      <h3 class="hover-underline">Case Study: Optimizing BPM</h3>
+        <p>Read how Saasify helped a client streamline their business processes effectively.</p>
+       </div>
+  </div>
+  </div>
+</section>
+
+<section class="cta-strip">
+  <div class="cta-left">
+    <h2>Looking to streamline your IT? <span style="color: #00c896">Get in Touch!</span></h2>
+    <p>If you’re looking for a tailored, results-driven approach — we’re just one click away!</p>
+  </div>
+  <div class="cta-right">
+    <a href="contact_us_page.html"> 
+       <button class="cta-button"> Contact Us</button>
+     </a>
+  </div>
+</section>
+
+
+<div id="contact-form-placeholder"></div>
+
+<div id="footer-placeholder"></div>
+</main>
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+  const img = document.querySelector(".why-saasify-image img");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        img.classList.add("animate");
+        observer.unobserve(img); // animate only once
+      }
+    });
+  }, { threshold: 0.2 });
+
+  observer.observe(img);
+});
+
+      const statsData = [
+  { number: 150, label: 'Implementations', suffix: '+'  },
+  { number: 40, label: 'Technology professionals', suffix: '+'  },
+  { number: 100, label: 'Clients',  suffix: '+'},
+  { number: 95, label: 'Retention Rate', suffix: '%'}
+];
+
+const statsGrid = document.getElementById("statsGrid");
+
+
+// Create stat boxes
+const statElements = [];
+
+statsData.forEach(stat => {
+  const box = document.createElement("div");
+  box.className = "stat-box";
+
+  // Create wrapper for animated number + static suffix
+  const numWrapper = document.createElement("div");
+  numWrapper.className = "stat-number"; // parent container for number + suffix
+
+  const numberSpan = document.createElement("span"); // animated number
+  numberSpan.textContent = "0";
+
+  const suffixSpan = document.createElement("span"); // static symbol
+  suffixSpan.textContent = stat.suffix || '';
+  suffixSpan.className = "stat-suffix";
+
+  numWrapper.appendChild(numberSpan);
+  numWrapper.appendChild(suffixSpan); // ✅ append inside the wrapper
+
+  const label = document.createElement("div");
+  label.className = "stat-label";
+  label.textContent = stat.label;
+
+  box.appendChild(numWrapper); // ✅ add the wrapper to the card
+  box.appendChild(label);
+  statsGrid.appendChild(box);
+
+  statElements.push({ el: numberSpan, value: stat.number }); // animate only numberSpan
+});
+
+
+statElements.forEach(stat => {
+  animateCounter(stat.el, stat.value, stat.suffix || '');
+});
+
+function animateCounter(el, value) {
+  let counter = 0;
+  const step = Math.ceil(value / 50);
+  const interval = setInterval(() => {
+    counter += step;
+    if (counter >= value) {
+      el.textContent = value;
+      clearInterval(interval);
+    } else {
+      el.textContent = counter;
+    }
+  }, 50);
+}
+
+// Animate on scroll
+let statsAnimated = false;
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting && !statsAnimated) {
+      statsAnimated = true;
+      statElements.forEach(stat => {
+        animateCounter(stat.el, stat.value);
+      });
+    }
+  });
+}, { threshold: 0.5 });
+
+observer.observe(document.querySelector(".key-stats-section"));
+
+window.addEventListener('scroll', function () {
+    const header = document.querySelector('header');
+    if (window.scrollY > 50) {
+      header.classList.remove('transparent');
+      header.classList.add('scrolled');
+    } else {
+      header.classList.add('transparent');
+      header.classList.remove('scrolled');
+    }
+  });
+
+  // Run once on load in case page starts scrolled
+  window.dispatchEvent(new Event('scroll'));
+
+   fetch('contact-form.html')
+    .then(response => response.text())
+    .then(html => {
+      const container = document.getElementById('contact-form-placeholder');
+      container.innerHTML = html;
+
+      // Extract and evaluate any scripts from the loaded HTML
+      const tempDiv = document.createElement('div');
+      tempDiv.innerHTML = html;
+      const scripts = tempDiv.querySelectorAll('script');
+      scripts.forEach(script => {
+        const newScript = document.createElement('script');
+        if (script.src) {
+          newScript.src = script.src;
+        } else {
+          newScript.textContent = script.textContent;
+        }
+        document.body.appendChild(newScript);
+      });
+    })
+    .catch(error => console.error('Failed to load contact form:', error));
+
+
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer-placeholder').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading footer:', error));
+
+  const partnerLogos = [
+    { src: "logos/S1.png", alt: "Partner 1" },
+    { src: "logos/S2.png", alt: "Partner 2" },
+    { src: "logos/S3.png", alt: "Partner 3" },
+    { src: "logos/S4.png", alt: "Partner 4" },
+    { src: "logos/S5.png", alt: "Partner 5" },
+    { src: "logos/S6.png", alt: "Partner 6" },
+    { src: "logos/S7.png", alt: "Partner 7" },
+    { src: "logos/S8.png", alt: "Partner 8" },
+    { src: "logos/S9.png", alt: "Partner 9" },
+    { src: "logos/S10.png", alt: "Partner 10" },
+    { src: "logos/S11.png", alt: "Partner 11" },
+    { src: "logos/S12.png", alt: "Partner 12" },
+    { src: "logos/S13.png", alt: "Partner 13" },
+    { src: "logos/S14.png", alt: "Partner 14" },
+    { src: "logos/S15.png", alt: "Partner 15" }
+  ];
+
+  const mid = Math.ceil(partnerLogos.length / 2);
+  const row1 = [...partnerLogos.slice(0, mid), ...partnerLogos.slice(0, mid)];
+  const row2 = [...partnerLogos.slice(mid), ...partnerLogos.slice(mid)];
+
+  const row1Container = document.getElementById("logos-row-1");
+  const row2Container = document.getElementById("logos-row-2");
+
+  row1.forEach(logo => {
+    const img = document.createElement("img");
+    img.src = logo.src;
+    img.alt = logo.alt;
+    row1Container.appendChild(img);
+  });
+
+  row2.forEach(logo => {
+    const img = document.createElement("img");
+    img.src = logo.src;
+    img.alt = logo.alt;
+    row2Container.appendChild(img);
+  });
+</script>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Saasify Solutions</title>
+    <link rel="icon" type="Saasify" href="Images/saasify.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+   
+  <style>
+ body {
+    font-family: 'Poppins', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: #ffffff;
+    color: #2a2a2a;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden !important;
+    overscroll-behavior-y: none;
+}
+
+.sub-heading {
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  color: #7a76a3;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.main-heading {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #0a1f44;
+}
+
+sheader {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  transition: background-color 0.3s ease !important;
+}
+
+ /* Hero Section */
+.hero-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.5);
+  animation: zoomOut 6s ease-out forwards;
+}
+
+@keyframes zoomOut {
+  to {
+    transform: scale(1);
+  }
+}
+
+.hero {
+  position: relative;
+  height: 100vh; 
+  display: flex;
+  align-items: flex-start; /* Top align */
+  justify-content: flex-start; /* Left align */
+  padding-top: 120px; /* Adjust this to match TCS vertical spacing */
+  padding-left: 10%;  /* Adds left offset */
+  color: white;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px; /* Keeps text from stretching too far */
+}
+.hero-content h1{
+    font-size: 3rem;
+    line-height: 4rem;
+}
+.subtitle {
+  font-size: 20px;
+  line-height: 1.5;
+  border-bottom: 0.0625rem solid hsla(0, 0%, 100%, .3);
+  padding-bottom: 10px;
+}
+
+.hero-description{
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+    letter-spacing: .03125rem;
+    color: #f4f3f9;
+    margin-bottom: 1rem;
+    text-transform: none;
+    width: 70%;
+}
+.overlay {
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+}
+
+.content {
+  background: white;
+  position: relative;
+  z-index: 3;
+}
+/* Contact Section */
+ .contact-form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+    
+.form-group input,
+.form-group select,
+.form-group textarea {
+  min-height: 45px;
+  font-size: 15px;
+}
+
+input, select, textarea {
+  width: 100%;
+  max-width: 100%; 
+  box-sizing: border-box;
+}
+
+.green-card {
+    background-color: #0a1f44;
+    width: 76%;
+    max-width: 1380px;
+    height: 363px;
+    border-radius: 0 50px 50px 0;
+    display: flex;
+    align-items: center;
+    margin-left: 37px;
+}
+ 
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+.form-group label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #0a1f44;
+}
+input, select, textarea {
+  padding: 10px;
+  border: 0.1rem solid #aeb0b2;
+  border-radius: 0.3rem;
+}
+textarea {
+  resize: vertical;
+}
+
+ @media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  .form-group.full {
+    grid-column: span 1;
+  }
+ 
+} 
+ 
+.contact-section {
+  position: relative;
+  padding: 161px 20px;
+  background-image: url('images/preview.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+}
+
+.curved-card {
+  position: relative;
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 8px;
+  width: 81%;
+  max-width: 960px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+.curved-card::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -97px;
+    transform: translateY(-50%);
+    width: 164px;
+    height: 189px;
+    background-color: #0a1f44;
+    border-radius: 91px;
+    background-image: url(images/handshake.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 97px;
+    box-shadow: inset 20px 0 24px -14px rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .curved-card::after {
+    display: none;
+  }
+}
+.contact-form .form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 80%;
+}
+
+.form-group.full {
+  grid-column: span 2;
+}
+@media (max-width: 768px) {
+   .contact-form .form-grid {
+    width: auto !important; 
+   }
+  .green-card {
+    background: none !important;
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block; 
+  }
+
+  .contact-section {
+    padding: 40px 15px !important;
+    background-image: none;
+  }
+
+  .curved-card {
+    width: 100% !important;
+    padding: 20px !important;
+    border-radius: 8px !important;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .curved-card {
+    width: 82%; 
+  }
+  .green-card {
+    background-color: #0a1f44;
+    width: 92%;
+    max-width: 1380px;
+    height: 363px;
+    border-radius: 0 50px 50px 0;
+    display: flex;
+    align-items: center;
+    margin-left: 37px;
+  }
+}
+
+ /* Intro Section */
+.intro-section {
+  display: flex;
+  justify-content: center; 
+  padding: 1.5rem 2rem;
+  background-color: #f8f9fa;
+  min-height: 50vh;        
+  box-sizing: border-box;
+}
+
+.intro-content {
+  max-width: 800px;
+}
+
+.intro-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.intro-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.intro-content ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.intro-content ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .intro-content {
+    max-width: 100%;
+    padding: 1rem;
+  }
+}
+
+.logo img {
+    transform: scale(1.5);
+    transform-origin: center;
+}
+
+
+@media (max-width: 768px) {
+  .fancy-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .benefit-card {
+    max-width: 100%;
+  }
+}
+.support-card p{
+   text-align: justify;
+}
+.breadcrumb {
+  padding: 15px 40px;
+  font-size: 0.95rem;
+  color: #333;
+  z-index: 1;
+  position: relative;
+  background-color: #fff;
+}
+
+.breadcrumb-container a {
+  text-decoration: none;
+  color: #0a1f44;
+  margin-right: 5px;
+}
+
+.breadcrumb-container span {
+  color: #666;
+  font-weight: 500;
+}
+
+ .row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 0px;
+}
+
+.row.bg-alt {
+  background-color:  #ddfff2;
+  border-radius: 12px;
+  gap: 82px;
+}
+
+.column.image img {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  border-radius: 12px;
+}
+
+.column.image {
+  flex: 1 1 40%;
+}
+
+.column.text {
+  flex: 1 1 60%;
+  margin-left: 46px;
+}  
+
+.row:nth-child(even) .column.image {
+  order: 2;
+}
+
+.row:nth-child(even) .column.text {
+  order: 1;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .column.image,
+  .column.text {
+    flex: 1 1 100%;
+  }
+
+  .row:nth-child(even) .column.image,
+  .row:nth-child(even) .column.text {
+    order: initial;
+  }
+}
+
+</style>
+</head>
+<body>
+<header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/Saasify logo.png" alt="Saasify Logo" />
+            </a>
+        </div>
+        <div class="hamburger" id="hamburgerIcon" onclick="toggleMobileMenu()">☰</div>
+
+        <nav>
+           <div class="dropdown">
+            <span style="color: white;">ManageEngine Expertise </span>
+            <svg xmlns="http://www.w3.org/2000/svg" 
+                fill="none" viewBox="0 0 24 24" stroke="white" 
+                style="width: 16px; height: 16px; vertical-align: middle; margin-left: 6px;">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                    d="M19 9l-7 7-7-7" />
+            </svg>   
+            <div class="dropdown-content expertise-dropdown">
+              <h4>Expertise</h4>
+              <div class="two-column-dropdown">
+                <ul>
+                  <li>
+                    <a href="IAM.html">IAM</a>
+                    <span class="desc">Manage, govern, and secure digital identities and privileged access.</span>
+                  </li>
+                  <li>
+                    <a href="ITSM.html">ITSM/ESM</a>
+                    <span class="desc">Design, automate, deliver, and manage IT and business services.</span>
+                  </li>
+                  <li>
+                    <a href="UEM.html">UEMS</a>
+                    <span class="desc">Secure and manage endpoints to protect your IT assets effectively.</span>
+                </li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href="ITOM.html">ITOM</a>
+                     <span class="desc">Achieve end-to-end visibility, proactive issue resolution, and enhanced security across the IT Infrastructure.</span>
+                  </li>
+                  <li>
+                    <a href="SIEM.html">SIEM</a>
+                    <span class="desc">Secure your network from cyberattacks and ensure compliance.</span>
+                  </li>
+                  <li>
+                    <a href="IT-Analysis.html">IT Analytics</a>
+                    <span class="desc">Visualize IT data and gain actionable insights into IT operations.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+                <span style="color: white;">Services</span>
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                  fill="none" viewBox="0 0 24 24" stroke="white" 
+                  style="width: 16px; height: 16px; vertical-align: middle; margin-left: 6px;">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                      d="M19 9l-7 7-7-7" />
+              </svg>
+              
+                <div class="dropdown-content" style="min-width: 200px !important;">
+                   <div class="dropdown-column">
+                      <h4>Services</h4>
+                        <ul>
+                            <li><a href="consulting-services.html">Consulting</a></li>
+                            <li><a href="evaluation-assistance.html">Evaluation Assistance</a></li>
+                            <li><a href="Imp-Cust-service.html">Implementation and Customisation</a></li>
+                            <li><a href="training-services.html">Training & Enablement</a></li>
+                            <li><a href="Ongoing_support.html">Ongoing Support</a></li>
+                            <li><a href="managed-services.html">Managed Services</a></li>
+                          </ul>
+                    </div>
+                </div>
+             </div>
+
+            <div class="dropdown">
+                <div class="dropdown-trigger">
+                  <span>Company Overview</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" 
+                      fill="none" viewBox="0 0 24 24" stroke="white" 
+                      style="width: 16px; height: 16px; vertical-align: middle; margin-left: 6px;">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                          d="M19 9l-7 7-7-7" />
+                  </svg>
+                </div>
+                <div class="dropdown-content" style="min-width: 200px !important;">
+                   <div class="dropdown-column">
+                      <h4>About</h4>
+                    <ul>
+                        <li><a href="about_us.html">About Saasify</a></li>
+                        <li><a href="our-presence.html">Our Presence</a></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            
+            <ul>
+                <li><a href="saasify-careers.html" style="color: white;">Careers</a></li>
+            </ul>
+            <ul>
+                <li><a href="insight-page.html" style="color: white;">Insights</a></li>
+            </ul>
+        </nav>
+        <div class="contact-button desktop-only">
+            <a href="contact_us_page.html">
+                <button>Contact Us</button>
+            </a>
+        </div>
+</header>
+   
+<div id="overlay" class="overlay" onclick="toggleMobileMenu()"> </div>
+
+<div id="mobileMenu">
+      <!-- Platform Proficiency -->
+      
+       <div class="submenu-toggle" onclick="toggleSubmenu(this)"> ManageEngine Expertise 
+            <img src="images/Arrow.png" alt="Arrow" style=" height: 24px;" />
+       </div>
+        <div class="submenu">
+            <a href="IAM.html">IAM</a>
+            <a href="ITSM.html">ITSM/ESM</a>
+            <a href="UEM.html">UEMS</a>
+            <a href="ITOM.html">ITOM</a>
+            <a href="SIEM.html">SIEM</a>
+            <a href="IT-Analysis.html">IT Analytics</a>
+           
+        </div>
+
+        <!-- Services -->
+        <div class="submenu-toggle" onclick="toggleSubmenu(this)">Services 
+           <img src="images/Arrow.png" alt="Arrow" style=" height: 24px;" />
+        </div>
+        <div class="submenu">
+            <a href="consulting-services.html">Consulting</a>
+            <a href="evaluation-assistance.html">Evaluation Assistance</a>
+            <a href="Imp-Cust-service.html">Implementation and Customisation</a>
+            <a href="training-services.html">Training & Enablement</a>
+            <a href="Ongoing_support.html">Ongoing Support</a>
+            <a href="managed-services.html">Managed Services</a>
+        </div>
+
+        <!-- Company Overview -->
+        <div class="submenu-toggle" onclick="toggleSubmenu(this)">Company Overview 
+           <img src="images/Arrow.png" alt="Arrow" style=" height: 24px;" />
+        </div>
+        <div class="submenu">
+            <a href="about_us.html">About Saasify</a>
+            <a href="our-presence.html">Our Presence</a>
+        </div>
+
+        <!-- Careers -->
+        <div class="submenu-toggle">
+            <a href="saasify-careers.html" style="display:block;">Careers</a>
+        </div>   
+
+        <!-- Insights -->
+        <div class="submenu-toggle">
+            <a href="insight-page.html" style="display:block;">Insights</a>
+        </div>
+        <!-- Contact Us -->
+        <div class="right-icons">
+            <a href="contact_us_page.html">
+                <button>Contact Us</button>
+            </a>
+        </div>
+</div>
+
+<div class="hero-image">
+  <img src="images/ongoing_support_image.webp" alt="Ongoing Support" loading="lazy">
+</div>
+
+<section class="hero">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <p class="subtitle">Ongoing Support</p>
+    <h1>Beyond Implementation: Support That Stays</h1>
+    <a href="contact_us_page.html">
+      <button class="cta-button">Book a Demo</button>
+    </a>
+  </div>
+</section>
+
+<main class="content">
+<section class="breadcrumb">
+  <div class="breadcrumb-container">
+    <a href="index.html">Home</a> &gt;
+    <a href="#">Services & Solutions</a> &gt;
+    <span>Ongoing Support</span>
+  </div>
+</section>
+
+<section class="intro-section">
+  <div class="glass-card">
+      <p class="sub-heading">Trusted Advisors</p>
+      <h2 class="main-heading">
+       Your Reliable Bridge to 
+        <span style="color: #00c896">Faster Resolutions</span>
+      </h2>
+      <div class="intro-content">
+       <p>
+     At Saasify Solutions, we provide continuous handholding and proactive support for as long as the technology is in use—acting as the first line of defense between your team and the technology OEM. From troubleshooting day-to-day challenges to resolving bugs and performance issues, our experts ensure minimal disruption and maximum productivity. Backed by agreed SLAs, we deliver rapid, reliable assistance so your team can focus on growth while we manage the technical complexities.
+    </p></div>
+  </div>
+</section>
+
+<section style="background-color: #0a1f44; padding: 60px 20px;">
+  <div style="max-width: 1200px; margin: auto;" >
+    <p class="sub-heading">Saasify Support in Action</p>
+      <h2 class="main-heading" style="color:#ccc">Behind the Scenes of <span style="color: #00c896">Our Support.</span></h2>
+
+    <div class="support-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 40px;">
+      
+      <!-- Card 1 -->
+      <div class="support-card" style="background: white; padding: 30px 20px; border-radius: 20px; color: #0a1f44; text-align: center; box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
+        <div style="font-size: 2.5rem; color: #00c896; margin-bottom: 16px;">
+          <i class="fas fa-shield-alt"></i> <!-- corrected icon -->
+        </div>
+       
+        <h3 style="margin-bottom: 10px;">Tiered Support Options</h3>
+        <p>Choose from Basic, Standard, or Premium plans tailored to your operational needs and criticality.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="support-card" style="background: white; padding: 30px 20px; border-radius: 20px; color: #0a1f44; text-align: center; box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
+        <div style="font-size: 2.5rem; color: #00c896; margin-bottom: 16px;">
+          <i class="fas fa-clock"></i>
+        </div>
+      
+        <h3 style="margin-bottom: 10px;">9/5 Helpdesk Access</h3>
+        <p>Round-the-clock support availability with guaranteed response SLAs, ensuring peace of mind.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="support-card" style="background: white; padding: 30px 20px; border-radius: 20px; color: #0a1f44; text-align: center; box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
+        <div style="font-size: 2.5rem; color: #00c896; margin-bottom: 16px;">
+          <i class="fas fa-users"></i>
+        </div>
+    
+        <h3 style="margin-bottom: 10px;">Dedicated Account Manager</h3>
+        <p>Your single point of contact for escalations, reporting, and proactive account health check-ins.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section style="padding: 60px 20px; background-color: #ffffff;">
+  <p class="sub-heading">What We Cover — From Start to Support</p>
+
+  <!-- Row 1 -->
+  <div class="row">
+    <div class="column image reverse">
+      <img src="images/siem-img.jpg" alt="Issue Handling" />
+    </div>
+    <div class="column text">
+      <h2 class="main-heading">Comprehensive <span style="color: #00c896">Issue Handling.</span></h2>
+      <p>
+        Once a solution is live, support continues without interruption.<br>
+        Whether facing bugs, performance lags, or unexpected system behavior,
+        the expert support team is always just a message away.<br>
+        Every issue is prioritized and addressed swiftly to restore normal operations.<br>
+        From minor glitches to critical system crashes, coverage is comprehensive.<br>
+        The goal is to ensure business operations run smoothly and without disruption.
+      </p>
+    </div>
+  </div>
+
+  <!-- Row 2 -->
+  <div class="row bg-alt">
+    <div class="column image">
+      <img src="images/business-process.jpg" alt="Reports and Insights" />
+    </div>
+    <div class="column text">
+      <h2 class="main-heading">Reports & <span style="color: #00c896">Usage Insights.</span></h2>
+      <p>
+        Regular reports provide complete visibility into system usage.<br>
+        From performance trends to user activity, every insight is captured and shared.<br>
+        These reports help monitor adoption and track critical KPIs.<br>
+        Understand team interactions with the platform in real time.<br>
+        Data-backed insights enable strategic improvements and planning.
+      </p>
+    </div>
+  </div>
+
+  <!-- Row 3 -->
+  <div class="row">
+    <div class="column image reverse">
+      <img src="images/security-img.jpg" alt="Security" />
+    </div>
+    <div class="column text">
+      <h2 class="main-heading">Security & <span style="color: #00c896">Patch Updates.</span></h2>
+      <p>
+        Stay protected from evolving cyber threats with proactive patching.<br>
+        Regular security updates are delivered, tailored to the environment.<br>
+        Each patch is tested to ensure stability, compliance, and performance.<br>
+        Business applications remain safeguarded without disrupting operations.<br>
+        System integrity is continuously reinforced through structured updates.
+      </p>
+    </div>
+  </div>
+
+  <!-- Row 4 -->
+  <div class="row bg-alt">
+    <div class="column image reverse">
+      <img src="images/uem-img.jpg" alt="Minor Enhancements" />
+    </div>
+    <div class="column text">
+      <h2 class="main-heading">Minor <span style="color: #00c896">Enhancements.</span></h2>
+      <p>
+        Post go-live, new needs and refinements are supported efficiently.<br>
+        Tasks such as renaming field labels or adjusting workflows are handled promptly.<br>
+        UI tweaks, logic updates, and functional improvements ensure systems remain relevant.<br>
+        Requests are processed to maintain continuity and user satisfaction.<br>
+        Systems evolve in sync with organizational goals without disruption.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div id="contact-form-placeholder"></div>
+
+<script>
+  fetch('contact-form.html')
+    .then(response => response.text())
+    .then(html => {
+      const container = document.getElementById('contact-form-placeholder');
+      container.innerHTML = html;
+
+      // Extract and evaluate any scripts from the loaded HTML
+      const tempDiv = document.createElement('div');
+      tempDiv.innerHTML = html;
+      const scripts = tempDiv.querySelectorAll('script');
+      scripts.forEach(script => {
+        const newScript = document.createElement('script');
+        if (script.src) {
+          newScript.src = script.src;
+        } else {
+          newScript.textContent = script.textContent;
+        }
+        document.body.appendChild(newScript);
+      });
+    })
+    .catch(error => console.error('Failed to load contact form:', error));
+
+
+
+fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer-placeholder').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading footer:', error));
+</script>
+
+<div id="footer-placeholder"></div>
+
+</main>
+<script>
+  window.addEventListener('scroll', function () {
+    const header = document.querySelector('header');
+    if (window.scrollY > 50) {
+      header.classList.remove('transparent');
+      header.classList.add('scrolled');
+    } else {
+      header.classList.add('transparent');
+      header.classList.remove('scrolled');
+    }
+  });
+
+  // Run once on load in case page starts scrolled
+  window.dispatchEvent(new Event('scroll'));
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>

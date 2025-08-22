@@ -1,0 +1,698 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Saasify Solutions</title>
+    <link rel="icon" type="Saasify" href="Images/saasify.ico">
+ <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <style>
+ body {
+    font-family: 'Poppins', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: #ffffff;
+    color: #2a2a2a;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden !important;
+    overscroll-behavior-y: none;
+}
+
+.sub-heading {
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  color: #7a76a3;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.main-heading {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #0a1f44;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  transition: background-color 0.3s ease !important;
+}
+
+  .cta-button,
+button[type="submit"] {
+  background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+ /* Hero Section */
+.hero-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.5);
+  animation: zoomOut 6s ease-out forwards;
+}
+
+@keyframes zoomOut {
+  to {
+    transform: scale(1);
+  }
+}
+
+.hero {
+  position: relative;
+  height: 100vh; 
+  display: flex;
+  align-items: flex-start; /* Top align */
+  justify-content: flex-start; /* Left align */
+  padding-top: 120px; /* Adjust this to match TCS vertical spacing */
+  padding-left: 10%;  /* Adds left offset */
+  color: white;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px; /* Keeps text from stretching too far */
+}
+.hero-content h1{
+    font-size: 3rem;
+    line-height: 4rem;
+}
+.subtitle {
+  font-size: 20px;
+  line-height: 1.5;
+  border-bottom: 0.0625rem solid hsla(0, 0%, 100%, .3);
+  padding-bottom: 10px;
+}
+
+.hero-description{
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+    letter-spacing: .03125rem;
+    color: #f4f3f9;
+    margin-bottom: 1rem;
+    text-transform: none;
+    width: 70%;
+}
+.overlay {
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+}
+
+.content {
+  background: white;
+  position: relative;
+  z-index: 3;
+}
+
+.breadcrumb {
+  padding: 15px 40px;
+  font-size: 0.95rem;
+  color: #333;
+  z-index: 1;
+  position: relative;
+  background-color: #fff;
+}
+
+.breadcrumb-container a {
+  text-decoration: none;
+  color: #0a1f44;
+  margin-right: 5px;
+}
+
+.breadcrumb-container span {
+  color: #666;
+  font-weight: 500;
+}
+
+.implementation-strategy {
+  background-color: #f4faff;
+  padding: 40px 20px;
+  position: relative;
+}
+
+.timeline-container {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.timeline-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 5px;
+  background-color: #e0e0e0;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px 30px;
+  box-sizing: border-box;
+}
+
+.timeline-item .content-box {
+  background: #ffffff;
+  padding: 20px 18px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  position: relative;
+}
+
+.timeline-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #0a1f44;
+}
+
+.timeline-item p {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
+}
+
+.timeline-item.left .content-box::after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  right: -47px;
+  width: 25px;
+  height: 25px;
+  background: #0a1f44;
+  border-radius: 50%;
+  border: 4px solid #fff;
+}
+
+.timeline-item.right .content-box::after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: -47px;
+  width: 25px;
+  height: 25px;
+  background: #0a1f44;
+  border-radius: 50%;
+  border: 4px solid #fff;
+}
+
+/* ======== Mobile Responsive Styles ======== */
+@media screen and (max-width: 768px) {
+  .timeline-container::before {
+    left: 20px;
+    transform: none;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 20px;
+    margin-bottom: 50px;
+  }
+
+  .timeline-item.left,
+  .timeline-item.right {
+    left: 0;
+    text-align: left;
+  }
+
+  .timeline-item .content-box::after {
+    left: -73px !important;
+    right: auto;
+  }
+}
+
+  /* Contact Section */
+ .contact-form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+    
+.form-group input,
+.form-group select,
+.form-group textarea {
+  min-height: 45px;
+  font-size: 15px;
+}
+
+input, select, textarea {
+  width: 100%;
+  max-width: 100%; 
+  box-sizing: border-box;
+}
+
+.green-card {
+    background-color: #0a1f44;
+    width: 76%;
+    max-width: 1380px;
+    height: 363px;
+    border-radius: 0 50px 50px 0;
+    display: flex;
+    align-items: center;
+    margin-left: 37px;
+}
+ 
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+.form-group label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #0a1f44;
+}
+input, select, textarea {
+  padding: 10px;
+  border: 0.1rem solid #aeb0b2;
+  border-radius: 0.3rem;
+}
+textarea {
+  resize: vertical;
+}
+
+ @media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  .form-group.full {
+    grid-column: span 1;
+  }
+ 
+} 
+ 
+.contact-section {
+  position: relative;
+  padding: 161px 20px;
+  background-image: url('images/preview.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+}
+
+.curved-card {
+  position: relative;
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 8px;
+  width: 81%;
+  max-width: 960px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+.curved-card::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -97px;
+    transform: translateY(-50%);
+    width: 164px;
+    height: 189px;
+    background-color: #0a1f44;
+    border-radius: 91px;
+    background-image: url(images/handshake.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 97px;
+    box-shadow: inset 20px 0 24px -14px rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .curved-card::after {
+    display: none;
+  }
+}
+.contact-form .form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 80%;
+}
+
+.form-group.full {
+  grid-column: span 2;
+}
+@media (max-width: 768px) {
+   .contact-form .form-grid {
+    width: auto !important; 
+   }
+  .green-card {
+    background: none !important;
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block; 
+  }
+
+  .contact-section {
+    padding: 40px 15px !important;
+    background-image: none;
+  }
+
+  .curved-card {
+    width: 100% !important;
+    padding: 20px !important;
+    border-radius: 8px !important;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .curved-card {
+    width: 82%; 
+  }
+  .green-card {
+    background-color: #0a1f44;
+    width: 92%;
+    max-width: 1380px;
+    height: 363px;
+    border-radius: 0 50px 50px 0;
+    display: flex;
+    align-items: center;
+    margin-left: 37px;
+  }
+}
+</style>
+</head>
+
+<body>
+<header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/Saasify logo.png" alt="Saasify Logo" />
+            </a>
+        </div>
+        <div class="hamburger" id="hamburgerIcon" onclick="toggleMobileMenu()">☰</div>
+
+        <nav>
+           <div class="dropdown">
+            <span style="color: white;">ManageEngine Expertise </span>
+            <svg xmlns="http://www.w3.org/2000/svg" 
+                fill="none" viewBox="0 0 24 24" stroke="white" 
+                style="width: 16px; height: 16px; vertical-align: middle; margin-left: 6px;">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                    d="M19 9l-7 7-7-7" />
+            </svg>   
+            <div class="dropdown-content expertise-dropdown">
+              <h4>Expertise</h4>
+              <div class="two-column-dropdown">
+                <ul>
+                  <li>
+                    <a href="IAM.html">IAM</a>
+                    <span class="desc">Manage, govern, and secure digital identities and privileged access.</span>
+                  </li>
+                  <li>
+                    <a href="ITSM.html">ITSM/ESM</a>
+                    <span class="desc">Design, automate, deliver, and manage IT and business services.</span>
+                  </li>
+                  <li>
+                    <a href="UEM.html">UEMS</a>
+                   <span class="desc">Secure and manage endpoints to protect your IT assets effectively.</span>
+                 </li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href="ITOM.html">ITOM</a>
+                     <span class="desc">Achieve end-to-end visibility, proactive issue resolution, and enhanced security across the IT Infrastructure.</span>
+                  </li>
+                  <li>
+                    <a href="SIEM.html">SIEM</a>
+                    <span class="desc">Secure your network from cyberattacks and ensure compliance.</span>
+                  </li>
+                  <li>
+                    <a href="IT-Analysis.html">IT Analytics</a>
+                    <span class="desc">Visualize IT data and gain actionable insights into IT operations.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+                <span style="color: white;">Services</span>
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                  fill="none" viewBox="0 0 24 24" stroke="white" 
+                  style="width: 16px; height: 16px; vertical-align: middle; margin-left: 6px;">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                      d="M19 9l-7 7-7-7" />
+              </svg>
+              
+                <div class="dropdown-content" style="min-width: 200px !important;">
+                   <div class="dropdown-column">
+                      <h4>Services</h4>
+                        <ul>
+                            <li><a href="consulting-services.html">Consulting</a></li>
+                            <li><a href="evaluation-assistance.html">Evaluation Assistance</a></li>
+                            <li><a href="Imp-Cust-service.html">Implementation and Customisation</a></li>
+                            <li><a href="training-services.html">Training & Enablement</a></li>
+                            <li><a href="Ongoing_support.html">Ongoing Support</a></li>
+                            <li><a href="managed-services.html">Managed Services</a></li>
+                          </ul>
+                    </div>
+                </div>
+             </div>
+
+            <div class="dropdown">
+                <div class="dropdown-trigger">
+                  <span>Company Overview</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" 
+                      fill="none" viewBox="0 0 24 24" stroke="white" 
+                      style="width: 16px; height: 16px; vertical-align: middle; margin-left: 6px;">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                          d="M19 9l-7 7-7-7" />
+                  </svg>
+                </div>
+                <div class="dropdown-content" style="min-width: 200px !important;">
+                   <div class="dropdown-column">
+                      <h4>About</h4>
+                    <ul>
+                        <li><a href="about_us.html">About Saasify</a></li>
+                        <li><a href="our-presence.html">Our Presence</a></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            
+            <ul>
+                <li><a href="saasify-careers.html" style="color: white;">Careers</a></li>
+            </ul>
+            <ul>
+                <li><a href="insight-page.html" style="color: white;">Insights</a></li>
+            </ul>
+        </nav>
+        <div class="contact-button desktop-only">
+            <a href="contact_us_page.html">
+                <button>Contact Us</button>
+            </a>
+        </div>
+</header>
+   
+<div id="overlay" class="overlay" onclick="toggleMobileMenu()"> </div>
+
+<div id="mobileMenu">
+      <!-- Platform Proficiency -->
+      
+       <div class="submenu-toggle" onclick="toggleSubmenu(this)"> ManageEngine Expertise 
+            <img src="images/Arrow.png" alt="Arrow" style=" height: 24px;" />
+       </div>
+        <div class="submenu">
+            <a href="IAM.html">IAM</a>
+            <a href="ITSM.html">ITSM/ESM</a>
+            <a href="UEM.html">UEMS</a>
+            <a href="ITOM.html">ITOM</a>
+            <a href="SIEM.html">SIEM</a>
+            <a href="IT-Analysis.html">IT Analytics</a>
+        </div>
+
+        <!-- Services -->
+        <div class="submenu-toggle" onclick="toggleSubmenu(this)">Services 
+           <img src="images/Arrow.png" alt="Arrow" style=" height: 24px;" />
+        </div>
+        <div class="submenu">
+            <a href="consulting-services.html">Consulting</a>
+            <a href="evaluation-assistance.html">Evaluation Assistance</a>
+            <a href="Imp-Cust-service.html">Implementation and Customisation</a>
+            <a href="training-services.html">Training & Enablement</a>
+            <a href="Ongoing_support.html">Ongoing Support</a>
+            <a href="managed-services.html">Managed Services</a>
+        </div>
+
+        <!-- Company Overview -->
+        <div class="submenu-toggle" onclick="toggleSubmenu(this)">Company Overview 
+           <img src="images/Arrow.png" alt="Arrow" style=" height: 24px;" />
+        </div>
+        <div class="submenu">
+            <a href="about_us.html">About Saasify</a>
+            <a href="our-presence.html">Our Presence</a>
+        </div>
+
+        <!-- Careers -->
+        <div class="submenu-toggle">
+            <a href="saasify-careers.html" style="display:block;">Careers</a>
+        </div>   
+
+        <!-- Insights -->
+        <div class="submenu-toggle">
+            <a href="insight-page.html" style="display:block;">Insights</a>
+        </div>
+        <!-- Contact Us -->
+        <div class="right-icons">
+            <a href="contact_us_page.html">
+                <button>Contact Us</button>
+            </a>
+        </div>
+</div>
+
+<div class="hero-image">
+  <img src="images/modern-buildings-optimized.webp" alt="IT-Analysis" loading="lazy">
+</div>
+
+<section class="hero">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <p class="subtitle">Our Approach</p>
+    <h1>Where Strategy Meets Technology</h1>
+    <a href="contact_us_page.html">
+      <button class="cta-button">Book a Demo</button>
+    </a>
+  </div>
+</section>
+
+<main class="content">
+
+<section class="breadcrumb">
+  <div class="breadcrumb-container">
+    <a href="index.html">Home</a> &gt;
+    <a href="#">Company Overview</a> &gt;
+    <span>Our Approach</span>
+  </div>
+</section>
+
+<section class="implementation-strategy">
+   <p class="sub-heading">Implementation Strategy</p>
+    <h2 class="main-heading">Driving Success Through <span style="color: #00c896"> Strategy</span></h2>
+   
+  <h2 class="main-heading">
+    <span class="span-border-bottom"></span>
+  </h2>
+  <div class="timeline-container">
+    <div class="timeline-item left">
+      <div class="content-box">
+        <h3>Assessment</h3>
+        <p>Understand current infrastructure, requirements, and analysis scope.</p>
+      </div>
+    </div>
+    <div class="timeline-item right">
+      <div class="content-box">
+        <h3>Tool Integration</h3>
+        <p>Connect relevant monitoring and analysis tools into your ecosystem.</p>
+      </div>
+    </div>
+    <div class="timeline-item left">
+      <div class="content-box">
+        <h3>Dashboard Configuration</h3>
+        <p>Set up intuitive dashboards to visualize key metrics and alerts.</p>
+      </div>
+    </div>
+    <div class="timeline-item right">
+      <div class="content-box">
+        <h3>Continuous Review & Alerts</h3>
+        <p>Enable automated alerting and ongoing performance optimization.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="contact-form-placeholder"></div>
+<div id="footer-placeholder"></div>
+</main>
+<script>
+   window.addEventListener('scroll', function () {
+    const header = document.querySelector('header');
+    if (window.scrollY > 50) {
+      header.classList.remove('transparent');
+      header.classList.add('scrolled');
+    } else {
+      header.classList.add('transparent');
+      header.classList.remove('scrolled'); 
+    }
+  });
+
+  // Run once on load in case page starts scrolled
+  window.dispatchEvent(new Event('scroll'));
+  fetch('contact-form.html')
+    .then(response => response.text())
+    .then(html => {
+      const container = document.getElementById('contact-form-placeholder');
+      container.innerHTML = html;
+
+      // Extract and evaluate any scripts from the loaded HTML
+      const tempDiv = document.createElement('div');
+      tempDiv.innerHTML = html;
+      const scripts = tempDiv.querySelectorAll('script');
+      scripts.forEach(script => {
+        const newScript = document.createElement('script');
+        if (script.src) {
+          newScript.src = script.src;
+        } else {
+          newScript.textContent = script.textContent;
+        }
+        document.body.appendChild(newScript);
+      });
+    })
+    .catch(error => console.error('Failed to load contact form:', error));
+
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer-placeholder').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading footer:', error));
+   
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Saasify Solutions</title>
+    <link rel="icon" type="Saasify" href="Images/saasify.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+<style>
+ body {
+    font-family: 'Poppins', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: #ffffff;
+    color: #2a2a2a;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden !important;
+    overscroll-behavior-y: none;
+}
+ 
+   .sub-heading {
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  color: #7a76a3;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.main-heading {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #0a1f44;
+}
+
+.cta-button {
+  background-color: #f4c300;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+.cta-button:hover {
+  background-color: #ffdb4d;
+}
+
+  .contact-hero {
+  background: url('Contact-us.jpg') center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 293px;
+  position: relative;
+  }
+  .contact-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(10, 31, 68, 0.85); 
+  z-index: 1;
+  }
+  .contact-hero-wrapper {
+  text-align: center;
+  color: white;
+  max-width: 800px;
+  z-index: 2;
+  position: relative;
+  }
+  
+  .contact-form-section {
+    background: transparent;
+    margin-top: -80px;
+    z-index: 2;
+    position: relative;
+    padding: 0 20px 60px;
+  }
+  .split-layout {
+    display: flex;
+    max-width: 1080px;
+    margin: auto;
+    align-items: stretch;
+  }
+  .form-background {
+    background-color: #eafaf7;
+    padding: 40px;
+    border-radius: 12px;
+    color: #000000;
+    flex: 1;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  .form-intro {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .form-intro h2 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+  }
+  .form-intro p {
+    font-size: 1rem;
+    color: #0a1f44;
+  }
+  .contact-form .form-group {
+    margin-bottom: 16px;
+  }
+  .contact-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    font-size: 0.95rem;
+  }
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 0.95rem;
+  }
+  .contact-form button {
+    background-color: #f4c300;
+    color: #000;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: block;
+    margin: 20px auto 0;
+  }
+  .contact-form button:hover {
+    background-color: #ffdb4d;
+  }
+  .form-image-block {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .form-image-block img {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 12px;
+  }
+  .form-image-block img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .form-image-block img {
+    max-height: 250px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+  .form-image-block p {
+    font-size: 1rem;
+    color: #041b30;
+    padding: 0 10px;
+  }
+
+  @media (max-width: 991px) {
+  .split-layout {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .form-image-block,
+  .form-background {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .form-image-block {
+    margin-bottom: 20px;
+  }
+
+  .contact-form-wrapper {
+    padding: 0;
+  }
+
+  .contact-hero {
+    padding: 40px 20px;
+    min-height: 200px;
+  }
+
+  .contact-hero-wrapper h2 {
+    font-size: 1.6rem;
+  }
+
+  .contact-hero-wrapper p {
+    font-size: 1rem;
+  }
+
+  .form-background {
+    padding: 25px 20px;
+  }
+
+  .form-intro h2 {
+    font-size: 1.5rem;
+  }
+
+  .form-intro p {
+    font-size: 0.95rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  .contact-form button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-hero-wrapper h2 {
+    font-size: 1.3rem;
+  }
+
+  .form-intro h2 {
+    font-size: 1.3rem;
+  }
+
+  .contact-form label {
+    font-size: 0.9rem;
+  }
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  .form-group.full {
+    grid-column: span 1;
+  }
+  .contact-container {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .form-background {
+    padding: 20px;
+    margin: 0 10px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .split-layout {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+
+  .form-image-block {
+    margin-bottom: 20px;
+  }
+}
+
+  .map-section {
+    position: relative;
+  background: url(premium_photo-map.jpg) center center / cover no-repeat;
+  padding: 60px 20px;
+  z-index: 1;
+  overflow: hidden;
+  }
+  .map-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(4, 27, 48, 0.7); /* Adjust alpha for transparency */
+  z-index: 2;
+   }
+  .map-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    position: relative;
+    z-index: 3;
+  }
+  .map h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+ 
+</style>
+</head>
+<body>
+<header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/Saasify logo.png" alt="Saasify Logo" />
+            </a>
+        </div>
+        <div class="hamburger" id="hamburgerIcon" onclick="toggleMobileMenu()">☰</div>
+
+        <nav>
+           <div class="dropdown">
+            <span style="color: white;">ManageEngine Expertise </span>
+            <svg xmlns="http://www.w3.org/2000/svg" 
+                fill="none" viewBox="0 0 24 24" stroke="white" 
+                style="width: 16px; height: 16px; vertical-align: middle; margin-left: 6px;">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                    d="M19 9l-7 7-7-7" />
+            </svg>   
+            <div class="dropdown-content expertise-dropdown">
+              <h4>Expertise</h4>
+              <div class="two-column-dropdown">
+                <ul>
+                  <li>
+                    <a href="IAM.html">IAM</a>
+                    <span class="desc">Manage, govern, and secure digital identities and privileged access</span>
+                  </li>
+                  <li>
+                    <a href="ITSM.html">ITSM/ESM</a>
+                    <span class="desc">Design, automate, deliver, and manage IT and business services</span>
+                  </li>
+                  <li>
+                    <a href="UEM.html">UEMS</a>
+                    <span class="desc">Secure and manage endpoints to protect your IT assets effectively</span>
+                 </li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href="ITOM.html">ITOM</a>
+                     <span class="desc">Achieve end-to-end visibility, proactive issue resolution, and enhanced security across the IT Infrastructure</span>
+                   </li>
+                  <li>
+                    <a href="SIEM.html">SIEM</a>
+                    <span class="desc">Secure your network from cyberattacks and ensure compliance</span>
+                  </li>
+                  <li>
+                    <a href="IT-Analysis.html">IT Analytics</a>
+                    <span class="desc">Visualize IT data and gain actionable insights into IT operations</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+                <span style="color: white;">Services</span>
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                  fill="none" viewBox="0 0 24 24" stroke="white" 
+                  style="width: 16px; height: 16px; vertical-align: middle; margin-left: 6px;">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                      d="M19 9l-7 7-7-7" />
+              </svg>
+              
+                <div class="dropdown-content" style="min-width: 200px !important;">
+                   <div class="dropdown-column">
+                      <h4>Services</h4>
+                        <ul>
+                            <li><a href="consulting-services.html">Consulting</a></li>
+                            <li><a href="evaluation-assistance.html">Evaluation Assistance</a></li>
+                            <li><a href="Imp-Cust-service.html">Implementation and Customisation</a></li>
+                            <li><a href="training-services.html">Training & Enablement</a></li>
+                            <li><a href="Ongoing_support.html">Ongoing Support</a></li>
+                            <li><a href="managed-services.html">Managed Services</a></li>
+                          </ul>
+                    </div>
+                </div>
+             </div>
+
+            <div class="dropdown">
+                <div class="dropdown-trigger">
+                  <span>Company Overview</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" 
+                      fill="none" viewBox="0 0 24 24" stroke="white" 
+                      style="width: 16px; height: 16px; vertical-align: middle; margin-left: 6px;">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                          d="M19 9l-7 7-7-7" />
+                  </svg>
+                </div>
+                <div class="dropdown-content" style="min-width: 200px !important;">
+                   <div class="dropdown-column">
+                      <h4>About</h4>
+                    <ul>
+                        <li><a href="about_us.html">About Saasify</a></li>
+                        <li><a href="our-presence.html">Our Presence</a></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            
+            <ul>
+                <li><a href="saasify-careers.html" style="color: white;">Careers</a></li>
+            </ul>
+            <ul>
+                <li><a href="insight-page.html" style="color: white;">Insights</a></li>
+            </ul>
+        </nav>
+        <div class="contact-button desktop-only">
+            <a href="contact_us_page.html">
+                <button>Contact Us</button>
+            </a>
+        </div>
+</header>
+   
+<div id="overlay" class="overlay" onclick="toggleMobileMenu()"> </div>
+
+<div id="mobileMenu">
+      <!-- Platform Proficiency -->
+      
+       <div class="submenu-toggle" onclick="toggleSubmenu(this)"> ManageEngine Expertise 
+            <img src="images/Arrow.png" alt="Arrow" style=" height: 24px;" />
+       </div>
+        <div class="submenu">
+            <a href="IAM.html">IAM</a>
+            <a href="ITSM.html">ITSM/ESM</a>
+            <a href="UEM.html">UEMS</a>
+            <a href="ITOM.html">ITOM</a>
+            <a href="SIEM.html">SIEM</a>
+            <a href="IT-Analysis.html">IT Analytics</a>
+        </div>
+
+        <!-- Services -->
+        <div class="submenu-toggle" onclick="toggleSubmenu(this)">Services 
+           <img src="images/Arrow.png" alt="Arrow" style=" height: 24px;" />
+        </div>
+        <div class="submenu">
+            <a href="consulting-services.html">Consulting</a>
+            <a href="evaluation-assistance.html">Evaluation Assistance</a>
+            <a href="Imp-Cust-service.html">Implementation and Customisation</a>
+            <a href="training-services.html">Training & Enablement</a>
+            <a href="Ongoing_support.html">Ongoing Support</a>
+            <a href="managed-services.html">Managed Services</a>
+        </div>
+
+        <!-- Company Overview -->
+        <div class="submenu-toggle" onclick="toggleSubmenu(this)">Company Overview 
+           <img src="images/Arrow.png" alt="Arrow" style=" height: 24px;" />
+        </div>
+        <div class="submenu">
+            <a href="about_us.html">About Saasify</a>
+            <a href="our-presence.html">Our Presence</a>
+        </div>
+
+        <!-- Careers -->
+        <div class="submenu-toggle">
+            <a href="saasify-careers.html" style="display:block;">Careers</a>
+        </div>   
+
+        <!-- Insights -->
+        <div class="submenu-toggle">
+            <a href="insight-page.html" style="display:block;">Insights</a>
+        </div>
+        <!-- Contact Us -->
+        <div class="right-icons">
+            <a href="contact_us_page.html">
+                <button>Contact Us</button>
+            </a>
+        </div>
+</div>
+<section class="contact-hero">
+  <div class="contact-hero-wrapper">
+     <h2 class="main-heading"><span style="color: #fff;">Contact Us</span></h2>
+     <p style="font-size: 1 rem; color: #fff;">We’re here to help you transform ideas into action. Reach out and let's explore the right solution for your business.</p>
+  </div>
+</section>
+
+<section class="contact-form-section">
+  <div class="contact-form-wrapper split-layout">
+    <div class="form-image-block">
+      <img src="wallpaper-contact.jpg" alt="Contact Illustration">
+    </div>
+    <div class="form-background">
+      <div class="form-intro">
+        <h2 class="main-heading" style="color: #0a1f44;">Send your questions</h2>
+        <p>A consultant will contact you shortly.</p>
+      </div>
+      <form class="contact-form" id="contact-form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="location">Your Location</label>
+          <input type="text" id="location" name="location">
+        </div>
+        <!-- <div class="form-group">
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="">Select Country</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Australia">Australia</option>
+            <option value="Other">Other</option>
+          </select>
+        </div> -->
+        <div class="form-group">
+          <label for="enquiry">What is the enquiry about?</label>
+          <select id="enquiry" name="enquiry">
+            <option value="">Select</option>
+            <option value="Product Demo">Product Features</option>
+            <option value="Partnership">Product Quote</option>
+            <option value="Support">Product Demo</option>
+            <option value="Other">Others</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+         <button type="button" onclick="submitForm()">Submit</button>
+      </form>
+      <div id="response-message" style="margin-top:10px;"></div>
+
+    </div>
+  </div>
+</section>
+
+<section class="map-section">
+  <div class="map-wrapper">
+    <div class="map">
+      <h3>Chennai Office</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.1708217693217!2d80.17392137418412!3d13.02479158729548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5261b7bada32b1%3A0x907911c0b5a58669!2sCenter%20Point%203!5e0!3m2!1sen!2sin!4v1750918698176!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="map">
+      <h3>Bangalore Office</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.6141352211503!2d77.6094251702497!3d12.932503887866734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15ec696ff097%3A0xeb4b96b461b7e97e!2sWorkafella%20Koramangala%20-%20Coworking%20space%20in%20Bangalore!5e0!3m2!1sen!2sin!4v1750918567518!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<script>
+ async function submitForm() {
+    const form = document.getElementById("contact-form");
+
+    // Prevent manual form submission if needed (not strictly required here)
+    event?.preventDefault();
+
+    // Optional: Validate
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
+    const formData = new FormData(form);
+    const responseDiv = document.getElementById("response-message");
+
+    try {
+      const response = await fetch("contact.php", {
+        method: "POST",
+        body: formData
+      });
+
+      const text = await response.text();
+      responseDiv.textContent = text;
+
+      if (text.toLowerCase().includes("success")) {
+        responseDiv.style.color = "green";
+        form.reset();
+      } else {
+        responseDiv.style.color = "red";
+      }
+    } catch (error) {
+      responseDiv.textContent = "Something went wrong. Please try again.";
+      responseDiv.style.color = "red";
+    }
+  }
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer-placeholder').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading footer:', error));
+</script>
+
+
+<div id="footer-placeholder"></div>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
