@@ -2,17 +2,17 @@ const insightsData = {
   news: [
     {
       id: 0,
-      title: "Saasify Expands with New Office in Bengaluru",
-      description: "Saasify is proud to announce the opening of a newly expanded office in Bengaluru, Karnataka.",
+      title: "Saasify Expands with New Office in Banglore",
+      description: "Saasify is proud to announce the opening of a newly expanded office in Banglore, Karnataka.",
       image: "images/Website-image-banner.jpg",
       fullText: `To meet the growing demands of our clients and accommodate our expanding team, Saasify has launched a new office in Bengaluru. This state-of-the-art facility is designed to foster innovation, enable collaboration, and serve as a strategic hub for enterprise transformation. The move is part of Saasify's commitment to investing in infrastructure that supports talent growth and operational excellence.`
     },
     {
       id: 1,
-      title: "Saasify Partners with AI Leader for Enterprise Automation",
-      description: "This collaboration enables businesses to fast-track digital transformation.",
-      image: "images/AI-images.jpg",
-      fullText: `Saasify has entered into a strategic partnership with an industry-leading AI solutions provider. This partnership brings powerful automation capabilities to our enterprise offerings. Clients can now benefit from intelligent workflows, predictive analytics, and improved decision-making. Our joint effort aims to revolutionize how businesses operate through seamless, AI-driven solutions.`
+      title: "Driving IT Transformation for a Leading NBFC",
+      description: "Saasify partnered with a leading NBFC to transform and modernize their IT operations",
+      image: "images/ESM-trends.jpg",
+      fullText: `Saasify Solutions is proud to announce its partnership with a leading NBFC to drive end-to-end IT transformation. Through our collaboration with ManageEngine, we are deploying advanced IT Operations Management solutions to enhance infrastructure visibility, performance, and resilience.This marks yet another milestone in Saasify’s commitment to enabling future-ready enterprises through smart IT solutions.`
     }
   ],
   blogs: [

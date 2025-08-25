@@ -140,77 +140,6 @@ header {
   color: #666;
   font-weight: 500;
 }
-
-.benefits-section {
-  background-image: url('images/section-bg.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.benefit-overlay {
-  background-color: rgba(10, 31, 68, 0.85);
-  padding: 60px 20px;
-}
-
-.benefit-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  color: white;
-}
-
-.benefit-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
-  margin-top: 40px;
-}
-.benefit-icon {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto 10px;
-}
-
-.benefit-card {
-  background: white;
-  border-radius: 12px;
-  padding: 30px 25px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  color: #2a2a2a;
-  text-align: center;
-}
-
-.benefit-card h3 {
-  color: #0a1f44;
-  margin-bottom: 10px;
-}
-
-.benefit-card p {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  margin: 0;
-}
-
-/* Responsive Tweaks */
-@media (max-width: 768px) {
-.benefit-overlay {
-  padding: 40px 15px;
-}
-
-.benefit-card {
-  padding: 20px 15px;
-}
-}
-@media (max-width: 1024px) {
-  .benefit-overlay {
-    padding: 40px 16px;
-  }
-}
-
 .row {
   display: flex;
   align-items: center;
@@ -327,7 +256,7 @@ textarea {
 } 
 
 .highlight-section {
-  background-image: url('images/section-bg.jpg');
+  background-image: url('images/section-bg-optimized.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -467,28 +396,17 @@ textarea {
     flex: 1 1 100%;
   }
 }
-
+ 
 .contact-section {
   position: relative;
   padding: 161px 20px;
-  background-image: url('images/preview.jpg');
+  background-image: url('images/contact_bg_optimized.webp');
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
 }
 
-  .green-card {
-    background: none !important;
-    width: 100% !important;
-    height: auto !important;
-    border-radius: 0 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    display: block; 
-  }
-
-  
 .curved-card {
   position: relative;
   background: #ffffff;
@@ -511,7 +429,7 @@ textarea {
     height: 189px;
     background-color: #0a1f44;
     border-radius: 91px;
-    background-image: url(images/handshake.png);
+    background-image: url(images/handshake.webp);
     background-repeat: no-repeat;
     background-position: right;
     background-size: 97px;
@@ -745,7 +663,8 @@ textarea {
 </div>
 
 <div class="hero-image">
-  <img src="images/IAM-optimized.webp" alt="IAM" loading="lazy">
+  <!-- <img src="images/IAM-optimized.webp" alt="IAM" loading="lazy"> -->
+     <img src="images/modern-buildings-optimized.webp" alt="IAM" loading="lazy">
 </div>
 
 <section class="hero">
@@ -779,7 +698,7 @@ textarea {
       <div class="intro-content">
       <p>
         In today’s hyper-connected world, securely managing digital identities and access is vital for enterprise resilience. 
-        As seasoned partners of ManageEngine, Saasify implements and supports their IAM suite — such as AD360 and Identity360 — 
+        As seasoned partners of ManageEngine, Saasify implements and supports their IAM suite - such as <strong>ADManager Plus</strong> and <strong>ADSelfService Plus</strong> - 
         to help businesses automate provisioning, enforce SSO & MFA, monitor privileged access, and streamline compliance through 
         real-time reporting and behavioral analytics. This ensures only the right people have access, at the right time, with 
         maximum security and zero complexity.
@@ -874,7 +793,7 @@ textarea {
 <!-- Row 1 -->
 <div class="row bg-alt">
   <div class="column image">
-     <img src="images/efficiency.png" alt="Centralized Monitoring" />
+     <img src="images/efficiency.webp" alt="Centralized Monitoring" />
   </div>
   <div class="column text">
     <h3 style="color: #0a1f44;">Built-in Universal Directory</h3>
@@ -889,7 +808,7 @@ textarea {
 <!-- Row 2 -->
 <div class="row">
   <div class="column image">
-     <img src="images/compliance-img.png" alt="Regulatory Compliance" />
+     <img src="images/compliance-img.webp" alt="Regulatory Compliance" />
   </div>
   <div class="column text">
     <h3 style="color: #0a1f44;">Identity Orchestration & Lifecycle Automation</h3>
@@ -904,7 +823,7 @@ textarea {
 <!-- Row 3 -->
 <div class="row bg-alt">
   <div class="column image">
-     <img src="images/securityandpatch-img.png" alt="Security and Patch Updates" />
+     <img src="images/securityandpatch-img.webp" alt="Security and Patch Updates" />
   </div>
   <div class="column text">
     <h3 style="color: #0a1f44;">Secure SSO with MFA</h3>
@@ -918,7 +837,7 @@ textarea {
 <!-- Row 4 -->
 <div class="row">
   <div class="column image">
-   <img src="images/secure-access-img.jpg" alt="Secure Access Control" />
+   <img src="images/secure-access-img.webp" alt="Secure Access Control" />
   </div>
   <div class="column text">
     <h3 style="color: #0a1f44;">Access Insights & Compliance Reporting</h3>

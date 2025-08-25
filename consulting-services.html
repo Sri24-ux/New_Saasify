@@ -364,7 +364,7 @@ textarea {
 .contact-section {
   position: relative;
   padding: 161px 20px;
-  background-image: url('images/preview.jpg');
+  background-image: url('images/contact_bg_optimized.webp');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -393,7 +393,7 @@ textarea {
     height: 189px;
     background-color: #0a1f44;
     border-radius: 91px;
-    background-image: url(images/handshake.png);
+    background-image: url(images/handshake.webp);
     background-repeat: no-repeat;
     background-position: right;
     background-size: 97px;
@@ -422,6 +422,54 @@ textarea {
    }
   }
 
+
+ /* Intro Section */
+.intro-section {
+  display: flex;
+  justify-content: center; 
+  padding: 1.5rem 2rem;
+  background-color: #f8f9fa;
+  min-height: 50vh;        
+  box-sizing: border-box;
+}
+
+.intro-content {
+  max-width: 800px;
+}
+
+.intro-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.intro-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #555;
+  text-align: justify;
+}
+
+.intro-content ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.intro-content ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .intro-content {
+    max-width: 100%;
+    padding: 1rem;
+  }
+}
 .logo img {
     transform: scale(1.5);
     transform-origin: center;
@@ -620,16 +668,18 @@ textarea {
       <span>Consulting</span>
     </div>
   </section>
-
+  
 <section class="intro-section">
   <div class="glass-card">
-      <p class="sub-heading">Trusted Advisors</p>
+      <p class="sub-heading">Smarter Decisions</p>
       <h2 class="main-heading">
-        Consulting That Powers 
+        Consulting That Powers
         <span style="color: #00c896">Digital Transformation</span>
       </h2>
       <div class="intro-content">
-       <p>At Saasify Solutions, we help enterprises tackle challenges in IT infrastructure, service delivery, security, analytics, and automation. As an authorized ManageEngine partner, we pair their robust tools with expert consulting, implementation, and integration services. By aligning with your digital vision, we identify gaps, unlock opportunities, and enable optimized IT operations—driving smarter, faster, and more secure business outcomes.</p>
+        <p>
+    At Saasify Solutions, we help enterprises tackle challenges in IT infrastructure, service delivery, security, analytics, and automation. As an authorized ManageEngine partner, we pair their robust tools with expert consulting, implementation, and integration services. By aligning with your digital vision, we identify gaps, unlock opportunities, and enable optimized IT operations—driving smarter, faster, and more secure business outcomes.
+    </p>
      </div>
   </div>
 </section>

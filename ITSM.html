@@ -142,7 +142,7 @@ header {
 }
     
 .benefits-section {
-  background-image: url('images/section-bg.jpg');
+  background-image: url('images/section-bg-optimized.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -273,7 +273,7 @@ textarea {
 .contact-section {
   position: relative;
   padding: 161px 20px;
-  background-image: url('images/preview.jpg');
+  background-image: url('images/contact_bg_optimized.webp');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -302,7 +302,7 @@ textarea {
     height: 189px;
     background-color: #0a1f44;
     border-radius: 91px;
-    background-image: url(images/handshake.png);
+    background-image: url(images/handshake.webp);
     background-repeat: no-repeat;
     background-position: right;
     background-size: 97px;
@@ -434,93 +434,89 @@ textarea {
     flex: 1 1 100%;
   }
 }
-.capabilities-section {
-  padding: 1px 40px;
-  padding-bottom: 40px;
+  /* Other section */
+ .consulting-expertise {
+  padding: 60px 40px;
+  background-color: #ddfff2;
 }
 
-.section-header {
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto 40px auto;
-}
-
-.section-header h2 {
-  font-size: 32px;
-  font-weight: 800;
-  margin-bottom: 10px;
-}
-
-.section-header p {
-  font-size: 16px;
-  color: #555;
-  line-height: 1.6;
-}
-
-.capabilities-grid {
+.expertise-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr); /* Always 3 columns */
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 25px;
 }
 
-.cap-overlay {
-  position: relative;
-  padding: 20px;
-  color: white;
-  z-index: 1;
+@media (max-width: 900px) {
+  .expertise-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-.cap-overlay h3 {
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 10px;
+@media (max-width: 600px) {
+  .expertise-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
-.cap-overlay p {
-  font-size: 1.115rem;
-  margin-bottom: 15px;
-  line-height: 1.6;
-}
-
-.cap-overlay a {
-  color: white;
-  font-size: 14px;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.cap-overlay a:hover {
-  text-decoration: underline;
-}
-
-.capability-card {
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
+.expertise-card {
+  background: white;
+  border-radius: 12px;
   overflow: hidden;
-  min-height: 350px;
-  display: flex;
-  align-items: flex-end;
-  cursor: pointer;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s ease;
+  text-align: left;
+  max-width: 400px;
 }
 
-.capability-card:hover {
-  transform: scale(1.05); /* slight zoom */
-  box-shadow: 0 12px 30px rgba(0,0,0,0.35); /* depth */
+.expertise-card:hover {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
 }
 
-.capability-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.1));
-  transition: background 0.4s ease;
+.expertise-card img {
+  transition: transform 0.5s ease;
 }
 
-.capability-card:hover::before {
-  background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.2)); /* darker overlay */
+.expertise-card:hover img {
+  transform: scale(1.05);
+}
+
+.expertise-card h3 {
+  display: inline-block;
+  border-bottom: 2.5px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.expertise-card:hover h3 {
+  border-color: #55ffbe;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  display: block;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #0a1f44;
+}
+
+.card-content p {
+  font-size: 0.95rem;
+  color: #333;
+  margin: 8px 0;
+  line-height: 1.6;
 }
 
 </style>
@@ -701,7 +697,7 @@ textarea {
   <div class="overlay"></div>
   <div class="hero-content">
     <p class="subtitle">IT Service Management / Enterprise Service Management</p>
-    <h1>Revolutionize IT & Enterprise Services with Saasify</h1>
+    <h1>Revolutionize the Future of IT & Enterprise Services</h1>
     <a href="contact_us_page.html">
       <button class="cta-button">Book a Demo</button>
     </a>
@@ -722,11 +718,11 @@ textarea {
   <div class="glass-card">
       <p class="sub-heading">Learning Support</p>
       <h2 class="main-heading">
-        Future-Ready Cybersecurity for a 
-        <span style="color: #00c896">Digital-First World</span>
+        Seamless Service Management for the   
+        <span style="color: #00c896">Digital Enterprise</span>
       </h2>
       <div class="intro-content">
-      <p>In today's dynamic business environment, efficient IT and enterprise service management is essential for seamless operations across all functions. Leveraging ManageEngine’s solutions, we help organizations streamline incident and request handling, manage changes and releases, maintain accurate asset records, and automate workflows to improve productivity and consistency. This approach extends to non-IT departments such as HR, finance, and facilities, ensuring standardized, user-centric service delivery throughout the organization. With a focus on reporting, analytics, and continuous improvement, these services help businesses optimize performance, enhance collaboration, and achieve their operational goals.</p>
+      <p>In today's dynamic business environment, efficient IT and enterprise service management is essential for seamless operations across all functions. With <strong>ServiceDesk Plus</strong>, organizations can streamline incident and request handling, manage changes and releases, maintain accurate asset records, and automate workflows to improve productivity and consistency. Extending beyond IT, ServiceDesk Plus empowers HR, finance, and facilities teams with standardized, user-centric service delivery. Backed by powerful reporting, analytics, and continuous improvement features, it enables businesses to optimize performance, enhance collaboration, and achieve their operational goals.</p>
      </div>
   </div>
 </section>
@@ -770,8 +766,8 @@ textarea {
     <!-- Right Content -->
     <div class="key-analysis-right">
 
-      <div class="analysis-item">
-        <h3>Lower Operational Costs</h3>
+      <div class="analysis-item"> 
+        <h3>Low Operational Costs</h3>
         <p>Automate workflows and reduce manual intervention to improve service delivery efficiency.</p>
       </div>
 
@@ -794,40 +790,56 @@ textarea {
   </div>
 </section>
 
-<section class="capabilities-section">
-  <p class="sub-heading">Our IAM Capabilities</p>
-    <h2 class="main-heading">Key Capabilities of  <span style="color: #00c896">ITSM/ESM</span></h2>
-    <div class="capabilities-grid">
+<section class="consulting-expertise">
+  <div class="container">
+     <p class="sub-heading">Capabilities</p>
+      <h2 class="main-heading">Key Capabilities of  <span style="color: #00c896">ITSM/ESM</span></h2>
 
-  <div class="capability-card" style="background-image: url('images/ITSM_CAP_resized.webp');">
-    <div class="cap-overlay">
-       <h3>Built-in Universal Directory</h3>
-        <p>Manage identities across apps and directories seamlessly with ManageEngine solutions</p>
-     </div>
+<div class="expertise-grid">
+ <div class="expertise-card">
+  <img class="card-img-top" src="images/Solution2.webp" alt="Security & Compliance" loading="lazy">
+  <div class="card-content">
+    <h3>Incident Management</h3>
+        <p>Restore normal services quickly after disruptions to minimize downtime and reduce business impact.</p>
   </div>
-
-  <div class="capability-card" style="background-image: url('images/ITSM_CAP-resized1.webp');">
-    <div class="cap-overlay">
-      
-      <h3>Secure SSO with MFA</h3>
-        <p>Enable passwordless access with single sign-on backed by advanced multi-factor authentication.</p>
-     </div>
+</div> 
+ <div class="expertise-card">
+  <img class="card-img-top" src="images/ITSM_CAP-resized1.webp" alt="ITSM" loading="lazy">
+  <div class="card-content">
+    <h3>Problem Management</h3>
+        <p>Identify the root cause of recurring issues and implement permanent fixes to prevent future incidents.</p>
   </div>
-
-  <div class="capability-card" style="background-image: url('images/ITSM_CAP_optimized2.webp');">
-    <div class="cap-overlay">
-      <h3>Identity Orchestration</h3>
-        <p>Automate onboarding, role changes, and offboarding with streamlined workflows</p>
-      </div>
+</div>
+ <div class="expertise-card">
+  <img class="card-img-top" src="images/ITSM_CAP_optimized2.webp" alt="Business Analytics" loading="lazy">
+  <div class="card-content">
+    <h3>Change Management</h3>
+        <p>Streamline planning and implementation of IT changes while reducing risks, outages, and instability.</p>
   </div>
-
-  <div class="capability-card" style="background-image: url('images/UEM_benefit_optimized.webp');">
-    <div class="cap-overlay"> 
-      <h3>Access Insights & Reporting</h3>
-        <p>Get complete visibility with detailed compliance reports and real-time access analytics.</p>
-      </div>
+</div> 
+<div class="expertise-card">
+  <img class="card-img-top" src="images/ITSM_CAP_resized.webp" alt="Security & Compliance" loading="lazy">
+  <div class="card-content">
+    <h3>Asset & Configuration Management</h3>
+        <p>Maintain accurate asset and configuration records, enabling visibility, compliance, and informed decisions.</p>
   </div>
+</div> 
+<div class="expertise-card">
+  <img class="card-img-top" src="images/ITSM_Solution3_optimized.webp" alt="Process Automation" loading="lazy">
+  <div class="card-content">
+    <h3>Service Request Management</h3>
+        <p>Automate and track service requests to improve response times and deliver a seamless user experience.</p>
+</div>
+</div>     
+<div class="expertise-card">
+  <img class="card-img-top" src="images/incident_man_optimized.webp" alt="IT Infrastructure" loading="lazy">
+  <div class="card-content">
+    <h3>Knowledge Management</h3>
+        <p>Provide a centralized knowledge base to speed up resolution, encourage self-service, and reduce workload.</p>
   </div>
+</div>
+</div>
+</div>
 </section>
 
 <div id="contact-form-placeholder"></div>

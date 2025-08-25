@@ -18,8 +18,8 @@
     overflow-x: hidden !important;
     overscroll-behavior-y: none;
 }
- 
-   .sub-heading {
+  
+ .sub-heading {
   text-transform: uppercase;
   font-size: 0.85rem;
   color: #7a76a3;
@@ -28,25 +28,24 @@
   margin-bottom: 8px;
 }
 
+.contact-heading {
+  font-size: 4rem;
+  margin-bottom: 30px;
+  color: #0a1f44;
+}
 .main-heading {
   font-size: 2rem;
   margin-bottom: 30px;
   color: #0a1f44;
-}
-
-.cta-button {
-  background-color: #f4c300;
-  color: #000;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 6px;
-  cursor: pointer;
-  margin: 20px 0;
-}
-
-.cta-button:hover {
-  background-color: #ffdb4d;
-}
+}       
+ header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  transition: background-color 0.3s ease !important;
+ }
 
   .contact-hero {
   background: url('Contact-us.jpg') center center/cover no-repeat;
@@ -60,7 +59,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(10, 31, 68, 0.85); 
+  background-color: rgba(10, 31, 68, 0.95); 
   z-index: 1;
   }
   .contact-hero-wrapper {
@@ -123,19 +122,19 @@
     font-size: 0.95rem;
   }
   .contact-form button {
-    background-color: #f4c300;
-    color: #000;
-    padding: 10px 22px;
-    border: none;
-    border-radius: 30px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.3s;
-    display: block;
-    margin: 20px auto 0;
+     display: inline-block;
+  padding: 12px 30px;
+  color: #000;
+  background-color: #00c896; 
+  border: none;
+  border-radius: 16px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
   }
   .contact-form button:hover {
-    background-color: #ffdb4d;
+     background-color: #026149; 
+     color: #000; 
   }
   .form-image-block {
     flex: 1;
@@ -229,7 +228,7 @@
 
 @media (max-width: 480px) {
   .contact-hero-wrapper h2 {
-    font-size: 1.3rem;
+    font-size: 2.4rem;
   }
 
   .form-intro h2 {
@@ -284,7 +283,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(4, 27, 48, 0.7); /* Adjust alpha for transparency */
+  background: rgba(4, 27, 48, 0.7);
   z-index: 2;
    }
   .map-wrapper {
@@ -472,9 +471,8 @@
 </div>
 <section class="contact-hero">
   <div class="contact-hero-wrapper">
-     <h2 class="main-heading"><span style="color: #fff;">Contact Us</span></h2>
-     <p style="font-size: 1 rem; color: #fff;">We’re here to help you transform ideas into action. Reach out and let's explore the right solution for your business.</p>
-  </div>
+     <h2 class="contact-heading"><span style="color: #fff;">Contact Us</span></h2>
+      </div>
 </section>
 
 <section class="contact-form-section">
@@ -504,7 +502,7 @@
           <label for="location">Your Location</label>
           <input type="text" id="location" name="location">
         </div>
-        <!-- <div class="form-group">
+         <div class="form-group">
           <label for="country">Country</label>
           <select id="country" name="country">
             <option value="">Select Country</option>
@@ -514,15 +512,15 @@
             <option value="Australia">Australia</option>
             <option value="Other">Other</option>
           </select>
-        </div> -->
+        </div> 
         <div class="form-group">
           <label for="enquiry">What is the enquiry about?</label>
           <select id="enquiry" name="enquiry">
             <option value="">Select</option>
-            <option value="Product Demo">Product Features</option>
-            <option value="Partnership">Product Quote</option>
-            <option value="Support">Product Demo</option>
-            <option value="Other">Others</option>
+            <option value="Product Features">Product Features</option>
+            <option value="Product Quote">Product Quote</option>
+            <option value="Product Demo">Product Demo</option>
+            <option value="Others">Others</option>
           </select>
         </div>
         <div class="form-group">
@@ -551,6 +549,20 @@
 </section>
 
 <script>
+   window.addEventListener('scroll', function () {
+    const header = document.querySelector('header');
+    if (window.scrollY > 50) {
+      header.classList.remove('transparent');
+      header.classList.add('scrolled');
+    } else {
+      header.classList.add('transparent');
+      header.classList.remove('scrolled');
+    }
+  });
+
+  // Run once on load in case page starts scrolled
+  window.dispatchEvent(new Event('scroll'));
+
  async function submitForm() {
     const form = document.getElementById("contact-form");
 

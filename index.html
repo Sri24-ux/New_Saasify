@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Saasify Solutions</title>
     <link rel="icon" type="Saasify" href="Images/saasify.ico">
+    <link rel="preload" href="images/key-sts_optimized.webp" as="image" type="image/webp">
     <link rel="stylesheet" href="css/style.css">
-    <!-- Swiper CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     
@@ -66,7 +65,6 @@
     padding-left: 10%;
     color: white;
 }
-
 .overlay {
   position: absolute;
   top: 0; left: 0;
@@ -195,7 +193,7 @@
       rgba(0, 0, 0, 0.7),  /* Black with 70% opacity */
       rgba(0, 0, 0, 0.7)
     ),
-    url('images/future-visions-business-technology-concept.jpg') center/cover no-repeat;
+    url('images/key-sts_optimized.webp') center/cover no-repeat;
   color: white;
   padding: 80px 40px;
   display: flex;
@@ -355,7 +353,7 @@ textarea {
 .contact-section {
   position: relative;
   padding: 161px 20px;
-  background-image: url('images/preview.jpg');
+  background-image: url('images/contact_bg_optimized.webp');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -384,7 +382,7 @@ textarea {
     height: 189px;
     background-color: #0a1f44;
     border-radius: 91px;
-    background-image: url(images/handshake.png);
+    background-image: url(images/handshake.webp);
     background-repeat: no-repeat;
     background-position: right;
     background-size: 97px;
@@ -545,13 +543,14 @@ header {
     text-align: center;
   }
 
-  .why-point {
-    flex-direction: column;
-    align-items: center;
+ .why-point {
+    flex-direction: row;   /* ✅ keep number + text in same row */
+    align-items: flex-start;
+    text-align: left;
   }
 
   .why-point div {
-    text-align: center;
+    text-align: left;
   }
   .why-saasify-image {
     flex: unset;         
@@ -848,8 +847,9 @@ header {
 </div>
 
 <div class="hero-video">
-  <video autoplay muted loop playsinline>
+  <video autoplay muted loop playsinline poster="images/hero_index_img.webp">
     <source src="videos/hand_video_1080p.webm" type="video/mp4">
+    <img src="images/hero_index_img.webp" alt="Hero background">
   </video>
 </div>
 
@@ -875,30 +875,27 @@ header {
       <div class="why-point">
         <span class="why-number">1.</span>
         <div>
-          <h4>Access to Industry-Leading IT Solutions</h4>
-          <p>As specialized <strong>ManageEngine</strong> partners, we implement and support tools like ServiceDesk Plus, OpManager, Endpoint Central, and Others. Our focus is helping businesses maximize value from these solutions.</p>
-        </div>
+          <h4>Strategic Partnership for Business Impact</h4>
+          <p>As an authorized ManageEngine partner, Saasify brings the best of enterprise IT management to your organization. We align proven tools with your business goals, ensuring technology drives measurable outcomes-not complexity.</p></div>
       </div>
 
       <div class="why-point">
         <span class="why-number">2.</span>
          <div>
-          <h4>Certified Expertise & Priority Support</h4>
-          <p>Saasify delivers certified expertise backed by <strong>ManageEngine</strong> partner training and resources. We ensure seamless deployment and priority support for your IT solutions.</p></div>
-      </div>
-
+          <h4>Certified Experts, Proven Delivery</h4>
+          <p>Our team is certified across multiple ManageEngine solutions, including OpManager Plus, ServiceDesk Plus, Site24x7, and Endpoint Central. With deep product knowledge and hands-on expertise, we guarantee smooth deployments, rapid issue resolution, and best-practice adoption.</p> </div>
+        </div>
       <div class="why-point">
        <span class="why-number">3.</span> 
        <div>
-          <h4>End-to-End Service Delivery</h4>
-          <p>We handle the complete lifecycle—implementation, customization, integration, training, and ongoing support—ensuring your <strong>ManageEngine</strong> solutions deliver maximum value with minimal complexity.</p>
-        </div>
+          <h4>Comprehensive IT Operations & Service Management</h4>
+          <p>From monitoring and observability to ITSM and endpoint security, we cover the entire IT landscape. Saasify manages the full lifecycle-implementation, integration, automation, and support-so your IT stays agile, resilient, and business-ready.</p></div>
       </div>
-    </div>
+      </div>
 
     <!-- Image Column -->
     <div class="why-saasify-image">
-      <img src="images/team-img-check.jpg" alt="Saasify Team">
+      <img src="images/team-img-optimized.webp" alt="Saasify Team">
     </div>
   </div>
 </section>

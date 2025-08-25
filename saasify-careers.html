@@ -442,70 +442,12 @@ header {
   color: #666;
   font-weight: 500;
 }
-
-.careers-openings-bg {
-  background: url('images/Careers-Imag.jpg') center center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 194px;
-  position: relative;
-  overflow: visible; /* allow image to overflow */
-  padding-bottom: 100px; /* space for overlapping image */
-  margin-top: 52px;
-}
-
-.careers-openings-bg::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(10, 31, 68, 0.85); 
-  z-index: 1;
-}
-
-.careers-content {
-  text-align: center;
-  color: white;
-  max-width: 800px;
-  z-index: 2;
-  position: relative;
-}
-
-.careers-content h2 {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
-  font-weight: 700;
-  color: rgb(85, 255, 190);
-}
-
-.team-overlay-img {
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 670px;
-  max-width: 90%;
-  z-index: 3;
-  pointer-events: none;
-}
-@media (max-width: 600px) {
-  .careers-content h2 {
-    font-size: 1.8rem;
-  }
-
-  .team-overlay-img {
-    width: 280px;
-    bottom: -40px;
-  }
-}
-
 .job-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 16px;
 }
-
 .job-footer p {
   margin: 0;
 }
@@ -688,7 +630,7 @@ header {
     <p class="subtitle">Careers!</p>
     <h1>Empower Your Career at Saasify</h1>
     <a href="contact_us_page.html">
-      <button class="cta-button">Book a Demo</button>
+      <button class="cta-button">Learn about us</button>
     </a>
   </div>
 </section>
@@ -708,7 +650,7 @@ header {
     
   <div class="why-grid">
     <!-- Card 1 - Background Image -->
-      <div class="why-card bg-image-card" style="background-image: url('images/three-engineers.jpg');">
+      <div class="why-card bg-image-card" style="background-image: url('images/three-engineers_opt.webp');">
       <div class="card-text">
         <h2 class="hover-underline">Continuous Learning</h2>
         <p>Upskill through certifications, training programs, and mentorship opportunities.</p>
@@ -716,7 +658,7 @@ header {
     </div>
 
     <!-- Card 2 - Soft background -->
-    <div class="why-card bg-image-card" style="background-image: url('images/corevalue.jpg');">
+    <div class="why-card bg-image-card" style="background-image: url('images/corevalue_opt.webp');">
       <div class="card-text">
         <h2 class="hover-underline">Inclusive Culture</h2>
         <p>We embrace diversity and unique perspectives to build a thriving, inclusive workplace.</p>
@@ -724,7 +666,7 @@ header {
     </div>
 
     <!-- Card 3 - Soft background -->
-    <div class="why-card bg-image-card" style="background-image: url('images/corevalue-sal.jpg');">
+    <div class="why-card bg-image-card" style="background-image: url('images/corevalue-sal_opt.webp');">
       <div class="card-text">
         <h2 class="hover-underline">Fair Compensation</h2>
         <p>Saasify offers fair, transparent, and performance-based pay.</p>
@@ -732,7 +674,7 @@ header {
     </div>
     
     <!-- Card 4 - Background Image -->
-   <div class="why-card bg-image-card" style="background-image: url('images/corevalues2.jpg');">
+   <div class="why-card bg-image-card" style="background-image: url('images/corevalues2_opt.webp');">
       <div class="card-text">
         <h2 class="hover-underline">Work-Life Balance</h2>
         <p>Saasify promotes a healthy, flexible work-life balance for all team members.</p>
@@ -768,16 +710,9 @@ header {
   <div class="apply-content">
     <p class="sub-heading">JOIN OUR TEAM!</p>
       <h2 class="main-heading">Email your details to: <span style="color: #00c896">hr@saasifysolutions.com</span></h2>
-  
-  <h4>How to Contact Us:</h4> 
-  <ul>
-  <li> Email: <a href="mailto:sales@saasifysolutions.com">sales@saasifysolutions.com</a></li>
-  <li> Phone: <a href="tel:+911234567890">+91 12345 67890</a></li>
-  
-</ul>
   </div>    
   <div class="apply-image">
-    <img src="images/business-process-man.jpg" alt="Apply Image">
+    <img src="images/business-process-man-optimized.webp" alt="Apply Image">
   </div>
 </section>
 <div id="footer-placeholder"></div>
@@ -806,9 +741,9 @@ header {
    const jobs = [
          {
   title: "Sales Manager",
-  location: "Bangalore - India",
-  experience: "2 – 5 Years of Experience",
-  posted: "17.06.2025",
+  location: "Mumbai - India",
+  experience: "5 – 8 Years of Experience",
+  posted: "25.08.2025",
   jobtype: "Full Time",
   description: [
     "We are seeking a motivated and results-driven Sales Manager to lead our sales team and drive revenue growth. The ideal candidate will have strong leadership skills, a track record of meeting/exceeding targets, and the ability to develop and execute strategic sales plans."
@@ -831,9 +766,9 @@ header {
   },
    {
   title: "Technical Lead",
-  location: "Chennai - India",
+  location: "Banglore - India",
   experience: "5 – 8 Years Experience",
-  posted: "25.06.2025",
+  posted: "25.08.2025",
   jobtype: "Full Time",
   description: [
     "We are looking for a highly skilled and experienced Technical Lead to oversee software development teams and provide technical direction throughout the project lifecycle. As a Technical Lead, you will be responsible for leading architecture discussions, code reviews, mentoring engineers, and ensuring the successful delivery of high-quality software solutions."
@@ -855,8 +790,8 @@ header {
         {
   title: "Sales Manager",
   location: "Bangalore - India",
-  experience: "1 – 3 Years Experience",
-  posted: "17.06.2025",
+  experience: "3 – 5 Years Experience",
+  posted: "25.08.2025",
   jobtype: "Full Time",
   description: [
     "We are seeking a motivated and results-driven Sales Manager to lead our sales team and drive revenue growth. The ideal candidate will have strong leadership skills, a track record of meeting/exceeding targets, and the ability to develop and execute strategic sales plans."
