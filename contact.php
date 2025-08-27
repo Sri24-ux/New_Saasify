@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Port = 587;
         //Recipients
         $mail->setFrom('dharshine@saasifysolutions.com', 'Saasify Solutions');
-        $mail->addAddress('dharshine@saasifysolutions.com'); // your receiving email
+        $mail->addAddress('sales@saasifysolutions.com'); // your receiving email
         $mail->addReplyTo($email, $name);
         
 

@@ -74,17 +74,17 @@ header {
   position: relative;
   height: 100vh; 
   display: flex;
-  align-items: flex-start; /* Top align */
-  justify-content: flex-start; /* Left align */
-  padding-top: 120px; /* Adjust this to match TCS vertical spacing */
-  padding-left: 10%;  /* Adds left offset */
+  align-items: flex-start; 
+  justify-content: flex-start; 
+  padding-top: 120px; 
+  padding-left: 10%;  
   color: white;
 }
 
 .hero-content {
   position: relative;
   z-index: 1;
-  max-width: 600px; /* Keeps text from stretching too far */
+  max-width: 600px; 
 }
 .hero-content h1{
     font-size: 3rem;
@@ -301,13 +301,12 @@ header {
     color: #666;
     font-weight: 500;
   }
-
- /* Contact Section */
- .contact-form {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 40px;
-    }
+/* Contact Section */
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
     
 .form-group input,
 .form-group select,
@@ -420,8 +419,43 @@ textarea {
    .contact-form .form-grid {
     width: auto !important; 
    }
+  .green-card {
+    background: none !important;
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block; 
   }
 
+  .contact-section {
+    padding: 40px 15px !important;
+    background-image: none;
+  }
+
+  .curved-card {
+    width: 100% !important;
+    padding: 20px !important;
+    border-radius: 8px !important;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .curved-card {
+    width: 82%; 
+  }
+  .green-card {
+    background-color: #0a1f44;
+    width: 92%;
+    max-width: 1380px;
+    height: 363px;
+    border-radius: 0 50px 50px 0;
+    display: flex;
+    align-items: center;
+    margin-left: 37px;
+  }
+}
 
  /* Intro Section */
 .intro-section {
@@ -594,7 +628,7 @@ textarea {
       <!-- Platform Proficiency -->
       
        <div class="submenu-toggle" onclick="toggleSubmenu(this)"> ManageEngine Expertise 
-            <img src="images/Arrow.png" alt="Arrow" style=" height: 24px;" />
+            <img src="images/Arrow.webp" alt="Arrow" style=" height: 24px;" />
        </div>
         <div class="submenu">
             <a href="IAM.html">IAM</a>
@@ -607,7 +641,7 @@ textarea {
 
         <!-- Services -->
         <div class="submenu-toggle" onclick="toggleSubmenu(this)">Services 
-           <img src="images/Arrow.png" alt="Arrow" style=" height: 24px;" />
+           <img src="images/Arrow.webp" alt="Arrow" style=" height: 24px;" />
         </div>
         <div class="submenu">
             <a href="consulting-services.html">Consulting</a>
@@ -620,7 +654,7 @@ textarea {
 
         <!-- Company Overview -->
         <div class="submenu-toggle" onclick="toggleSubmenu(this)">Company Overview 
-           <img src="images/Arrow.png" alt="Arrow" style=" height: 24px;" />
+           <img src="images/Arrow.webp" alt="Arrow" style=" height: 24px;" />
         </div>
         <div class="submenu">
             <a href="about_us.html">About Saasify</a>
@@ -787,7 +821,6 @@ textarea {
       const container = document.getElementById('contact-form-placeholder');
       container.innerHTML = html;
 
-      // Extract and evaluate any scripts from the loaded HTML
       const tempDiv = document.createElement('div');
       tempDiv.innerHTML = html;
       const scripts = tempDiv.querySelectorAll('script');
@@ -812,7 +845,6 @@ textarea {
 </script>
 
 <div id="footer-placeholder"></div>
-
 </main>
 <script>
   window.addEventListener('scroll', function () {
