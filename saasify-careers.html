@@ -18,7 +18,6 @@
     overflow-x: hidden !important;
     overscroll-behavior-y: none;
 }
-  
 .sub-heading {
   text-transform: uppercase;
   font-size: 0.85rem;
@@ -27,13 +26,11 @@
   letter-spacing: 0.5px;
   margin-bottom: 8px;
 }
-
 .main-heading {
   font-size: 2rem;
   margin-bottom: 30px;
   color: #0a1f44;
 }
-
 header {
   position: fixed;
   width: 100%;
@@ -42,7 +39,6 @@ header {
   z-index: 999;
   transition: background-color 0.3s ease !important;
 }
- /* Hero Section */
 .hero-image {
   position: fixed;
   top: 0;
@@ -52,7 +48,6 @@ header {
   z-index: -1;
   overflow: hidden;
 }
-
 .hero-image img {
   width: 100%;
   height: 100%;
@@ -60,28 +55,25 @@ header {
   transform: scale(1.5);
   animation: zoomOut 6s ease-out forwards;
 }
-
 @keyframes zoomOut {
   to {
     transform: scale(1);
   }
 }
-
 .hero {
   position: relative;
   height: 100vh; 
   display: flex;
-  align-items: flex-start; /* Top align */
-  justify-content: flex-start; /* Left align */
-  padding-top: 120px; /* Adjust this to match TCS vertical spacing */
-  padding-left: 10%;  /* Adds left offset */
+  align-items: flex-start; 
+  justify-content: flex-start; 
+  padding-top: 120px; 
+  padding-left: 10%;  
   color: white;
 }
-
 .hero-content {
   position: relative;
   z-index: 1;
-  max-width: 600px; /* Keeps text from stretching too far */
+  max-width: 600px; 
 }
 .hero-content h1{
     font-size: 3rem;
@@ -93,7 +85,6 @@ header {
   border-bottom: 0.0625rem solid hsla(0, 0%, 100%, .3);
   padding-bottom: 10px;
 }
-
 .hero-description{
     font-size: 1.5rem;
     line-height: 2.1rem;
@@ -111,18 +102,15 @@ header {
   height: 100%;
   background: rgba(0,0,0,0.4);
 }
-
 .content {
   background: white;
   position: relative;
   z-index: 3;
 }
-
 .why-work-section {
   padding: 50px 40px;
   background-color: #fff;
 }
-
 .why-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -130,7 +118,6 @@ header {
   max-width: 1100px;
   margin: 60px auto;
 }
-
 @media (max-width: 768px) {
   .why-grid {
     grid-template-columns: 1fr;
@@ -143,7 +130,6 @@ header {
   cursor: pointer;
   transition: color 0.3s ease;
 }
-
 .hover-underline::after {
   content: "";
   position: absolute;
@@ -155,17 +141,12 @@ header {
   transition: width 0.3s ease;
   pointer-events: none;
 }
-
-
 .why-card:hover .hover-underline {
   color: #0a1f44;
 }
-
 .why-card:hover .hover-underline::after {
   width: 100%;
 }
-
-
 .why-card {
   border-radius: 20px;
   padding: 30px;
@@ -178,36 +159,26 @@ header {
   flex-direction: column;
   justify-content: space-between;
 }
-
 .bg-color-card {
   color: #000;
   background-blend-mode: overlay;
   background-color: rgba(10, 31, 68, 0.3); /* Optional dark overlay for text readability */
 }
-
 .bg-image-card {
   color: #fff;
   background-blend-mode: overlay;
   background-color: rgba(10, 31, 68, 0.3); /* Optional dark overlay for text readability */
 }
-
  .card-text h4 {
   font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 12px;
 }
-/*
-.card-text p {
-  font-size: 0.95rem;
-  line-height: 1.5;
-} */
-
-
-  .apply-role{
+.apply-role{
     padding: 50px 40px;
     background: #ddfff2;
 
-  }
+}
 .job-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Exactly 3 columns on desktop */
@@ -215,19 +186,16 @@ header {
   max-width: 1200px;
   margin: auto;
 }
-
 @media (max-width: 992px) {
   .job-grid {
     grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
   }
 }
-
 @media (max-width: 600px) {
   .job-grid {
     grid-template-columns: 1fr; /* 1 column on small devices */
   }
 }
-
 .job-card {
   background: #fff;
   border-radius: 12px;
@@ -241,28 +209,23 @@ header {
   box-shadow: 0 4px 6px rgba(0, 0, 0, .1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .job-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
-
 .job-card h3 {
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 10px;
   transition: color 0.3s ease;
 }
-
 .job-card:hover h3 {
   color: #296D46; 
 }
-
 .job-card p {
   font-size: 16px;
   margin-bottom: 10px;
 }
-
 .view-dtls {
     background-color: #0a1f44;
     border: 1px solid #0a1f44;
@@ -273,8 +236,6 @@ header {
     cursor: pointer;
     color: white;
 }
-
-  /* Modal styles */
   .modal {
     display: none;
     position: fixed;
@@ -285,7 +246,6 @@ header {
     justify-content: center;
     align-items: center;
   }
-
   .modal-content {
     background: #fff;
     padding: 30px;
@@ -295,12 +255,10 @@ header {
     position: relative;
     animation: slideDown 0.3s ease;
   }
-
   @keyframes slideDown {
     from { transform: translateY(-30px); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
   }
-
   .close-btn {
     position: absolute;
     top: 12px;
@@ -309,26 +267,21 @@ header {
     cursor: pointer;
     color: #999;
   }
-
   .close-btn:hover {
     color: #000;
   }
-
   .modal-content p {
     margin: 10px 0;
     font-size: 0.95rem;
   }
-
   .modal-content h3 {
     margin-top: 0;
     color: #0a1f44;
   }
-
   .apply-email a {
     color: #0077cc;
     font-weight: bold;
   }
-
 .apply-split-v2 {
   display: flex;
   flex-wrap: wrap;
@@ -340,19 +293,16 @@ header {
   margin: 40px auto;
   min-height: 400px;
 }
-
 .apply-image,
 .apply-content {
   flex: 1;
   min-width: 300px;
   box-sizing: border-box;
 }
-
 .apply-image {
   display: flex;
   align-items: stretch;
 }
-
 .apply-image img {
   width: 100%;
   height: 100%;
@@ -360,26 +310,22 @@ header {
   display: block;
   border-radius:  12px;
 }
-
 .apply-content {
   padding: 40px 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
 .apply-content h2 {
   font-size: 1.6rem;
   margin-bottom: 15px;
   color: #0a1f44;
 }
-
 .apply-content h3 {
   margin: 15px 0 5px;
   color: #0a1f44;
   font-size: 1.1rem;
 }
-
 .apply-content a {
   display: inline-block;
   font-size: 1rem;
@@ -388,41 +334,32 @@ header {
   text-decoration: none;
   font-weight: bold;
 }
-
 .apply-content ul {
   padding-left: 20px;
   color: #333;
   list-style: none;
 }
-
 .apply-content ul li {
   margin-bottom: 10px;
 }
-
-/* Responsive design */
 @media (max-width: 768px) {
   .apply-split-v2 {
     flex-direction: column;
   }
-
   .apply-content {
     padding: 30px 20px;
     text-align: center;
   }
-
   .apply-content h2 {
     font-size: 1.4rem;
   }
-
   .apply-content h3 {
     font-size: 1rem;
   }
-
   .apply-content a {
     font-size: 0.95rem;
   }
 }
-
 .breadcrumb {
   padding: 15px 40px;
   font-size: 0.95rem;
@@ -431,13 +368,11 @@ header {
   position: relative;
   background-color: #fff;
 }
-
 .breadcrumb-container a {
   text-decoration: none;
   color: #0a1f44;
   margin-right: 5px;
 }
-
 .breadcrumb-container span {
   color: #666;
   font-weight: 500;
@@ -451,7 +386,6 @@ header {
 .job-footer p {
   margin: 0;
 }
-
 </style>
 </head>
 <body>
@@ -462,7 +396,6 @@ header {
             </a>
         </div>
         <div class="hamburger" id="hamburgerIcon" onclick="toggleMobileMenu()" style="display:none">☰</div>
-
         <nav>
            <div class="dropdown">
             <span style="color: white;">ManageEngine Expertise </span>
@@ -513,8 +446,7 @@ header {
                   style="width: 16px; height: 16px; vertical-align: middle; margin-left: 6px;">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
                       d="M19 9l-7 7-7-7" />
-              </svg>
-              
+              </svg> 
                 <div class="dropdown-content" style="min-width: 200px !important;">
                    <div class="dropdown-column">
                       <h4>Services</h4>
@@ -529,7 +461,6 @@ header {
                     </div>
                 </div>
              </div>
-
             <div class="dropdown">
                 <div class="dropdown-trigger">
                   <span>About us</span>
@@ -549,8 +480,7 @@ header {
                     </ul>
                 </div>
               </div>
-            </div>
-            
+            </div>         
             <ul>
                 <li><a href="saasify-careers.html" style="color: white;">Careers</a></li>
             </ul>
@@ -563,13 +493,10 @@ header {
                 <button>Contact Us</button>
             </a>
         </div>
-</header>
-   
+</header> 
 <div id="overlay" class="overlay" onclick="toggleMobileMenu()"> </div>
-
 <div id="mobileMenu">
-      <!-- Platform Proficiency -->
-      
+      <!-- Platform Proficiency -->  
        <div class="submenu-toggle" onclick="toggleSubmenu(this)"> ManageEngine Expertise 
             <img src="images/Arrow.webp" alt="Arrow" style=" height: 24px;" />
        </div>
@@ -581,7 +508,6 @@ header {
             <a href="SIEM.html">SIEM</a>
             <a href="IT-Analysis.html">IT Analytics</a>
         </div>
-
         <!-- Services -->
         <div class="submenu-toggle" onclick="toggleSubmenu(this)">Services 
            <img src="images/Arrow.webp" alt="Arrow" style=" height: 24px;" />
@@ -594,7 +520,6 @@ header {
             <a href="Ongoing_support.html">Ongoing Support</a>
             <a href="managed-services.html">Managed Services</a>
         </div>
-
         <!-- Company Overview -->
         <div class="submenu-toggle" onclick="toggleSubmenu(this)">Company Overview 
            <img src="images/Arrow.webp" alt="Arrow" style=" height: 24px;" />
@@ -603,12 +528,10 @@ header {
             <a href="about_us.html">About Saasify</a>
             <a href="our-presence.html">Our Presence</a>
         </div>
-
         <!-- Careers -->
         <div class="submenu-toggle">
             <a href="saasify-careers.html" style="display:block;">Careers</a>
         </div>   
-
         <!-- Insights -->
         <div class="submenu-toggle">
             <a href="insight-page.html" style="display:block;">Insights</a>
@@ -623,7 +546,6 @@ header {
 <div class="hero-image">
   <img src="images/careers_hero_resize.webp" alt="Careers" loading="lazy">
 </div>
-
 <section class="hero">
   <div class="overlay"></div>
   <div class="hero-content">
@@ -634,20 +556,16 @@ header {
     </a>
   </div>
 </section>
-
 <main class="content">
-
 <section class="breadcrumb">
   <div class="breadcrumb-container">
     <a href="index.html">Home</a> &gt;
     <a href="#">Careers</a> &gt;
   </div>
 </section>
-
 <section class="why-work-section">
    <p class="sub-heading">WHY WORK WITH US?</p>
     <h2 class="main-heading">Where Passion Meets  <span style="color: #00c896">Purpose and Growth.</span></h2>
-    
   <div class="why-grid">
     <!-- Card 1 - Background Image -->
       <div class="why-card bg-image-card" style="background-image: url('images/three-engineers_opt.webp');">
@@ -656,7 +574,6 @@ header {
         <p>Upskill through certifications, training programs, and mentorship opportunities.</p>
       </div>
     </div>
-
     <!-- Card 2 - Soft background -->
     <div class="why-card bg-image-card" style="background-image: url('images/corevalue_opt.webp');">
       <div class="card-text">
@@ -664,15 +581,13 @@ header {
         <p>We embrace diversity and unique perspectives to build a thriving, inclusive workplace.</p>
       </div>
     </div>
-
     <!-- Card 3 - Soft background -->
     <div class="why-card bg-image-card" style="background-image: url('images/corevalue-sal_opt.webp');">
       <div class="card-text">
         <h2 class="hover-underline">Fair Compensation</h2>
         <p>Saasify offers fair, transparent, and performance-based pay.</p>
       </div>
-    </div>
-    
+    </div>    
     <!-- Card 4 - Background Image -->
    <div class="why-card bg-image-card" style="background-image: url('images/corevalues2_opt.webp');">
       <div class="card-text">
@@ -682,13 +597,10 @@ header {
     </div>
   </div>
 </section>
-
 <section class="apply-role">
   <p class="sub-heading">WE ARE HIRING!</p>
-  <h2 class="main-heading">Our Current  <span style="color: #00c896">Job Openings.</span></h2>
-  
-  <div class="job-grid" id="jobList"></div>
- 
+  <h2 class="main-heading">Our Current  <span style="color: #00c896">Job Openings.</span></h2>  
+  <div class="job-grid" id="jobList"></div> 
   <div id="jobModal" class="modal">
     <div class="modal-content">
       <span class="close-btn" onclick="closeModal()">×</span>
@@ -705,7 +617,6 @@ header {
     </div>
   </div>
 </section>
-
 <section class="apply-split-v2">
   <div class="apply-content">
     <p class="sub-heading">JOIN OUR TEAM!</p>
@@ -728,10 +639,8 @@ header {
       header.classList.remove('scrolled'); 
     }
   });
-
   // Run once on load in case page starts scrolled
   window.dispatchEvent(new Event('scroll'));
-
   fetch('footer.html')
     .then(response => response.text())
     .then(data => {
@@ -813,10 +722,8 @@ header {
   skills: "B2B Sales, Strategic Planning, CRM Tools"
   }
     ];
-
     const jobList = document.getElementById("jobList");
     const modal = document.getElementById("jobModal");
-
     jobs.forEach((job, i) => {
       const card = document.createElement("div");
       card.className = "job-card";
@@ -831,38 +738,30 @@ header {
     `;
       jobList.appendChild(card);
     });
-
-    function openModal(index) {
+  function openModal(index) {
   const job = jobs[index];
   document.getElementById("modalTitle").textContent = job.title;
   document.getElementById("modalLocation").textContent = job.location;
   document.getElementById("modalExperience").textContent = job.experience;
   document.getElementById("modalPosted").textContent = job.posted;
-
   // Description as bullet list
   const descList = job.description.map(item => `<li>${item}</li>`).join('');
   document.getElementById("modalDescription").innerHTML = `<ul>${descList}</ul>`;
-  
   //Requirements as bullet list
    const reqList = job.requirements.map(item => `<li>${item}</li>`).join('');
    document.getElementById("modalRequirements").innerHTML = `<ul>${reqList}</ul>`;
-
   // Responsibilities as bullet list
   const resList = job.responsibilities.map(item => `<li>${item}</li>`).join('');
   document.getElementById("modalResponsibilities").innerHTML = `<ul>${resList}</ul>`;
-
   document.getElementById("modalSkills").textContent = job.skills;
-
   const emailLink = document.getElementById("modalEmail");
-  emailLink.href = `mailto:kalyani@saasifysolutions.com?subject=Application for ${job.title}`;
-  emailLink.textContent = "kalyani@saasifysolutions.com";
-
+  emailLink.href = `mailto:hr@saasifysolutions.com?subject=Application for ${job.title}`;
+  emailLink.textContent = "hr@saasifysolutions.com";
   modal.style.display = "flex";
   }
     function closeModal() {
       modal.style.display = "none";
     }
-
     // Close modal on outside click
     window.onclick = function(event) {
       if (event.target == modal) {
@@ -871,6 +770,5 @@ header {
     };
   </script>
   <script src="js/main.js"></script>
-
 </body>
 </html>

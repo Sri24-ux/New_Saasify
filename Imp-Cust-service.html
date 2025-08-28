@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
- 
 <style>
  body {
     font-family: 'Poppins', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -20,7 +19,6 @@
     overflow-x: hidden !important;
     overscroll-behavior-y: none;
 }
-
 .sub-heading {
   text-transform: uppercase;
   font-size: 0.85rem;
@@ -29,7 +27,6 @@
   letter-spacing: 0.5px;
   margin-bottom: 8px;
 }
-
 .main-heading {
   font-size: 2rem;
   margin-bottom: 30px;
@@ -43,8 +40,6 @@ header {
   z-index: 999;
   transition: background-color 0.3s ease !important;
 }
-
- /* Hero Section */
 .hero-image {
   position: fixed;
   top: 0;
@@ -54,7 +49,6 @@ header {
   z-index: -1;
   overflow: hidden;
 }
-
 .hero-image img {
   width: 100%;
   height: 100%;
@@ -62,13 +56,11 @@ header {
   transform: scale(1.5);
   animation: zoomOut 6s ease-out forwards;
 }
-
 @keyframes zoomOut {
   to {
     transform: scale(1);
   }
 }
-
 .hero {
   position: relative;
   height: 100vh; 
@@ -79,7 +71,6 @@ header {
   padding-left: 10%;  /* Adds left offset */
   color: white;
 }
-
 .hero-content {
   position: relative;
   z-index: 1;
@@ -95,7 +86,6 @@ header {
   border-bottom: 0.0625rem solid hsla(0, 0%, 100%, .3);
   padding-bottom: 10px;
 }
-
 .hero-description{
     font-size: 1.5rem;
     line-height: 2.1rem;
@@ -113,34 +103,27 @@ header {
   height: 100%;
   background: rgba(0,0,0,0.4);
 }
-
 .content {
   background: white;
   position: relative;
   z-index: 3;
 }
-
-
- /* Contact Section */
  .contact-form {
       display: flex;
       flex-wrap: wrap;
       gap: 40px;
-    }
-    
+    }   
 .form-group input,
 .form-group select,
 .form-group textarea {
   min-height: 45px;
   font-size: 15px;
 }
-
 input, select, textarea {
   width: 100%;
   max-width: 100%; 
   box-sizing: border-box;
 }
-
 .green-card {
     background-color: #0a1f44;
     width: 76%;
@@ -151,7 +134,6 @@ input, select, textarea {
     align-items: center;
     margin-left: 37px;
 }
- 
 .form-group {
   display: flex;
   flex-direction: column;
@@ -169,7 +151,6 @@ input, select, textarea {
 textarea {
   resize: vertical;
 }
-
  @media (max-width: 768px) {
   .form-grid {
     grid-template-columns: 1fr;
@@ -177,9 +158,7 @@ textarea {
   .form-group.full {
     grid-column: span 1;
   }
- 
 } 
- 
 .contact-section {
   position: relative;
   padding: 161px 20px;
@@ -189,7 +168,6 @@ textarea {
   display: flex;
   justify-content: center;
 }
-
 .curved-card {
   position: relative;
   background: #ffffff;
@@ -201,7 +179,6 @@ textarea {
   z-index: 2;
   box-sizing: border-box;
 }
-
 .curved-card::after {
     content: "";
     position: absolute;
@@ -219,7 +196,6 @@ textarea {
     box-shadow: inset 20px 0 24px -14px rgba(0, 0, 0, 0.4);
     z-index: -1;
 }
-
 @media (max-width: 768px) {
   .curved-card::after {
     display: none;
@@ -231,7 +207,6 @@ textarea {
   gap: 20px;
   width: 80%;
 }
-
 .form-group.full {
   grid-column: span 2;
 }
@@ -248,19 +223,16 @@ textarea {
     padding: 0 !important;
     display: block; 
   }
-
   .contact-section {
     padding: 40px 15px !important;
     background-image: none;
   }
-
   .curved-card {
     width: 100% !important;
     padding: 20px !important;
     border-radius: 8px !important;
   }
 }
-
 @media (max-width: 1024px) and (min-width: 769px) {
   .curved-card {
     width: 82%; 
@@ -276,8 +248,6 @@ textarea {
     margin-left: 37px;
   }
 }
-
- /* Intro Section */
 .intro-section {
   display: flex;
   justify-content: center; 
@@ -286,36 +256,30 @@ textarea {
   min-height: 50vh;        
   box-sizing: border-box;
 }
-
 .intro-content {
   max-width: 800px;
 }
-
 .intro-content h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
   color: #222;
 }
-
 .intro-content p {
   font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
   color: #555;
 }
-
 .intro-content ul {
   list-style: none;
   padding: 0;
   margin-bottom: 1.5rem;
 }
-
 .intro-content ul li {
   margin-bottom: 0.5rem;
   font-size: 1rem;
   color: #333;
 }
-
 /* Mobile view adjustments */
 @media (max-width: 768px) {
   .intro-content {
@@ -323,20 +287,17 @@ textarea {
     padding: 1rem;
   }
 }
-
   .section-wrapper {
     background: #0a1f44;
     padding: 40px 20px 0;
     color: #fff;
   }
-
   .cards {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding: 32px 4px;
   }
-
   .card {
     background: #fff;
     border-radius: 10px;
@@ -347,7 +308,6 @@ textarea {
     padding: 30px 20px;
     position: relative;
   }
-
   .card-number {
     background-color: #55ffbe;
     color: #fff;
@@ -364,34 +324,29 @@ textarea {
     left: 50%;
     transform: translateX(-50%);
   }
-
   .card i {
     font-size: 32px;
     color: #0a1f44;
     margin-top: 20px;
     margin-bottom: 15px;
   }
-
   .card h4 {
     font-size: 1.1rem;
     margin-bottom: 10px;
     color: #0a1f44;
   }
-
   .card p {
     font-size: 0.95rem;
     color: #444;
     line-height: 1.6;
     text-align: justify;
   }
-
   @media (max-width: 768px) {
     .cards {
       flex-direction: column;
       align-items: center;
     }
   }
-
 .timeline-wrapper {
   max-width: 100%;
   margin: 60px auto;
@@ -401,7 +356,6 @@ textarea {
   box-sizing: border-box;
   overflow-x: hidden;
 }
-
 .timeline {
   position: relative;
   border-left: 2px solid #0a1f44;
@@ -410,13 +364,11 @@ textarea {
   padding-left: 40px;
   max-width: 900px; /* Add this */
 }
-
 .timeline-item {
   position: relative;
   margin-bottom: 50px;
   padding-left: 20px;
 }
-
 .timeline-icon {
   position: absolute;
   left: -60px;
@@ -431,7 +383,6 @@ textarea {
   align-items: center;
   justify-content: center;
 }
-
 .timeline-content {
   background: #ffffff;
   padding: 20px;
@@ -440,33 +391,28 @@ textarea {
   width: 100%;
   max-width: 100%; 
 }
-
 .timeline-content h4 {
   margin: 0 0 8px;
   color: #0a1f44;
   font-size: 1.1rem;
 }
-
 .timeline-content p {
   margin: 0;
   font-size: 0.95rem;
   color: #444;
   line-height: 1.6;
 }
-
 @media (max-width: 768px) {
   .timeline {
     margin-left: 10px;
     padding-left: 15px;
   }
-
   .timeline-icon {
     left: -30px;
     width: 30px;
     height: 30px;
     font-size: 18px;
   }
-
   .timeline-content {
     width: 93%;
   }
@@ -479,13 +425,11 @@ textarea {
     position: relative;
     background-color: #fff;
   }
-  
   .breadcrumb-container a {
     text-decoration: none;
     color: #0a1f44;
     margin-right: 5px;
   }
-  
   .breadcrumb-container span {
     color: #666;
     font-weight: 500;
@@ -494,7 +438,6 @@ textarea {
     transform: scale(1.5);
     transform-origin: center;
 }
-
 </style>
 </head>
 <body>
@@ -505,7 +448,6 @@ textarea {
             </a>
         </div>
         <div class="hamburger" id="hamburgerIcon" onclick="toggleMobileMenu()">☰</div>
-
         <nav>
            <div class="dropdown">
             <span style="color: white;">ManageEngine Expertise </span>
@@ -557,7 +499,6 @@ textarea {
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
                       d="M19 9l-7 7-7-7" />
               </svg>
-              
                 <div class="dropdown-content" style="min-width: 200px !important;">
                    <div class="dropdown-column">
                       <h4>Services</h4>
@@ -572,7 +513,6 @@ textarea {
                     </div>
                 </div>
              </div>
-
             <div class="dropdown">
                 <div class="dropdown-trigger">
                   <span>Company Overview</span>
@@ -593,7 +533,6 @@ textarea {
                 </div>
               </div>
             </div>
-            
             <ul>
                 <li><a href="saasify-careers.html" style="color: white;">Careers</a></li>
             </ul>
@@ -607,12 +546,9 @@ textarea {
             </a>
         </div>
 </header>
-   
 <div id="overlay" class="overlay" onclick="toggleMobileMenu()"> </div>
-
 <div id="mobileMenu">
       <!-- Platform Proficiency -->
-      
        <div class="submenu-toggle" onclick="toggleSubmenu(this)"> ManageEngine Expertise 
             <img src="images/Arrow.webp" alt="Arrow" style=" height: 24px;" />
        </div>
@@ -624,7 +560,6 @@ textarea {
             <a href="SIEM.html">SIEM</a>
             <a href="IT-Analysis.html">IT Analytics</a>
         </div>
-
         <!-- Services -->
         <div class="submenu-toggle" onclick="toggleSubmenu(this)">Services 
            <img src="images/Arrow.webp" alt="Arrow" style=" height: 24px;" />
@@ -637,7 +572,6 @@ textarea {
             <a href="Ongoing_support.html">Ongoing Support</a>
             <a href="managed-services.html">Managed Services</a>
         </div>
-
         <!-- Company Overview -->
         <div class="submenu-toggle" onclick="toggleSubmenu(this)">Company Overview 
            <img src="images/Arrow.webp" alt="Arrow" style=" height: 24px;" />
@@ -646,12 +580,10 @@ textarea {
             <a href="about_us.html">About Saasify</a>
             <a href="our-presence.html">Our Presence</a>
         </div>
-
         <!-- Careers -->
         <div class="submenu-toggle">
             <a href="saasify-careers.html" style="display:block;">Careers</a>
         </div>   
-
         <!-- Insights -->
         <div class="submenu-toggle">
             <a href="insight-page.html" style="display:block;">Insights</a>
@@ -663,11 +595,9 @@ textarea {
             </a>
         </div>
 </div>
-
 <div class="hero-image">
   <img src="images/impandcust_optimized.webp" alt="Implementation"  loading="lazy">
 </div>
-
 <section class="hero">
   <div class="overlay"></div>
   <div class="hero-content">
@@ -678,9 +608,7 @@ textarea {
     </a>
   </div>
 </section>
-
 <main class="content">
-
   <section class="breadcrumb">
     <div class="breadcrumb-container">
       <a href="index.html">Home</a> &gt;
@@ -700,11 +628,9 @@ textarea {
        </p></div>
   </div>
 </section>
-
 <section class="section-wrapper">
   <p class="sub-heading">Why Saasify for Implementation ?</p>
   <h2 class="main-heading" style="color:#ccc">Delivering Implementations with <span style="color: #00c896">Confidence & Clarity.</span></h2>
-  
   <div class="cards">
     <div class="card">
       <div class="card-number">1</div>
@@ -712,21 +638,18 @@ textarea {
       <h4>Certified Experts</h4>
       <p>Specialized in delivering tailored IT implementations that align with diverse business needs.</p>
     </div>
-
     <div class="card">
       <div class="card-number">2</div>
       <i class="fas fa-tachometer-alt"></i>
       <h4>Accelerated Delivery</h4>
       <p>With tested methods and expertise, we deliver faster deployments with consistent success.</p>
     </div>
-
     <div class="card">
       <div class="card-number">3</div>
       <i class="fas fa-cogs"></i>
       <h4>Environment Ready</h4>
       <p>We implement ManageEngine solutions across cloud, on-premises setups to fit your environment.</p>
     </div>
-
     <div class="card">
       <div class="card-number">4</div>
       <i class="fas fa-handshake"></i>
@@ -735,11 +658,9 @@ textarea {
     </div>
   </div>
 </section>
-  
 <section class="timeline-wrapper">
   <p class="sub-heading">Our Implementation Approach</p>
   <h2 class="main-heading">Efficient, Scalable, and <span style="color: #00c896">Reliable Delivery.</span></h2>
-  
   <div class="timeline">
     <div class="timeline-item">
       <div class="timeline-icon"><i class="fas fa-clipboard-list"></i></div>
@@ -748,7 +669,6 @@ textarea {
         <p>We begin by aligning with your business goals, defining objectives, and setting realistic timelines for a clear path forward.</p>
       </div>
     </div>
-
     <div class="timeline-item">
       <div class="timeline-icon"><i class="fas fa-map-marked-alt"></i></div>
       <div class="timeline-content">
@@ -756,7 +676,6 @@ textarea {
         <p>Implementation is broken into well-structured phases, giving you visibility, control, and measurable progress at each step.</p>
       </div>
     </div>
-
     <div class="timeline-item">
       <div class="timeline-icon"><i class="fas fa-tools"></i></div>
       <div class="timeline-content">
@@ -764,7 +683,6 @@ textarea {
         <p>Solutions are tailored to your workflows with the right integrations, role-based access, and process alignment.</p>
       </div>
     </div>
-
     <div class="timeline-item">
       <div class="timeline-icon"><i class="fas fa-rocket"></i></div>
       <div class="timeline-content">
@@ -774,19 +692,15 @@ textarea {
     </div>
   </div>
 </section>
-
 <div id="contact-form-placeholder"></div>
-
 <div id="footer-placeholder"></div>
 </main>
-
 <script>
   fetch('contact-form.html')
     .then(response => response.text())
     .then(html => {
       const container = document.getElementById('contact-form-placeholder');
       container.innerHTML = html;
-
       // Extract and evaluate any scripts from the loaded HTML
       const tempDiv = document.createElement('div');
       tempDiv.innerHTML = html;
@@ -802,9 +716,6 @@ textarea {
       });
     })
     .catch(error => console.error('Failed to load contact form:', error));
-
-
-
   fetch('footer.html')
     .then(response => response.text())
     .then(data => {
@@ -821,7 +732,6 @@ textarea {
       header.classList.remove('scrolled');
     }
   });
-
   // Run once on load in case page starts scrolled
   window.dispatchEvent(new Event('scroll'));
 </script>

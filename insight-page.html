@@ -254,7 +254,6 @@ header {
             </a>
         </div>
         <div class="hamburger" id="hamburgerIcon" onclick="toggleMobileMenu()">☰</div>
-
         <nav>
            <div class="dropdown">
             <span style="color: white;">ManageEngine Expertise </span>
@@ -306,7 +305,6 @@ header {
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
                       d="M19 9l-7 7-7-7" />
               </svg>
-              
                 <div class="dropdown-content" style="min-width: 200px !important;">
                    <div class="dropdown-column">
                       <h4>Services</h4>
@@ -320,8 +318,7 @@ header {
                           </ul>
                     </div>
                 </div>
-             </div>
-
+              </div>
             <div class="dropdown">
                 <div class="dropdown-trigger">
                   <span>Company Overview</span>
@@ -342,7 +339,6 @@ header {
                 </div>
               </div>
             </div>
-            
             <ul>
                 <li><a href="saasify-careers.html" style="color: white;">Careers</a></li>
             </ul>
@@ -356,12 +352,9 @@ header {
             </a>
         </div>
 </header>
-   
 <div id="overlay" class="overlay" onclick="toggleMobileMenu()"> </div>
-
 <div id="mobileMenu">
       <!-- Platform Proficiency -->
-      
        <div class="submenu-toggle" onclick="toggleSubmenu(this)"> ManageEngine Expertise 
             <img src="images/Arrow.webp" alt="Arrow" style=" height: 24px;" />
        </div>
@@ -373,7 +366,6 @@ header {
             <a href="SIEM.html">SIEM</a>
             <a href="IT-Analysis.html">IT Analytics</a>
          </div>
-
         <!-- Services -->
         <div class="submenu-toggle" onclick="toggleSubmenu(this)">Services 
            <img src="images/Arrow.webp" alt="Arrow" style=" height: 24px;" />
@@ -386,7 +378,6 @@ header {
             <a href="Ongoing_support.html">Ongoing Support</a>
             <a href="managed-services.html">Managed Services</a>
         </div>
-
         <!-- Company Overview -->
         <div class="submenu-toggle" onclick="toggleSubmenu(this)">Company Overview 
            <img src="images/Arrow.webp" alt="Arrow" style=" height: 24px;" />
@@ -396,12 +387,10 @@ header {
             <a href="our-team.html">Our Approach</a>
             <a href="our-presence.html">Our Presence</a>
         </div>
-
         <!-- Careers -->
         <div class="submenu-toggle">
             <a href="saasify-careers.html" style="display:block;">Careers</a>
         </div>   
-
         <!-- Insights -->
         <div class="submenu-toggle">
             <a href="insight-page.html" style="display:block;">Insights</a>
@@ -416,7 +405,6 @@ header {
 <div class="hero-image">
   <img src="images/insight_hero_img_optimized.webp" alt="Insight" loading="lazy">
 </div>
-
 <section class="hero">
   <div class="overlay"></div>
   <div class="hero-content">
@@ -434,31 +422,25 @@ header {
     <span>Insights</span>
   </div>
 </section>
-
   <div class="insights-nav" style="padding: 18px;">
     <button class="tab-button active" data-target="news">News & Announcements</button>
     <button class="tab-button" data-target="blogs">Blogs</button>
     <button class="tab-button" data-target="cases">Case Studies</button>
   </div>
-
   <section id="news" class="insight-section active">
     <div class="insight-grid" id="newsContent"></div>
   </section>
-
   <section id="blogs" class="insight-section">
     <div class="insight-grid" id="blogsContent"></div>
   </section>
-
   <section id="cases" class="insight-section">
     <div class="insight-grid" id="casesContent"></div>
   </section>
-  
  <section class="insight-contact">
   <div class="insight-contact-wrapper">
     <div class="insight-contact-text">
       <p class="sub-heading">Connect with Saasify.</p>
       <h2 class="main-heading">Connect to explore <span style="color: #00c896">possibilities.</span></h2>
-
       <p>We’d love to hear from you and answer any questions. Let’s start a conversation that matters.</p>
     </div>
      <a href="contact_us_page.html">
@@ -466,10 +448,8 @@ header {
     </a>
   </div>
 </section>
-
 <div id="footer-placeholder"></div>
 </main>
-
 <script src="insights-data.js"></script>
   <script>
      window.addEventListener('scroll', function () {
@@ -482,10 +462,8 @@ header {
       header.classList.remove('scrolled');
     }
   });
-
   // Run once on load in case page starts scrolled
   window.dispatchEvent(new Event('scroll'));
-
     fetch('footer.html')
     .then(response => response.text())
     .then(data => {
@@ -509,23 +487,19 @@ header {
         container.appendChild(card);
       });
     }
-  
     window.addEventListener("DOMContentLoaded", () => {
       generateInsightCards('news', 'newsContent');
       generateInsightCards('blogs', 'blogsContent');
       generateInsightCards('cases', 'casesContent');
-  
       // Optional: strip hash from URL
       if (window.location.hash) {
         history.replaceState(null, null, window.location.pathname);
       }
     });
-  
     document.querySelectorAll('.tab-button').forEach(button => {
       button.addEventListener('click', () => {
         document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
         document.querySelectorAll('.insight-section').forEach(sec => sec.classList.remove('active'));
-  
         button.classList.add('active');
         document.getElementById(button.dataset.target).classList.add('active');
       });

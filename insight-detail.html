@@ -7,7 +7,6 @@
     <link rel="icon" type="Saasify" href="Images/saasify.ico">
  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
   <style>
  body {
     font-family: 'Poppins', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -27,58 +26,56 @@ header {
   z-index: 999;
   background: linear-gradient(313deg, #010512, #072254);
 }
-    .detail-wrapper {
-      max-width: 900px;
-      margin: auto;
-      padding: 80px 20px;
-      background: #fff;
-      box-shadow: 0 0 20px rgba(0,0,0,0.05);
-      text-align: center;
-    }
-    .detail-image {
-      width: 100%;
-      max-height: 400px;
-      object-fit: cover;
-      border-radius: 12px;
-    }
-    h1 {
-      font-size: 2rem;
-      margin-top: 20px;
-    }
-    p.full-text {
-      font-size: 1rem;
-      line-height: 1.7;
-      margin-top: 20px;
-      white-space: pre-line; /* preserve newlines */
-    }
-    a.back-link {
-      display: inline-block;
-      margin-top: 30px;
-      color: #0077cc;
-      text-decoration: none;
-    }
-    a.back-link:hover {
-      text-decoration: underline;
-    }
-    .insight-contact-btn {
-      background-color: #f4c300;
-      color: #000;
-      padding: 12px 30px;
-      border-radius: 30px;
-      font-weight: 500;
-      text-decoration: none;
-      transition: background 0.3s;
-    }
-    .insight-contact-btn:hover {
-      background-color: #ffd500;
-    }
-
+.detail-wrapper {
+  max-width: 900px;
+  margin: auto;
+  padding: 80px 20px;
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+  text-align: center;
+}
+.detail-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+h1 {
+  font-size: 2rem;
+  margin-top: 20px;
+}
+p.full-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-top: 20px;
+  white-space: pre-line; /* preserve newlines */
+}
+a.back-link {
+  display: inline-block;
+  margin-top: 30px;
+  color: #0077cc;
+  text-decoration: none;
+}
+a.back-link:hover {
+  text-decoration: underline;
+}
+.insight-contact-btn {
+  background-color: #f4c300;
+  color: #000;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.insight-contact-btn:hover {
+  background-color: #ffd500;
+}
 .btn-flex-center {
   display: flex;
   justify-content: center;
-  margin-top: 30px; /* optional spacing */
+  margin-top: 30px; 
 }
-
   </style>
 </head>
 <body>
@@ -89,7 +86,6 @@ header {
             </a>
         </div>
         <div class="hamburger" id="hamburgerIcon" onclick="toggleMobileMenu()">☰</div>
-
         <nav>
            <div class="dropdown">
             <span style="color: white;">ManageEngine Expertise </span>
@@ -141,7 +137,6 @@ header {
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
                       d="M19 9l-7 7-7-7" />
               </svg>
-              
                 <div class="dropdown-content" style="min-width: 200px !important;">
                    <div class="dropdown-column">
                       <h4>Services</h4>
@@ -156,7 +151,6 @@ header {
                     </div>
                 </div>
              </div>
-
             <div class="dropdown">
                 <div class="dropdown-trigger">
                   <span>Company Overview</span>
@@ -177,7 +171,6 @@ header {
                 </div>
               </div>
             </div>
-            
             <ul>
                 <li><a href="saasify-careers.html" style="color: white;">Careers</a></li>
             </ul>
@@ -191,12 +184,9 @@ header {
             </a>
         </div>
     </header>
-   
 <div id="overlay" class="overlay" onclick="toggleMobileMenu()"> </div>
-
 <div id="mobileMenu">
       <!-- Platform Proficiency -->
-      
        <div class="submenu-toggle" onclick="toggleSubmenu(this)"> ManageEngine Expertise 
             <img src="images/Arrow.webp" alt="Arrow" style=" height: 24px;" />
        </div>
@@ -208,7 +198,6 @@ header {
             <a href="SIEM.html">SIEM</a>
             <a href="IT-Analysis.html">IT Analytics</a>
              </div>
-
         <!-- Services -->
         <div class="submenu-toggle" onclick="toggleSubmenu(this)">Services 
            <img src="images/Arrow.webp" alt="Arrow" style=" height: 24px;" />
@@ -221,7 +210,6 @@ header {
             <a href="Ongoing_support.html">Ongoing Support</a>
             <a href="managed-services.html">Managed Services</a>
         </div>
-
         <!-- Company Overview -->
         <div class="submenu-toggle" onclick="toggleSubmenu(this)">Company Overview 
            <img src="images/Arrow.webp" alt="Arrow" style=" height: 24px;" />
@@ -230,12 +218,10 @@ header {
             <a href="about_us.html">About Saasify</a>
             <a href="our-presence.html">Our Presence</a>
         </div>
-
         <!-- Careers -->
         <div class="submenu-toggle">
             <a href="saasify-careers.html" style="display:block;">Careers</a>
         </div>   
-
         <!-- Insights -->
         <div class="submenu-toggle">
             <a href="insight-page.html" style="display:block;">Insights</a>
@@ -247,7 +233,6 @@ header {
             </a>
         </div>
 </div>
-
   <div class="detail-wrapper">
     <img id="detailImage" class="detail-image" src="" alt="Insight image" />
     <h1 id="detailTitle"></h1>
@@ -258,12 +243,9 @@ header {
     </a>
   </div>
   </div>
-
 <div id="footer-placeholder"></div>
-
   <script src="insights-data.js"></script>
   <script>
-
     fetch('footer.html')
     .then(response => response.text())
     .then(data => {
@@ -273,14 +255,11 @@ header {
     const params = new URLSearchParams(window.location.search);
     const id = parseInt(params.get('id'));
     const category = params.get('category');
-
     const dataItem = insightsData[category]?.[id];
-
     if (dataItem) {
       document.getElementById("detailImage").src = dataItem.image;
       document.getElementById("detailTitle").textContent = dataItem.title;
       document.getElementById("detailText").textContent = dataItem.fullText;
-
     } else {
       document.querySelector(".detail-wrapper").innerHTML = "<h2>Content not found.</h2>";
     }

@@ -19,7 +19,6 @@
     overflow-x: hidden !important;
     overscroll-behavior-y: none;
 }
-
 .sub-heading {
   text-transform: uppercase;
   font-size: 0.85rem;
@@ -28,14 +27,11 @@
   letter-spacing: 0.5px;
   margin-bottom: 8px;
 }
-
 .main-heading {
   font-size: 2rem;
   margin-bottom: 30px;
   color: #0a1f44;
 }
-
- 
 header {
   position: fixed;
   width: 100%;
@@ -44,8 +40,6 @@ header {
   z-index: 999;
   transition: background-color 0.3s ease !important;
 }
-
- /* Hero Section */
 .hero-image {
   position: fixed;
   top: 0;
@@ -55,7 +49,6 @@ header {
   z-index: -1;
   overflow: hidden;
 }
-
 .hero-image img {
   width: 100%;
   height: 100%;
@@ -63,13 +56,11 @@ header {
   transform: scale(1.5);
   animation: zoomOut 6s ease-out forwards;
 }
-
 @keyframes zoomOut {
   to {
     transform: scale(1);
   }
 }
-
 .hero {
   position: relative;
   height: 100vh; 
@@ -80,7 +71,6 @@ header {
   padding-left: 10%;  /* Adds left offset */
   color: white;
 }
-
 .hero-content {
   position: relative;
   z-index: 1;
@@ -96,7 +86,6 @@ header {
   border-bottom: 0.0625rem solid hsla(0, 0%, 100%, .3);
   padding-bottom: 10px;
 }
-
 .hero-description{
     font-size: 1.5rem;
     line-height: 2.1rem;
@@ -114,33 +103,27 @@ header {
   height: 100%;
   background: rgba(0,0,0,0.4);
 }
-
 .content {
   background: white;
   position: relative;
   z-index: 3;
 }
-
- /* Contact Section */
  .contact-form {
       display: flex;
       flex-wrap: wrap;
       gap: 40px;
     }
-    
 .form-group input,
 .form-group select,
 .form-group textarea {
   min-height: 45px;
   font-size: 15px;
 }
-
 input, select, textarea {
   width: 100%;
   max-width: 100%; 
   box-sizing: border-box;
 }
-
 .green-card {
     background-color: #0a1f44;
     width: 76%;
@@ -151,7 +134,6 @@ input, select, textarea {
     align-items: center;
     margin-left: 37px;
 }
- 
 .form-group {
   display: flex;
   flex-direction: column;
@@ -169,7 +151,6 @@ input, select, textarea {
 textarea {
   resize: vertical;
 }
-
  @media (max-width: 768px) {
   .form-grid {
     grid-template-columns: 1fr;
@@ -177,9 +158,7 @@ textarea {
   .form-group.full {
     grid-column: span 1;
   }
- 
 } 
- 
 .contact-section {
   position: relative;
   padding: 161px 20px;
@@ -189,7 +168,6 @@ textarea {
   display: flex;
   justify-content: center;
 }
-
 .curved-card {
   position: relative;
   background: #ffffff;
@@ -201,7 +179,6 @@ textarea {
   z-index: 2;
   box-sizing: border-box;
 }
-
 .curved-card::after {
     content: "";
     position: absolute;
@@ -219,7 +196,6 @@ textarea {
     box-shadow: inset 20px 0 24px -14px rgba(0, 0, 0, 0.4);
     z-index: -1;
 }
-
 @media (max-width: 768px) {
   .curved-card::after {
     display: none;
@@ -231,7 +207,6 @@ textarea {
   gap: 20px;
   width: 80%;
 }
-
 .form-group.full {
   grid-column: span 2;
 }
@@ -248,19 +223,16 @@ textarea {
     padding: 0 !important;
     display: block; 
   }
-
   .contact-section {
     padding: 40px 15px !important;
     background-image: none;
   }
-
   .curved-card {
     width: 100% !important;
     padding: 20px !important;
     border-radius: 8px !important;
   }
 }
-
 @media (max-width: 1024px) and (min-width: 769px) {
   .curved-card {
     width: 82%; 
@@ -276,8 +248,6 @@ textarea {
     margin-left: 37px;
   }
 }
-
- /* Intro Section */
 .intro-section {
   display: flex;
   justify-content: center; 
@@ -286,54 +256,44 @@ textarea {
   min-height: 50vh;        
   box-sizing: border-box;
 }
-
 .intro-content {
   max-width: 800px;
 }
-
 .intro-content h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
   color: #222;
 }
-
 .intro-content p {
   font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
   color: #555;
 }
-
 .intro-content ul {
   list-style: none;
   padding: 0;
   margin-bottom: 1.5rem;
 }
-
 .intro-content ul li {
   margin-bottom: 0.5rem;
   font-size: 1rem;
   color: #333;
 }
-
-/* Mobile view adjustments */
 @media (max-width: 768px) {
   .intro-content {
     max-width: 100%;
     padding: 1rem;
   }
 }
-
 .logo img {
     transform: scale(1.5);
     transform-origin: center;
 }
-
     .managed-section {
       padding: 60px 20px;
       background-color: #ffffff;
-    }
-  
+    } 
     .managed-container {
       max-width: 1200px;
       margin: 0 auto;
@@ -342,23 +302,19 @@ textarea {
       align-items: center;
       gap: 40px;
     }
-  
     .managed-text {
       flex: 1 1 500px;
     }
-  
     .managed-text ul {
       list-style-type: disc;
       padding-left: 20px;
       color: #444;
       font-size: 16px;
     }
-  
     .managed-image {
       flex: 1 1 500px;
       text-align: center;
     }
-  
     .managed-image img {
       width: 100%;
       max-width: 500px;
@@ -369,20 +325,17 @@ textarea {
       background-color: #0a1f44;
       padding: 60px 20px;
     }
-  
     .continuous-section h2 {
       color: #ffffff;
       font-size: 32px;
       margin-bottom: 10px;
     }
-  
     .continuous-section .section-underline {
       width: 80px;
       height: 3px;
       margin: 0 auto 40px auto;
       border-radius: 2px;
     }
-  
     .card-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -390,7 +343,6 @@ textarea {
       max-width: 1200px;
       margin: 0 auto;
     }
-  
     .improvement-card {
       background-color: #ffffff;
       border-radius: 12px;
@@ -399,22 +351,18 @@ textarea {
       box-shadow: 0 4px 12px rgba(0,0,0,0.08);
       transition: transform 0.3s ease;
     }
-  
     .improvement-card:hover {
       transform: translateY(-5px);
     }
-  
     .improvement-card img {
       height: 40px;
       margin-bottom: 20px;
     }
-  
     .improvement-card h3 {
       font-size: 18px;
       color: #0a1f44;
       margin-bottom: 15px;
     }
-  
     .improvement-card p {
       font-size: 15px;
       color: #555;
@@ -429,13 +377,11 @@ textarea {
       position: relative;
       background-color: #fff;
     }
-    
     .breadcrumb-container a {
       text-decoration: none;
       color: #0a1f44;
       margin-right: 5px;
     }
-    
     .breadcrumb-container span {
       color: #666;
       font-weight: 500;
@@ -450,7 +396,6 @@ textarea {
             </a>
         </div>
         <div class="hamburger" id="hamburgerIcon" onclick="toggleMobileMenu()">☰</div>
-
         <nav>
            <div class="dropdown">
             <span style="color: white;">ManageEngine Expertise </span>
@@ -502,7 +447,6 @@ textarea {
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
                       d="M19 9l-7 7-7-7" />
               </svg>
-              
                 <div class="dropdown-content" style="min-width: 200px !important;">
                    <div class="dropdown-column">
                       <h4>Services</h4>
@@ -517,7 +461,6 @@ textarea {
                     </div>
                 </div>
              </div>
-
             <div class="dropdown">
                 <div class="dropdown-trigger">
                   <span>Company Overview</span>
@@ -538,7 +481,6 @@ textarea {
                 </div>
               </div>
             </div>
-            
             <ul>
                 <li><a href="saasify-careers.html" style="color: white;">Careers</a></li>
             </ul>
@@ -552,12 +494,9 @@ textarea {
             </a>
         </div>
 </header>
-   
 <div id="overlay" class="overlay" onclick="toggleMobileMenu()"> </div>
-
 <div id="mobileMenu">
       <!-- Platform Proficiency -->
-      
        <div class="submenu-toggle" onclick="toggleSubmenu(this)"> ManageEngine Expertise 
             <img src="images/Arrow.webp" alt="Arrow" style=" height: 24px;" />
        </div>
@@ -568,9 +507,7 @@ textarea {
             <a href="ITOM.html">ITOM</a>
             <a href="SIEM.html">SIEM</a>
             <a href="IT-Analysis.html">IT Analytics</a>
-            
         </div>
-
         <!-- Services -->
         <div class="submenu-toggle" onclick="toggleSubmenu(this)">Services 
            <img src="images/Arrow.webp" alt="Arrow" style=" height: 24px;" />
@@ -583,7 +520,6 @@ textarea {
             <a href="Ongoing_support.html">Ongoing Support</a>
             <a href="managed-services.html">Managed Services</a>
         </div>
-
         <!-- Company Overview -->
         <div class="submenu-toggle" onclick="toggleSubmenu(this)">Company Overview 
            <img src="images/Arrow.webp" alt="Arrow" style=" height: 24px;" />
@@ -592,12 +528,10 @@ textarea {
             <a href="about_us.html">About Saasify</a>
             <a href="our-presence.html">Our Presence</a>
         </div>
-
         <!-- Careers -->
         <div class="submenu-toggle">
             <a href="saasify-careers.html" style="display:block;">Careers</a>
         </div>   
-
         <!-- Insights -->
         <div class="submenu-toggle">
             <a href="insight-page.html" style="display:block;">Insights</a>
@@ -609,11 +543,9 @@ textarea {
             </a>
         </div>
 </div>
-
 <div class="hero-image">
   <img src="images/Managedser_resized.webp"  alt="Managed Services" loading="lazy">
 </div>
-
 <section class="hero">
   <div class="overlay"></div>
   <div class="hero-content">
@@ -624,9 +556,7 @@ textarea {
     </a>
   </div>
 </section>
-
 <main class="content">
-
 <section class="breadcrumb">
   <div class="breadcrumb-container">
     <a href="index.html">Home</a> &gt;
@@ -646,16 +576,11 @@ textarea {
   </div>
   </div>
 </section>
-
 <section class="continuous-section">
-
      <p class="sub-heading">Continuous Improvements</p>
       <h2 class="main-heading" style="color:#ccc">Driving Progress Through  <span style="color: #00c896">Continuous Enhancements.</span></h2>
-
   <div class="section-underline"></div>
-
   <div class="card-container">
-
     <div class="improvement-card">
       <img src="images/add-file.webp" alt="Feature Usage Icon">
       <h3>Feature Usage Audits</h3>
@@ -663,7 +588,6 @@ textarea {
         We analyze usage patterns and adoption trends to identify underused or high-impact areas for improvement.
       </p>
     </div>
-
     <div class="improvement-card">
       <img src="images/presentation-optimized.webp" alt="UX/UI Icon">
       <h3>UX/UI & Workflow Optimization</h3>
@@ -671,7 +595,6 @@ textarea {
         Based on real user feedback, we refine forms, navigation, and workflows to enhance experience and reduce friction.
       </p>
     </div>
-
     <div class="improvement-card">
       <img src="images/medical_optimized.webp" alt="Feature Rollout Icon">
       <h3>New Feature Rollouts</h3>
@@ -679,7 +602,6 @@ textarea {
         We help roll out new features with full support—from configuration to user training and release communication.
       </p>
     </div>
-
     <div class="improvement-card">
       <img src="images/search-optimized.webp" alt="Recommendations Icon">
       <h3>Strategic Recommendations</h3>
@@ -687,22 +609,18 @@ textarea {
         Get expert input on aligning your platform with evolving trends, business needs, and future scalability goals.
       </p>
     </div>
-
   </div>
 </section>
-
 <section class="managed-section">
   <div class="managed-container">
      <!-- Image -->
     <div class="managed-image">
       <img src="images/Manage_img_optimised.webp" alt="Managed Services" />
     </div>
-
     <!-- Text Content -->
     <div class="managed-text">
        <p class="sub-heading">Trusted Management</p>
       <h2 class="main-heading">Managed Services – Continuous<span style="color: #00c896"> IT Support & Optimization</span></h2>
-
     <div style="display:flex">
       <i class="fas fa-check-circle" style="color:  #0a1f44; font-size: 20px; margin-top: 4px;"></i>
       <span style="margin: 0 0 10px; padding-left: 28px;">Ongoing Support & Maintenance.</span>
@@ -726,16 +644,13 @@ textarea {
     </div>
   </div>
 </section>
-
 <div id="contact-form-placeholder"></div>
-
 <script>
   fetch('contact-form.html')
     .then(response => response.text())
     .then(html => {
       const container = document.getElementById('contact-form-placeholder');
       container.innerHTML = html;
-
       // Extract and evaluate any scripts from the loaded HTML
       const tempDiv = document.createElement('div');
       tempDiv.innerHTML = html;
@@ -751,7 +666,6 @@ textarea {
       });
     })
     .catch(error => console.error('Failed to load contact form:', error));
-
 fetch('footer.html')
     .then(response => response.text())
     .then(data => {
@@ -759,10 +673,8 @@ fetch('footer.html')
     })
     .catch(error => console.error('Error loading footer:', error));
 </script>
-
 <div id="footer-placeholder"></div>
 </main>
-
 <script>
   window.addEventListener('scroll', function () {
     const header = document.querySelector('header');
@@ -774,7 +686,6 @@ fetch('footer.html')
       header.classList.remove('scrolled');
     }
   });
-
   // Run once on load in case page starts scrolled
   window.dispatchEvent(new Event('scroll'));
 </script>

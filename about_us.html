@@ -7,7 +7,6 @@
     <link rel="icon" type="Saasify" href="Images/saasify.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/style.css">
-
  <style>
  body {
     font-family: 'Poppins', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -19,7 +18,6 @@
     overflow-x: hidden !important;
     overscroll-behavior-y: none;
 }
- 
 .sub-heading {
   text-transform: uppercase;
   font-size: 0.85rem;
@@ -28,13 +26,11 @@
   letter-spacing: 0.5px;
   margin-bottom: 8px;
 }
-
 .main-heading {    
   font-size: 2rem;
   margin-bottom: 30px;
   color: #0a1f44;
 }
- 
 header {
   position: fixed;
   width: 100%;
@@ -43,13 +39,11 @@ header {
   z-index: 999;
   transition: background-color 0.3s ease !important;
 }
- 
 .vision-mission-wrapper {
   display: flex;
   justify-content: center;
   padding: 60px 20px;
 }
-
 .vision-mission-card {
   display: flex;
   flex-direction: row;         
@@ -60,7 +54,6 @@ header {
   overflow: hidden;
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
 }
-
 .vision-mission-left {
   flex: 1 1 40%;
   min-width: 300px;
@@ -70,13 +63,11 @@ header {
   justify-content: center;
   clip-path: ellipse(90% 100% at 0% 50%);
 }
-
 .vision-mission-left img {
   width: 100%;
   height: 100%;
   object-fit: fill;
 }
-
 .vision-mission-right {
   flex: 1 1 60%;
   padding: 40px;
@@ -84,7 +75,6 @@ header {
   flex-direction: column;
   justify-content: center;
 }
-
 .vision-mission-right h2 {
   font-size: 1.5rem;
   margin-bottom: 10px;
@@ -93,19 +83,16 @@ header {
   align-items: center;
   gap: 10px;
 }
-
 .vision-mission-right h2 i {
   color: #55ffbe;
   font-size: 1.2rem;
 }
-
 .vision-mission-right p {
   font-size: 1rem;
   line-height: 1.6;
   color: #2a2a2a;
   margin-bottom: 30px;
 }
-
 @media (max-width: 1024px) {
   .vision-mission-card {
     flex-direction: column;     
@@ -115,7 +102,6 @@ header {
     clip-path: ellipse(100% 100% at 50% 50%);
   }
 }
-
 @media screen and (min-width: 1025px) {
   .vision-mission-card {
     max-width: 1400px;   
@@ -128,7 +114,6 @@ header {
     flex: 0 0 50%;        
   }
 }
-
 @media (max-width: 600px) {
   .vision-mission-card {
     flex-direction: column;
@@ -141,7 +126,6 @@ header {
     padding: 20px;
   }
 }
-
 .benefits-section {
   background-image: url('images/section-bg-optimized.webp');
   background-size: cover;
@@ -150,25 +134,21 @@ header {
   width: 100%;
   box-sizing: border-box;
 }
-
 .benefit-overlay {
   background-color: rgba(10, 31, 68, 0.85);
   padding: 60px 20px;
 }
-
 .benefit-content {
   max-width: 1200px;
   margin: 0 auto;
   color: white;
 }
-
 .benefit-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 30px;
   margin-top: 40px;
 }
-
 .benefit-card {
   background: white;
   border-radius: 12px;
@@ -177,24 +157,19 @@ header {
   color: #2a2a2a;
   text-align: center;
 }
-
 .benefit-card h3 {
   color: #27ae60;
   margin-bottom: 10px;
 }
-
 .benefit-card p {
   font-size: 0.95rem;
   line-height: 1.5;
   margin: 0;
 }
-
-/* Responsive Tweaks */
 @media (max-width: 768px) {
 .benefit-overlay {
   padding: 40px 15px;
 }
-
 .benefit-card {
   padding: 20px 15px;
 }
@@ -204,11 +179,9 @@ header {
     padding: 40px 16px;
   }
 }
-
 .services-section {
   padding: 10px 40px;
 }
-
 .services-grid {
   display: flex;
   justify-content: space-between;
@@ -217,7 +190,6 @@ header {
   gap: 20px;
   padding: 20px 20px;
 }
-
 .service-card {
   background-color: transparent;
   flex: 1 1 220px;
@@ -234,31 +206,25 @@ header {
   opacity: 0;
   transform: translateY(40px);
 }
-
 .service-card.animate {
   opacity: 1;
   transform: translateY(0);
 }
-
 .service-card:hover {
   background-color: white;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
   transform: translateY(-5px);
 }
-
-
 .service-card img {
   max-width: 55px;
   margin-bottom: 16px;
 }
-
 .service-card h3 {
   position: relative;
   display: inline-block;
   cursor: pointer;
   color:#0a1f44;
 }
-
 .service-card h3::after {
   content: '';
   position: absolute;
@@ -269,26 +235,21 @@ header {
   background-color: #00c896; /* Your highlight color */
   transition: width 0.4s ease;
 }
-
 .service-card h3:hover::after {
   width: 100%;
 }
-
-
 .service-card p {
   margin: 0;
   font-size: 0.95rem;
   color: #555;
   line-height: 1.5;
 }
-
 @media (max-width: 768px) {
   .services-grid {
     gap: 24px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 }
-
 @media (max-width: 480px) {
   .services-section {
     padding: 40px 41px;
@@ -301,37 +262,30 @@ header {
     max-width: 60px;
   }
 }
-    
 .careers-section {
   width: 100%;
   padding: 60px 20px;
   border-radius: 12px;
   box-sizing: border-box;
 }
-
 .careers-overlay {
   max-width: 900px;
   margin: 0 auto;
 }
-
 .careers-section .main-heading {
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 15px;
   color: #1a1a1a;
 }
-
-/* Mobile responsive */
 @media (max-width: 600px) {
   .careers-section .main-heading {
     font-size: 22px;
   }
-
   .careers-section p {
     font-size: 14px;
   }
 }
-
 .breadcrumb {
   padding: 15px 40px;
   font-size: 0.95rem;
@@ -340,29 +294,24 @@ header {
   position: relative;
   background-color: #fff;
 }
-
 .breadcrumb-container a {
   text-decoration: none;
   color: #0a1f44;
   margin-right: 5px;
 }
-
 .breadcrumb-container span {
   color: #666;
   font-weight: 500;
 }
 @media (max-width: 768px) {
-
   .features {
     grid-template-columns: 1fr; /* Stack features on mobile */
   }
-
   .breadcrumb {
     padding: 10px 20px;
     font-size: 0.85rem;
   }
 }
-
 .quote-section {
   background-image: url('images/dir_note_optimized.webp'); 
   background-size: cover;
@@ -372,7 +321,6 @@ header {
   position: relative;
   z-index: 1;
 }
-
 .quote-section::before {
   content: "";
   position: absolute;
@@ -383,7 +331,6 @@ header {
   background-color:  rgba(0, 0, 0, 0.4); /* Optional overlay for better text readability */
   z-index: -1;
 }
-
 .quote-bg {
   padding: 40px 20px;
   background: linear-gradient(135deg, #1abc9c, #3498db);
@@ -391,11 +338,9 @@ header {
   background-repeat: repeat;
   background-size: contain;
 }
-
 .quote-inner {
   max-width: 1032px;
   margin: 0 auto;
- 
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.05);
   overflow: hidden;
@@ -407,19 +352,16 @@ header {
  background: white;
   backdrop-filter: blur(3px);
 }
-
 .quote-content {
   flex: 1 1 300px;
   min-width: 280px;
 }
-
 .quote-mark {
   font-size: 3rem;
   color: #0a1f44;
   margin-bottom: 20px;
   line-height: 1;
 }
-
 .quote-text {
   color: #0a1f44;
   font-size: 1.25rem;
@@ -427,18 +369,15 @@ header {
   font-weight: 600;
   margin: 0 0 30px;
 }
-
 .quote-author {
   font-weight: bold;
   color: #0a1f44;
   margin-bottom: 4px;
 }
-
 .quote-title {
   color: #444;
   margin-bottom: 20px;
 }
-
 .quote-btn {
   display: inline-block;
   background-color: #f4c300;
@@ -449,11 +388,9 @@ header {
   font-weight: 600;
   transition: background-color 0.2s ease;
 }
-
 .quote-btn:hover {
   background-color: #e0b800;
 }
-
 .quote-image {
   position: relative;
   flex: 1 1 260px;
@@ -462,7 +399,6 @@ header {
   justify-content: center;
   align-items: center;
 }
-
 .quote-image .image-bg {
   width: 260px;
   height: 260px;
@@ -471,7 +407,6 @@ header {
   position: relative;
   z-index: 1;
 }
-
 .quote-image img {
   position: absolute;
   z-index: 2;
@@ -481,28 +416,23 @@ header {
   object-fit: cover;
   transform: translate(16px, 16px);
 }
-
-/* Responsive tweaks */
 @media (max-width: 768px) {
   .quote-inner {
     flex-direction: column;
     text-align: center;
     padding: 30px 20px;
   }
-
   .quote-content,
   .quote-image {
     flex: 1 1 100%;
     min-width: auto;
   }
-
   .quote-image img {
     transform: none;
     position: relative;
     margin-top: 20px;
     max-width: 280px;
   }
-
   .quote-image .image-bg {
     display: none;
   }
@@ -518,7 +448,6 @@ header {
   position: relative;
   z-index: 1;
 }
-
 .intro-section::before {
   content: "";
   position: absolute;
@@ -543,21 +472,18 @@ header {
   min-width: 280px;
   max-width: 906px;
 }
-
 .intro-title {
   font-size: 2rem;
   font-weight: 700;
   color: #0a1f44;
   margin-bottom: 20px;
 }
-
 .intro-text {
   font-size: 1.05rem;
   line-height: 1.7;
   color: #333;
   margin-bottom: 18px;
 }
-
 .intro-image {
   flex: 1 1 280px;
   min-width: 260px;
@@ -566,7 +492,6 @@ header {
   align-items: center;
   position: relative;
 }
-
 .intro-image img {
   position: absolute;
   z-index: 2;
@@ -582,27 +507,23 @@ header {
     min-height: auto;    /* let height adjust to content */
     padding: 60px 20px;  /* top/bottom padding instead of centering */
   }
-
   .glass-card {
     width: 84%;
     flex-direction: column; /* stack text and image vertically */
     align-items: center;
     padding: 30px;
   }
-
   .intro-inner {
     flex-direction: column;
     text-align: center;
     padding: 0;
   }
-
   .intro-image img {
     transform: none;
     position: relative;
     margin-top: 20px;
     max-width: 280px;
   }
-
   .intro-image .image-bg {
     display: none;
   }
@@ -617,7 +538,6 @@ header {
             </a>
         </div>
         <div class="hamburger" id="hamburgerIcon" onclick="toggleMobileMenu()">☰</div>
-
         <nav>
            <div class="dropdown">
             <span style="color: white;">ManageEngine Expertise</span>
@@ -669,7 +589,6 @@ header {
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
                       d="M19 9l-7 7-7-7" />
               </svg>
-              
                 <div class="dropdown-content" style="min-width: 200px !important;">
                    <div class="dropdown-column">
                       <h4>Services</h4>
@@ -684,7 +603,6 @@ header {
                     </div>
                 </div>
              </div>
-
             <div class="dropdown">
                 <div class="dropdown-trigger">
                   <span>Company Overview</span>
@@ -705,7 +623,6 @@ header {
                 </div>
               </div>
             </div>
-            
             <ul>
                 <li><a href="saasify-careers.html" style="color: white;">Careers</a></li>
             </ul>
@@ -719,12 +636,9 @@ header {
             </a>
         </div>
 </header>
-   
 <div id="overlay" class="overlay" onclick="toggleMobileMenu()"> </div>
-
 <div id="mobileMenu">
       <!-- Platform Proficiency -->
-      
        <div class="submenu-toggle" onclick="toggleSubmenu(this)">ManageEngine Expertise 
             <img src="images/Arrow.webp" alt="Arrow" style=" height: 24px;" />
        </div>
@@ -736,7 +650,6 @@ header {
             <a href="SIEM.html">SIEM</a>
             <a href="IT-Analysis.html">IT Analytics</a>
         </div>
-
         <!-- Services -->
         <div class="submenu-toggle" onclick="toggleSubmenu(this)">Services 
            <img src="images/Arrow.webp" alt="Arrow" style=" height: 24px;" />
@@ -749,7 +662,6 @@ header {
             <a href="Ongoing_support.html">Ongoing Support</a>
             <a href="managed-services.html">Managed Services</a>
         </div>
-
         <!-- Company Overview -->
         <div class="submenu-toggle" onclick="toggleSubmenu(this)">Company Overview 
            <img src="images/Arrow.webp" alt="Arrow" style=" height: 24px;" />
@@ -758,12 +670,10 @@ header {
             <a href="about_us.html">Company Overview</a>
             <a href="our-presence.html">Our Presence</a>
         </div>
-
         <!-- Careers -->
         <div class="submenu-toggle">
             <a href="saasify-careers.html" style="display:block;">Careers</a>
         </div>   
-
         <!-- Insights -->
         <div class="submenu-toggle">
             <a href="insight-page.html" style="display:block;">Insights</a>
@@ -775,8 +685,6 @@ header {
             </a>
         </div>
 </div>
-
-
 <div class="hero-video">
   <video autoplay muted loop playsinline poster="images/hero_about_img.webp">
      <source src="videos/presence_hero_video_1080p.webm" type="video/mp4">
@@ -793,7 +701,6 @@ header {
     </a>
   </div>
 </section>
-
 <main class="content">
 <section class="breadcrumb">
   <div class="breadcrumb-container">
@@ -802,9 +709,7 @@ header {
     <span>About Saasify</span>
   </div>
 </section>
-
 <section class="intro-section" style="background-image: url('images/optimized-journey-img.webp'); background-size: cover; background-position: center;">
-  
  <div class="glass-card">
       <div class="intro-content">
          <p class="sub-heading" style="margin-bottom: 23px;">WHO WE ARE</p>
@@ -814,8 +719,7 @@ header {
          enterprise-grade solutions across ITSM, ITOM, UEM and others. This collaboration has strengthened our portfolio and empowered us to address complex enterprise IT requirements with scalable, future-ready solutions. With branches in Chennai and Bangalore, we serve a diverse range of clients across industries, providing future-ready IT solutions that drive efficiency, growth, and lasting partnerships.
         </p>
   </div>
-</section>
-  
+</section> 
 <section class="vision-mission-wrapper">
   <div class="vision-mission-card">
     <div class="vision-mission-left">
@@ -829,7 +733,6 @@ header {
     </div>
   </div>
 </section>
-
 <section class="benefits-section">
   <div class="benefit-overlay">
     <div class="benefit-content">
@@ -837,7 +740,6 @@ header {
       <h2 class="main-heading" style="color: #ffffff">
         Where technology meets <span style="color: #00c896">transformative outcomes.</span>
       </h2>
-
       <div class="benefit-grid">
         <div class="benefit-card">
           <i class="fa-solid fa-robot"></i>
@@ -863,11 +765,9 @@ header {
     </div>
   </div>
 </section>
-
 <section class="services-section">
   <p class="sub-heading">FEATURES</p>
     <h2 class="main-heading">Purposeful Principles Powering  <span style="color: #00c896">Our Expansion.</span></h2>
-
   <div class="services-grid">
     <div class="service-card">
       <img src="images/Collaborate_icon_optimized.webp" alt="Collaboration icon" />
@@ -891,7 +791,6 @@ header {
     </div>
   </div>
 </section>
-
 <section class="quote-section">  
 <div class="quote-bg"> 
   <div class="quote-inner">
@@ -910,7 +809,6 @@ header {
   </div>
 </div>
 </section>
-
 <section class="careers-section">
   <div class="careers-overlay">
       <p class="sub-heading">NEXT HORIZON</p>
@@ -921,9 +819,7 @@ header {
     </a>
   </div>
 </section>
-
 <div id="footer-placeholder"></div>
-
 </main>
 <script>
   window.addEventListener('scroll', function () {
@@ -936,13 +832,10 @@ header {
       header.classList.remove('scrolled');
     }
   });
-
   // Run once on load in case page starts scrolled
   window.dispatchEvent(new Event('scroll'));
-
 document.addEventListener("DOMContentLoaded", () => {
   const cards = document.querySelectorAll(".service-card");
-
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -951,10 +844,8 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }, { threshold: 0.2 }); // trigger when 20% visible
-
   cards.forEach(card => observer.observe(card));
 });
-
 fetch('footer.html')
     .then(response => response.text())
     .then(data => {
@@ -962,7 +853,6 @@ fetch('footer.html')
     })
     .catch(error => console.error('Error loading footer:', error));
 </script>
-
 <script src="js/main.js"></script>
 </body>
 </html>

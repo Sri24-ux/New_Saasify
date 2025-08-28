@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
  <style>
   body {
     font-family: 'Poppins', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -20,7 +19,6 @@
     overflow-x: hidden !important;
     overscroll-behavior-y: none;
 }
- 
 .sub-heading {
   text-transform: uppercase;
   font-size: 0.85rem;
@@ -29,13 +27,11 @@
   letter-spacing: 0.5px;
   margin-bottom: 8px;
 }
-
 .main-heading {
   font-size: 2rem;
   margin-bottom: 30px;
   color: #0a1f44;
 }
-
 header {
   position: fixed;
   width: 100%;
@@ -44,8 +40,6 @@ header {
   z-index: 999;
   transition: background-color 0.3s ease !important;
 }
-
- /* Hero Section */
 .hero-image {
   position: fixed;
   top: 0;
@@ -55,7 +49,6 @@ header {
   z-index: -1;
   overflow: hidden;
 }
-
 .hero-image img {
   width: 100%;
   height: 100%;
@@ -63,13 +56,11 @@ header {
   transform: scale(1.5);
   animation: zoomOut 6s ease-out forwards;
 }
-
 @keyframes zoomOut {
   to {
     transform: scale(1);
   }
 }
-
 .overlay {
   position: absolute;
   top: 0; 
@@ -78,13 +69,11 @@ header {
   height: 100%;
   background: rgba(0,0,0,0.4);
 }
-
 .content {
   background: white;
   position: relative;
   z-index: 3;
 }
-
 .hero {
   position: relative;
   height: 100vh; 
@@ -94,19 +83,16 @@ header {
   padding-left: 8%;      /* Left offset */
   color: white;
 }
-
 .hero-content {
   position: relative;
   z-index: 1;
   max-width: 650px; /* Slightly wider for balance */
   text-align: left;  /* Force text to align left */
 }
-
 .hero-content h1 {
   font-size: 3rem;
   line-height: 4rem;
 }
-
 .subtitle {
   font-size: 20px;
   line-height: 1.5;
@@ -114,27 +100,22 @@ header {
   padding-bottom: 10px;
   text-align: left;
 }
-
-/* Contact Section */
  .contact-form {
       display: flex;
       flex-wrap: wrap;
       gap: 40px;
-    }
-    
+    }   
 .form-group input,
 .form-group select,
 .form-group textarea {
   min-height: 45px;
   font-size: 15px;
 }
-
 input, select, textarea {
   width: 100%;
   max-width: 100%; 
   box-sizing: border-box;
 }
-
 .green-card {
     background-color: #0a1f44;
     width: 76%;
@@ -145,7 +126,6 @@ input, select, textarea {
     align-items: center;
     margin-left: 37px;
 }
- 
 .form-group {
   display: flex;
   flex-direction: column;
@@ -163,7 +143,6 @@ input, select, textarea {
 textarea {
   resize: vertical;
 }
-
  @media (max-width: 768px) {
   .form-grid {
     grid-template-columns: 1fr;
@@ -171,9 +150,7 @@ textarea {
   .form-group.full {
     grid-column: span 1;
   }
- 
 } 
- 
 .contact-section {
   position: relative;
   padding: 161px 20px;
@@ -183,7 +160,6 @@ textarea {
   display: flex;
   justify-content: center;
 }
-
 .curved-card {
   position: relative;
   background: #ffffff;
@@ -195,7 +171,6 @@ textarea {
   z-index: 2;
   box-sizing: border-box;
 }
-
 .curved-card::after {
     content: "";
     position: absolute;
@@ -213,7 +188,6 @@ textarea {
     box-shadow: inset 20px 0 24px -14px rgba(0, 0, 0, 0.4);
     z-index: -1;
 }
-
 @media (max-width: 768px) {
   .curved-card::after {
     display: none;
@@ -225,7 +199,6 @@ textarea {
   gap: 20px;
   width: 80%;
 }
-
 .form-group.full {
   grid-column: span 2;
 }
@@ -242,19 +215,16 @@ textarea {
     padding: 0 !important;
     display: block; 
   }
-
   .contact-section {
     padding: 40px 15px !important;
     background-image: none;
   }
-
   .curved-card {
     width: 100% !important;
     padding: 20px !important;
     border-radius: 8px !important;
   }
 }
-
 @media (max-width: 1024px) and (min-width: 769px) {
   .curved-card {
     width: 82%; 
@@ -270,7 +240,6 @@ textarea {
     margin-left: 37px;
   }
 }
-
 .breadcrumb {
   padding: 15px 40px;
   font-size: 0.95rem;
@@ -279,23 +248,19 @@ textarea {
   position: relative;
   background-color: #fff;
 }
-
 .breadcrumb-container a {
   text-decoration: none;
   color: #0a1f44;
   margin-right: 5px;
 }
-
 .breadcrumb-container span {
   color: #666;
   font-weight: 500;
 }
-
 .key-analysis-section {
   background-color: #ffffff;
   padding: 60px 40px;
 }
-
 .key-analysis-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -305,23 +270,19 @@ textarea {
   margin: auto;
   gap: 40px;
 }
-
 .key-analysis-left {
   flex: 1 1 40%;
   text-align: center;
 }
-
 .key-analysis-left img {
   max-width: 100%;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
-
 .key-analysis-right {
   flex: 1 1 55%;
 }
-
 .analysis-item p {
   font-size: 1rem;
   color: #333;
@@ -334,7 +295,6 @@ textarea {
   position: relative;
   padding-left: 20px; /* Space for bullet */
 }
-
 .analysis-item h3::before {
   content: "";
   position: absolute;
@@ -346,32 +306,27 @@ textarea {
   background-color:#00c896;
   border-radius: 50%;
 }
-
 /* Responsive */
 @media screen and (max-width: 768px) {
   .key-analysis-wrapper {
     flex-direction: column;
     gap: 30px;
   }
-
   .key-analysis-left,
   .key-analysis-right {
     flex: 1 1 100%;
   }
 }
-/* IT Analytics Section */
 .it-analytics {
   padding: 60px 40px;
   background: #f9fafc;
   font-family: 'Inter', sans-serif;
 }
-
 .it-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 30px;
 }
-
 .it-card {
   position: relative;
   background: url('https://picsum.photos/400/300?random=1') center/cover no-repeat;
@@ -383,7 +338,6 @@ textarea {
   align-items: flex-end;
   transition: transform 0.3s ease;
 }
-
 .it-card:nth-child(2) {
   background: url('https://picsum.photos/400/300?random=2') center/cover no-repeat;
 }
@@ -393,12 +347,9 @@ textarea {
 .it-card:nth-child(4) {
   background: url('https://picsum.photos/400/300?random=4') center/cover no-repeat;
 }
-
 .it-card:hover {
   transform: translateY(-8px);
 }
-
-/* Number Overlay */
 .it-overlay {
   position: absolute;
   top: 20px;
@@ -409,26 +360,21 @@ textarea {
   padding: 6px 12px;
   border-radius: 8px;
 }
-
-/* Card Content */
 .it-content {
   background: rgba(0, 0, 0, 0.55);
   padding: 20px;
   border-radius: 0 0 16px 16px;
 }
-
 .it-content h3 {
   margin: 0 0 10px;
   font-size: 1.2rem;
   font-weight: 600;
 }
-
 .it-content p {
   font-size: 0.9rem;
   margin-bottom: 12px;
   line-height: 1.6;
 }
-
 .it-content a {
   color: #ffd700;
   font-size: 0.9rem;
@@ -436,11 +382,9 @@ textarea {
   text-decoration: none;
   transition: color 0.3s;
 }
-
 .it-content a:hover {
   color: #fff;
 }
-
 .highlight-section {
   background-image: url('images/section-bg-optimized.webp');
   background-size: cover;
@@ -449,25 +393,21 @@ textarea {
   width: 100%;
   box-sizing: border-box;
 }
-
 .highlight-overlay {
   background-color: rgba(10, 31, 68, 0.85);
   padding: 60px 20px;
 }
-
 .highlight-content {
   max-width: 1200px;
   margin: 0 auto;
   color: white;
 }
-
 .highlight-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 30px;
   margin-top: 40px;
 }
-
 .highlight-icon {
   width: 40px;
   height: 40px;
@@ -475,7 +415,6 @@ textarea {
   display: block;
   margin: 0 auto 10px;
 }
-
 .highlight-card {
   background: white;
   border-radius: 12px;
@@ -484,19 +423,15 @@ textarea {
   color: #2a2a2a;
   text-align: center;
 }
-
 .highlight-card h3 {
   color: #0a1f44;
   margin-bottom: 10px;
 }
-
 .highlight-card p {
   font-size: 0.95rem;
   line-height: 1.6;
   margin: 0;
 }
-
-/* Responsive Tweaks */
 @media (max-width: 768px) {
   .highlight-overlay {
     padding: 40px 15px;
@@ -505,7 +440,6 @@ textarea {
     padding: 20px 15px;
   }
 }
-
 @media (max-width: 1024px) {
   .highlight-overlay {
     padding: 40px 16px;
@@ -515,43 +449,36 @@ textarea {
   padding: 1px 40px;
   padding-bottom: 40px;
 }
-
 .capabilities-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 }
-
 .cap-overlay {
   position: relative;
   padding: 20px;
   color: white;
   z-index: 1;
 }
-
 .cap-overlay h3 {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 10px;
 }
-
 .cap-overlay p {
   font-size: 1.115rem;
   margin-bottom: 15px;
   line-height: 1.6;
 }
-
 .cap-overlay a {
   color: white;
   font-size: 14px;
   font-weight: bold;
   text-decoration: none;
 }
-
 .cap-overlay a:hover {
   text-decoration: underline;
 }
-
 .capability-card {
   position: relative;
   background-size: cover;
@@ -564,12 +491,10 @@ textarea {
   cursor: pointer;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
-
 .capability-card:hover {
   transform: scale(1.05); /* slight zoom */
   box-shadow: 0 12px 30px rgba(0,0,0,0.35); /* depth */
 }
-
 .capability-card::before {
   content: "";
   position: absolute;
@@ -577,11 +502,9 @@ textarea {
   background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.1));
   transition: background 0.4s ease;
 }
-
 .capability-card:hover::before {
   background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.2)); /* darker overlay */
 }
-
 </style>
 </head>
 <body>
@@ -592,7 +515,6 @@ textarea {
             </a>
         </div>
         <div class="hamburger" id="hamburgerIcon" onclick="toggleMobileMenu()">☰</div>
-
         <nav>
            <div class="dropdown">
             <span style="color: white;">ManageEngine Expertise </span>
@@ -644,7 +566,6 @@ textarea {
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
                       d="M19 9l-7 7-7-7" />
               </svg>
-              
                 <div class="dropdown-content" style="min-width: 200px !important;">
                    <div class="dropdown-column">
                       <h4>Services</h4>
@@ -659,7 +580,6 @@ textarea {
                     </div>
                 </div>
              </div>
-
             <div class="dropdown">
                 <div class="dropdown-trigger">
                   <span>Company Overview</span>
@@ -680,7 +600,6 @@ textarea {
                 </div>
               </div>
             </div>
-            
             <ul>
                 <li><a href="saasify-careers.html" style="color: white;">Careers</a></li>
             </ul>
@@ -694,12 +613,9 @@ textarea {
             </a>
         </div>
 </header>
-   
 <div id="overlay" class="overlay" onclick="toggleMobileMenu()"> </div>
-
 <div id="mobileMenu">
       <!-- Platform Proficiency -->
-      
        <div class="submenu-toggle" onclick="toggleSubmenu(this)"> ManageEngine Expertise 
             <img src="images/Arrow.webp" alt="Arrow" style=" height: 24px;" />
        </div>
@@ -711,7 +627,6 @@ textarea {
             <a href="SIEM.html">SIEM</a>
             <a href="IT-Analysis.html">IT Analytics</a>
         </div>
-
         <!-- Services -->
         <div class="submenu-toggle" onclick="toggleSubmenu(this)">Services 
            <img src="images/Arrow.webp" alt="Arrow" style=" height: 24px;" />
@@ -724,7 +639,6 @@ textarea {
             <a href="Ongoing_support.html">Ongoing Support</a>
             <a href="managed-services.html">Managed Services</a>
         </div>
-
         <!-- Company Overview -->
         <div class="submenu-toggle" onclick="toggleSubmenu(this)">Company Overview 
            <img src="images/Arrow.webp" alt="Arrow" style=" height: 24px;" />
@@ -733,12 +647,10 @@ textarea {
             <a href="about_us.html">About Saasify</a>
             <a href="our-presence.html">Our Presence</a>
         </div>
-
         <!-- Careers -->
         <div class="submenu-toggle">
             <a href="saasify-careers.html" style="display:block;">Careers</a>
         </div>   
-
         <!-- Insights -->
         <div class="submenu-toggle">
             <a href="insight-page.html" style="display:block;">Insights</a>
@@ -750,11 +662,9 @@ textarea {
             </a>
         </div>
 </div>
-
 <div class="hero-image">
   <img src="images/IT_analytics-optimized.webp" alt="IT-Analysis" loading="lazy">
 </div>
-
 <section class="hero">
   <div class="overlay"></div>
   <div class="hero-content">
@@ -765,9 +675,7 @@ textarea {
     </a>
   </div>
 </section>
-
 <main class="content">
-
 <section class="breadcrumb">
   <div class="breadcrumb-container">
     <a href="index.html">Home</a> &gt;
@@ -787,7 +695,6 @@ textarea {
   </div>
   </div>
 </section>
-
 <section class="highlight-section">
   <div class="highlight-overlay">
     <div class="highlight-content">
@@ -795,7 +702,6 @@ textarea {
       <h2 class="main-heading" style="color: #ffffff">
         Why IT Analysis Matters for <span style="color: #00c896">Your Business ?</span>
       </h2>
-
       <div class="highlight-grid">
         <div class="highlight-card">
           <h3>Proactive Monitoring</h3>
@@ -817,34 +723,28 @@ textarea {
     </div>
   </div>
 </section>
-
 <section class="key-analysis-section">
    <p class="sub-heading">Visibility. Intelligence. Response.</p>
   <h2 class="main-heading">
     Key Benefits of <span style="color: #00c896">IT Analysis</span>
   </h2>
-
   <div class="key-analysis-wrapper">
     <div class="key-analysis-left">
       <img src="images/IT_Analytics_resize.webp" alt="IT Analysis Illustration">
     </div>
-
     <div class="key-analysis-right">
       <div class="analysis-item">
         <h3>Proactive Issue Detection</h3>
         <p>Spot potential problems early with real-time monitoring and alerts.</p>
       </div>
-
       <div class="analysis-item">
         <h3>Optimized Resource Allocation</h3>
         <p>Use usage insights to allocate servers, storage, and bandwidth efficiently.</p>
       </div>
-
       <div class="analysis-item">
         <h3>Improved Performance</h3>
         <p>Analyze data to remove bottlenecks and enhance system responsiveness.</p>
       </div>
-
       <div class="analysis-item">
         <h3>Data-Driven Decision Making</h3>
         <p>Turn operational data into actionable insights for smarter IT strategy.</p>
@@ -856,21 +756,18 @@ textarea {
   <p class="sub-heading">Capabilities</p>
     <h2 class="main-heading">Key Capabilities of <span style="color: #00c896">IT Analytics</span></h2>
     <div class="capabilities-grid">
-
   <div class="capability-card" style="background-image: url('images/IT_cap.webp');">
     <div class="cap-overlay">
        <h3>IT Alignment</h3>
         <p>Translate IT metrics into actionable business outcomes, aligning technology decisions with organizational goals.</p>
         </div>
   </div>
-
   <div class="capability-card" style="background-image: url('images/IT_cap3.webp');">
     <div class="cap-overlay">
        <h3>Advanced Dashboards</h3>
         <p>Drag-and-drop dashboards and highly customizable reports for instant, actionable business insights.</p>
          </div>
   </div>
-
   <div class="capability-card" style="background-image: url('images/IT_Cap1.webp');">
     <div class="cap-overlay">
      <h3>AI-Powered Predictive Analytics</h3>
@@ -885,16 +782,13 @@ textarea {
   </div>
   </div>
 </section>
-
 <div id="contact-form-placeholder"></div>
-
 <script>
   fetch('contact-form.html')
     .then(response => response.text())
     .then(html => {
       const container = document.getElementById('contact-form-placeholder');
       container.innerHTML = html;
-
       // Extract and evaluate any scripts from the loaded HTML
       const tempDiv = document.createElement('div');
       tempDiv.innerHTML = html;
@@ -910,7 +804,6 @@ textarea {
       });
     })
     .catch(error => console.error('Failed to load contact form:', error));
-
 fetch('footer.html')
     .then(response => response.text())
     .then(data => {
@@ -918,7 +811,6 @@ fetch('footer.html')
     })
     .catch(error => console.error('Error loading footer:', error));
 </script>
-
 <div id="footer-placeholder"></div>
 </main>
 <script>
@@ -932,7 +824,6 @@ fetch('footer.html')
       header.classList.remove('scrolled');
     }
   });
-
   // Run once on load in case page starts scrolled
   window.dispatchEvent(new Event('scroll'));
 </script>     

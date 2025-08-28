@@ -1,9 +1,7 @@
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-
 require 'vendor/autoload.php'; // adjust if PHPMailer is placed differently
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Collect and sanitize form inputs
     $name     = htmlspecialchars($_POST['name'] ?? '', ENT_QUOTES, 'UTF-8');
@@ -14,9 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $enquiry  = htmlspecialchars($_POST['enquiry'] ?? '', ENT_QUOTES, 'UTF-8');
     $company  = htmlspecialchars($_POST['company'] ?? '', ENT_QUOTES, 'UTF-8');
     $message  = htmlspecialchars($_POST['message'] ?? '', ENT_QUOTES, 'UTF-8');
-
     $mail = new PHPMailer(true);
-
     try {
         // Brevo SMTP configuration
         $mail->isSMTP();
@@ -27,11 +23,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
         //Recipients
-        $mail->setFrom('dharshine@saasifysolutions.com', 'Saasify Solutions');
-        $mail->addAddress('sales@saasifysolutions.com'); // your receiving email
+        $mail->setFrom('hr@saasifysolutions.com', 'Saasify Solutions');
+        $mail->addAddress('hr@saasifysolutions.com'); // your receiving email
         $mail->addReplyTo($email, $name);
-        
-
         // Content
         $mail->isHTML(true);
         $mail->CharSet = 'UTF-8';
@@ -47,8 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         . (!empty($enquiry) ? "<tr><td><strong>Enquiry:</strong></td><td>$enquiry</td></tr>" : "")
         . (!empty($company) ? "<tr><td><strong>Company:</strong></td><td>$company</td></tr>" : "") .
         "<tr><td valign='top'><strong>Message:</strong></td><td>" . nl2br($message) . "</td></tr>
-        </table>";
-        
+        </table>";    
          // Plain-text fallback
         $mail->AltBody = "New Contact Request\n\n"
             . "Name: $name\n"
@@ -59,7 +52,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             . (!empty($enquiry) ? "Enquiry: $enquiry\n" : "")
             . (!empty($company) ? "Company: $company\n" : "")
             . "Message:\n$message";
-
         $mail->send();
         echo "Mail sent successfully!";
         exit;

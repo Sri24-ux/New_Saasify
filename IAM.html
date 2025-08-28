@@ -8,7 +8,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
   <style>
  body {
     font-family: 'Poppins', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -20,7 +19,6 @@
     overflow-x: hidden !important;
     overscroll-behavior-y: none;
 }
- 
 .sub-heading {
   text-transform: uppercase;
   font-size: 0.85rem;
@@ -29,13 +27,11 @@
   letter-spacing: 0.5px;
   margin-bottom: 8px;
 }
-
 .main-heading {
   font-size: 2rem;
   margin-bottom: 30px;
   color: #0a1f44;
 }
-
 header {
   position: fixed;
   width: 100%;
@@ -44,8 +40,6 @@ header {
   z-index: 999;
   transition: background-color 0.3s ease !important;
 }
-
- /* Hero Section */
 .hero-image {
   position: fixed;
   top: 0;
@@ -55,7 +49,6 @@ header {
   z-index: -1;
   overflow: hidden;
 }
-
 .hero-image img {
   width: 100%;
   height: 100%;
@@ -63,13 +56,11 @@ header {
   transform: scale(1.5);
   animation: zoomOut 6s ease-out forwards;
 }
-
 @keyframes zoomOut {
   to {
     transform: scale(1);
   }
 }
-
 .hero {
   position: relative;
   height: 100vh; 
@@ -80,7 +71,6 @@ header {
   padding-left: 10%;  /* Adds left offset */
   color: white;
 }
-
 .hero-content {
   position: relative;
   z-index: 1;
@@ -96,7 +86,6 @@ header {
   border-bottom: 0.0625rem solid hsla(0, 0%, 100%, .3);
   padding-bottom: 10px;
 }
-
 .hero-description{
     font-size: 1.5rem;
     line-height: 2.1rem;
@@ -114,13 +103,11 @@ header {
   height: 100%;
   background: rgba(0,0,0,0.4);
 }
-
 .content {
   background: white;
   position: relative;
   z-index: 3;
-}
-    
+}  
 .breadcrumb {
   padding: 15px 40px;
   font-size: 0.95rem;
@@ -129,13 +116,11 @@ header {
   position: relative;
   background-color: #fff;
 }
-
 .breadcrumb-container a {
   text-decoration: none;
   color: #0a1f44;
   margin-right: 5px;
 }
-
 .breadcrumb-container span {
   color: #666;
   font-weight: 500;
@@ -146,46 +131,36 @@ header {
   padding: 20px;
   gap: 20px;
 }
-
 .row.bg-alt {
   background-color: #ddfff2;
   border-radius: 12px;
 }
-
 .column.image img {
   width: 360px;
   height: 269px;        
   object-fit: contain;
 }
-
 .column.image {
   flex: 1 1 40%;
 }
-
 .column.text {
   flex: 1 1 60%;
 }
-
 .row:nth-child(odd) .column.image {
   order: 2;
 }
-
 .row:nth-child(odd) .column.text {
   order: 1;
 }
-
-/* Mobile View */
 @media (max-width: 768px) {
   .row {
     flex-direction: column;
     text-align: center;
   }
-
   .column.image,
   .column.text {
     flex: 1 1 100%;
   }
-
   .row:nth-child(odd) .column.image,
   .row:nth-child(odd) .column.text {
     order: initial;
@@ -201,21 +176,18 @@ header {
       display: flex;
       flex-wrap: wrap;
       gap: 40px;
-    }
-    
+    } 
 .form-group input,
 .form-group select,
 .form-group textarea {
   min-height: 45px;
   font-size: 15px;
 }
-
 input, select, textarea {
   width: 100%;
   max-width: 100%; 
   box-sizing: border-box;
 }
-
 .green-card {
     background-color: #0a1f44;
     width: 76%;
@@ -226,7 +198,6 @@ input, select, textarea {
     align-items: center;
     margin-left: 37px;
 }
- 
 .form-group {
   display: flex;
   flex-direction: column;
@@ -244,7 +215,6 @@ input, select, textarea {
 textarea {
   resize: vertical;
 }
-
  @media (max-width: 768px) {
   .form-grid {
     grid-template-columns: 1fr;
@@ -252,9 +222,7 @@ textarea {
   .form-group.full {
     grid-column: span 1;
   }
- 
 } 
-
 .highlight-section {
   background-image: url('images/section-bg-optimized.webp');
   background-size: cover;
@@ -263,25 +231,21 @@ textarea {
   width: 100%;
   box-sizing: border-box;
 }
-
 .highlight-overlay {
   background-color: rgba(10, 31, 68, 0.85);
   padding: 60px 20px;
 }
-
 .highlight-content {
   max-width: 1200px;
   margin: 0 auto;
   color: white;
 }
-
 .highlight-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 30px;
   margin-top: 40px;
 }
-
 .highlight-icon {
   width: 40px;
   height: 40px;
@@ -289,7 +253,6 @@ textarea {
   display: block;
   margin: 0 auto 10px;
 }
-
 .highlight-card {
   background: white;
   border-radius: 12px;
@@ -298,20 +261,16 @@ textarea {
   color: #2a2a2a;
   text-align: center;
 }
-
 .highlight-card h3 {
   color: #0a1f44;
   margin-bottom: 10px;
 }
-
 .highlight-card p {
   font-size: 0.95rem;
   line-height: 1.6;
   margin: 0;
   text-align: justify;
 }
-
-/* Responsive Tweaks */
 @media (max-width: 768px) {
   .highlight-overlay {
     padding: 40px 15px;
@@ -320,18 +279,15 @@ textarea {
     padding: 20px 15px;
   }
 }
-
 @media (max-width: 1024px) {
   .highlight-overlay {
     padding: 40px 16px;
   }
 }
-
 .key-analysis-section {
   background-color: #ffffff;
   padding: 60px 40px;
 }
-
 .key-analysis-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -341,23 +297,19 @@ textarea {
   margin: auto;
   gap: 40px;
 }
-
 .key-analysis-left {
   flex: 1 1 40%;
   text-align: center;
 }
-
 .key-analysis-left img {
   max-width: 100%;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
-
 .key-analysis-right {
   flex: 1 1 55%;
 }
-
 .analysis-item p {
   font-size: 1rem;
   color: #333;
@@ -371,7 +323,6 @@ textarea {
   position: relative;
   padding-left: 20px; /* Space for bullet */
 }
-
 .analysis-item h3::before {
   content: "";
   position: absolute;
@@ -383,20 +334,16 @@ textarea {
   background-color:#00c896;
   border-radius: 50%;
 }
-
-/* Responsive */
 @media screen and (max-width: 768px) {
   .key-analysis-wrapper {
     flex-direction: column;
     gap: 30px;
   }
-
   .key-analysis-left,
   .key-analysis-right {
     flex: 1 1 100%;
   }
 }
- 
 .contact-section {
   position: relative;
   padding: 161px 20px;
@@ -406,7 +353,6 @@ textarea {
   display: flex;
   justify-content: center;
 }
-
 .curved-card {
   position: relative;
   background: #ffffff;
@@ -418,7 +364,6 @@ textarea {
   z-index: 2;
   box-sizing: border-box;
 }
-
 .curved-card::after {
     content: "";
     position: absolute;
@@ -436,7 +381,6 @@ textarea {
     box-shadow: inset 20px 0 24px -14px rgba(0, 0, 0, 0.4);
     z-index: -1;
 }
-
 @media (max-width: 768px) {
   .curved-card::after {
     display: none;
@@ -448,7 +392,6 @@ textarea {
   gap: 20px;
   width: 80%;
 }
-
 .form-group.full {
   grid-column: span 2;
 }
@@ -465,19 +408,16 @@ textarea {
     padding: 0 !important;
     display: block; 
   }
-
   .contact-section {
     padding: 40px 15px !important;
     background-image: none;
   }
-
   .curved-card {
     width: 100% !important;
     padding: 20px !important;
     border-radius: 8px !important;
   }
 }
-
 @media (max-width: 1024px) and (min-width: 769px) {
   .curved-card {
     width: 82%; 
@@ -503,7 +443,6 @@ textarea {
             </a>
         </div>
         <div class="hamburger" id="hamburgerIcon" onclick="toggleMobileMenu()">☰</div>
-
         <nav>
            <div class="dropdown">
             <span>ManageEngine Expertise </span>
@@ -555,7 +494,6 @@ textarea {
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
                       d="M19 9l-7 7-7-7" />
               </svg>
-              
                 <div class="dropdown-content" style="min-width: 200px !important;">
                    <div class="dropdown-column">
                       <h4>Services</h4>
@@ -570,7 +508,6 @@ textarea {
                     </div>
                 </div>
              </div>
-
             <div class="dropdown">
                 <div class="dropdown-trigger">
                   <span>Company Overview</span>
@@ -591,7 +528,6 @@ textarea {
                 </div>
               </div>
             </div>
-            
             <ul>
                 <li><a href="saasify-careers.html" style="color: white;">Careers</a></li>
             </ul>
@@ -605,12 +541,9 @@ textarea {
             </a>
         </div>
 </header>
-   
 <div id="overlay" class="overlay" onclick="toggleMobileMenu()"> </div>
-
 <div id="mobileMenu">
       <!-- Platform Proficiency -->
-      
        <div class="submenu-toggle" onclick="toggleSubmenu(this)"> ManageEngine Expertise 
             <img src="images/Arrow.webp" alt="Arrow" style=" height: 24px;" />
        </div>
@@ -622,7 +555,6 @@ textarea {
             <a href="SIEM.html">SIEM</a>
             <a href="IT-Analysis.html">IT Analytics</a>
         </div>
-
         <!-- Services -->
         <div class="submenu-toggle" onclick="toggleSubmenu(this)">Services 
            <img src="images/Arrow.webp" alt="Arrow" style=" height: 24px;" />
@@ -635,7 +567,6 @@ textarea {
             <a href="Ongoing_support.html">Ongoing Support</a>
             <a href="managed-services.html">Managed Services</a>
         </div>
-
         <!-- Company Overview -->
         <div class="submenu-toggle" onclick="toggleSubmenu(this)">Company Overview 
            <img src="images/Arrow.webp" alt="Arrow" style=" height: 24px;" />
@@ -644,12 +575,10 @@ textarea {
             <a href="about_us.html">About Saasify</a>
             <a href="our-presence.html">Our Presence</a>
         </div>
-
         <!-- Careers -->
         <div class="submenu-toggle">
             <a href="saasify-careers.html" style="display:block;">Careers</a>
         </div>   
-
         <!-- Insights -->
         <div class="submenu-toggle">
             <a href="insight-page.html" style="display:block;">Insights</a>
@@ -661,12 +590,10 @@ textarea {
             </a>
         </div>
 </div>
-
 <div class="hero-image">
   <!-- <img src="images/IAM-optimized.webp" alt="IAM" loading="lazy"> -->
      <img src="images/modern-buildings-optimized.webp" alt="IAM" loading="lazy">
 </div>
-
 <section class="hero">
   <div class="overlay"></div>
   <div class="hero-content">
@@ -677,9 +604,7 @@ textarea {
     </a>
   </div>
 </section>
-
 <main class="content">
-
 <section class="breadcrumb">
   <div class="breadcrumb-container">
     <a href="index.html">Home</a> &gt;
@@ -687,7 +612,6 @@ textarea {
     <span>IAM</span>
   </div>
 </section>
-
 <section class="intro-section">
   <div class="glass-card">
       <p class="sub-heading">Trusted Identities</p>
@@ -706,7 +630,6 @@ textarea {
     </div>
   </div>
 </section>
-
 <!-- Why IAM Matters Section -->
 <section class="highlight-section">
   <div class="highlight-overlay">
@@ -715,7 +638,6 @@ textarea {
       <h2 class="main-heading" style="color: #fff">
         Why IAM Matters for <span style="color: #00c896">Your Business?</span>
       </h2>
-
       <div class="highlight-grid">
         <div class="highlight-card">
           <h3>Mitigate Critical Security Risks</h3>
@@ -723,21 +645,18 @@ textarea {
             Prevent unauthorized access and protect sensitive business-critical data with robust IAM security measures.
           </p>
         </div>
-
         <div class="highlight-card">
           <h3>Ensure Regulatory Compliance</h3>
           <p>
             Meet standards like GDPR, HIPAA, and SOX with audit trails, policy enforcement, and automated reporting.
           </p>
         </div>
-
         <div class="highlight-card">
           <h3>Enhance Operational Efficiency</h3>
           <p>
             Automate identity lifecycle management to reduce overhead and streamline onboarding / offboarding.
           </p>
         </div>
-
         <div class="highlight-card">
           <h3>Support Remote & Hybrid Work</h3>
           <p>
@@ -748,43 +667,35 @@ textarea {
     </div>
   </div>
 </section>
-
 <section class="key-analysis-section">
    <p class="sub-heading">Secure. Simplify. Scale.</p>
    <h2 class="main-heading">Key Benefits of <span style="color: #00c896">ManageEngine IAM</span></h2>
-  
   <div class="key-analysis-wrapper">
     <!-- Left Image -->
 <div class="key-analysis-left">
   <img src="images/IAM_benefit_optimized.webp" alt="IAM Benefits Illustration" />
 </div>
-    
     <!-- Right Content -->
 <div class="key-analysis-right">
   <div class="analysis-item">
     <h3>Regulatory Compliance</h3>
     <p>Ensure audit readiness with detailed monitoring, reporting, and governance aligned to Zero Trust principles.</p>
   </div>
-
   <div class="analysis-item">
     <h3>Automated Identity Lifecycle</h3>
     <p>Enable seamless onboarding and offboarding with automated provisioning, de-provisioning, and smart workflows.</p>
   </div>
-
   <div class="analysis-item">
     <h3>AI-Driven Insights</h3>
     <p>Enhance security with AI-powered analytics for anomaly detection and intelligent automation.</p>
   </div>
-
   <div class="analysis-item">
     <h3>Unified Access Management</h3>
     <p>Centralize SSO, MFA, and role-based access control within a single, unified console.</p>
   </div>
 </div>
-
 </div>
 </section>
-
 <section style="padding: 1px 40px; padding-bottom: 40px;">
   <p class="sub-heading">Our IAM Capabilities</p>
   <h2 class="main-heading">
@@ -804,7 +715,6 @@ textarea {
     </p>
   </div>
 </div>
-
 <!-- Row 2 -->
 <div class="row">
   <div class="column image">
@@ -819,7 +729,6 @@ textarea {
     </p>
   </div>
 </div>
-
 <!-- Row 3 -->
 <div class="row bg-alt">
   <div class="column image">
@@ -833,7 +742,6 @@ textarea {
     </p>
   </div>
 </div>
-
 <!-- Row 4 -->
 <div class="row">
   <div class="column image">
@@ -847,18 +755,14 @@ textarea {
     </p>
   </div>
 </div>
-
 </section>
-
 <div id="contact-form-placeholder"></div>
-
 <script>
   fetch('contact-form.html')
     .then(response => response.text())
     .then(html => {
       const container = document.getElementById('contact-form-placeholder');
       container.innerHTML = html;
-
       // Extract and evaluate any scripts from the loaded HTML
       const tempDiv = document.createElement('div');
       tempDiv.innerHTML = html;
@@ -874,8 +778,6 @@ textarea {
       });
     })
     .catch(error => console.error('Failed to load contact form:', error));
-
-
 fetch('footer.html')
     .then(response => response.text())
     .then(data => {
@@ -883,8 +785,6 @@ fetch('footer.html')
     })
     .catch(error => console.error('Error loading footer:', error));
 </script>
-
-
 <div id="footer-placeholder"></div>
 </main>
 <script>
@@ -898,12 +798,9 @@ fetch('footer.html')
       header.classList.remove('scrolled');
     }
   });
-
   // Run once on load in case page starts scrolled
   window.dispatchEvent(new Event('scroll'));
 </script>
-
 <script src="js/main.js"></script>
-
 </body>
 </html>
