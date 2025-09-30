@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Saasify Solutions</title>
-    <link rel="icon" type="Saasify" href="Images/saasify.ico">
+  <link rel="icon" type="Saasify" href="Images/saasify.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/style.css">
 <style>
@@ -37,365 +37,56 @@ header {
   top: 0;
   left: 0;
   z-index: 999;
-  transition: background-color 0.3s ease !important;
+  background: linear-gradient(313deg, #010512, #072254);
 }
-.hero-image {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: -1;
-  overflow: hidden;
-}
-.hero-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transform: scale(1.5);
-  animation: zoomOut 6s ease-out forwards;
-}
-@keyframes zoomOut {
-  to {
-    transform: scale(1);
-  }
-}
-.hero {
-  position: relative;
-  height: 100vh; 
-  display: flex;
-  align-items: flex-start; 
-  justify-content: flex-start; 
-  padding-top: 120px; 
-  padding-left: 10%;  
-  color: white;
-}
-.hero-content {
-  position: relative;
-  z-index: 1;
-  max-width: 600px; 
-}
-.hero-content h1{
-    font-size: 3rem;
-    line-height: 4rem;
-}
-.subtitle {
-  font-size: 20px;
-  line-height: 1.5;
-  border-bottom: 0.0625rem solid hsla(0, 0%, 100%, .3);
-  padding-bottom: 10px;
-}
-.hero-description{
-    font-size: 1.5rem;
-    line-height: 2.1rem;
-    letter-spacing: .03125rem;
-    color: #f4f3f9;
-    margin-bottom: 1rem;
-    text-transform: none;
-    width: 70%;
-}
-.overlay {
-  position: absolute;
-  top: 0; 
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.4);
-}
-.content {
-  background: white;
-  position: relative;
-  z-index: 3;
-}
-.why-work-section {
-  padding: 50px 40px;
-  background-color: #fff;
-}
-.why-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  max-width: 1100px;
-  margin: 60px auto;
-}
-@media (max-width: 768px) {
-  .why-grid {
-    grid-template-columns: 1fr;
-  }
-}
-.hover-underline {
-  display: inline-block;
-  color: #ffffff;
-  position: relative;
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-.hover-underline::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  width: 0;
-  height: 2px;
-  background-color: #00c896;
-  transition: width 0.3s ease;
-  pointer-events: none;
-}
-.why-card:hover .hover-underline {
-  color: #0a1f44;
-}
-.why-card:hover .hover-underline::after {
-  width: 100%;
-}
-.why-card {
-  border-radius: 20px;
-  padding: 30px;
-  color: #0a1f44;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 250px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.bg-color-card {
-  color: #000;
-  background-blend-mode: overlay;
-  background-color: rgba(10, 31, 68, 0.3); /* Optional dark overlay for text readability */
-}
-.bg-image-card {
-  color: #fff;
-  background-blend-mode: overlay;
-  background-color: rgba(10, 31, 68, 0.3); /* Optional dark overlay for text readability */
-}
- .card-text h4 {
-  font-size: 1.3rem;
-  font-weight: 600;
-  margin-bottom: 12px;
-}
-.apply-role{
-    padding: 50px 40px;
-    background: #ddfff2;
-
-}
-.job-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Exactly 3 columns on desktop */
-  gap: 20px;
-  max-width: 1200px;
-  margin: auto;
-}
-@media (max-width: 992px) {
-  .job-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
-  }
-}
-@media (max-width: 600px) {
-  .job-grid {
-    grid-template-columns: 1fr; /* 1 column on small devices */
-  }
-}
-.job-card {
-  background: #fff;
-  border-radius: 12px;
-  padding: 24px 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 220px;
-  color: #000000;
-  border: 1px solid #ddd;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, .1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.job-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-.job-card h3 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: 10px;
-  transition: color 0.3s ease;
-}
-.job-card:hover h3 {
-  color: #296D46; 
-}
-.job-card p {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-.view-dtls {
-    background-color: #0a1f44;
-    border: 1px solid #0a1f44;
-    padding: 8px 25px;
-    border-radius: 20px;
-    width: 126px;
-    text-align: center;
-    cursor: pointer;
-    color: white;
-}
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0; top: 0;
-    width: 100%; height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    justify-content: center;
-    align-items: center;
-  }
-  .modal-content {
+.job-detail-container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
     background: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    width: 90%;
-    max-width: 600px;
-    position: relative;
-    animation: slideDown 0.3s ease;
-  }
-  @keyframes slideDown {
-    from { transform: translateY(-30px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
-  }
-  .close-btn {
-    position: absolute;
-    top: 12px;
-    right: 16px;
-    font-size: 20px;
-    cursor: pointer;
-    color: #999;
-  }
-  .close-btn:hover {
-    color: #000;
-  }
-  .modal-content p {
-    margin: 10px 0;
-    font-size: 0.95rem;
-  }
-  .modal-content h3 {
-    margin-top: 0;
-    color: #0a1f44;
-  }
-  .apply-email a {
-    color: #0077cc;
-    font-weight: bold;
-  }
-.apply-split-v2 {
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+h1 {
+  font-size: 2rem;
+  margin-top: 20px;
+}
+h2 {
+    color: #0a1f44; 
+}
+h3 { 
+    margin-top: 25px; 
+    color: #0a1f44; }
+.apply-email { 
+    margin-top: 20px; 
+    font-weight: bold; 
+}
+.apply-email a { 
+    color:#0077cc; 
+    text-decoration: none; 
+}
+.back-link { 
+    display: inline-block; 
+    margin-top: 30px; 
+    color:#296D46; 
+    font-weight:bold; 
+    text-decoration:none; 
+}
+.btn-flex-center {
   display: flex;
-  flex-wrap: wrap;
-  background: #eef7fc;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
-  max-width: 1000px;
-  margin: 40px auto;
-  min-height: 400px;
-}
-.apply-image,
-.apply-content {
-  flex: 1;
-  min-width: 300px;
-  box-sizing: border-box;
-}
-.apply-image {
-  display: flex;
-  align-items: stretch;
-}
-.apply-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  border-radius:  12px;
-}
-.apply-content {
-  padding: 40px 30px;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-}
-.apply-content h2 {
-  font-size: 1.6rem;
-  margin-bottom: 15px;
-  color: #0a1f44;
-}
-.apply-content h3 {
-  margin: 15px 0 5px;
-  color: #0a1f44;
-  font-size: 1.1rem;
-}
-.apply-content a {
-  display: inline-block;
-  font-size: 1rem;
-  margin-bottom: 15px;
-  color: #0a1f44;
-  text-decoration: none;
-  font-weight: bold;
-}
-.apply-content ul {
-  padding-left: 20px;
-  color: #333;
-  list-style: none;
-}
-.apply-content ul li {
-  margin-bottom: 10px;
-}
-@media (max-width: 768px) {
-  .apply-split-v2 {
-    flex-direction: column;
-  }
-  .apply-content {
-    padding: 30px 20px;
-    text-align: center;
-  }
-  .apply-content h2 {
-    font-size: 1.4rem;
-  }
-  .apply-content h3 {
-    font-size: 1rem;
-  }
-  .apply-content a {
-    font-size: 0.95rem;
-  }
-}
-.breadcrumb {
-  padding: 15px 40px;
-  font-size: 0.95rem;
-  color: #333;
-  z-index: 1;
-  position: relative;
-  background-color: #fff;
-}
-.breadcrumb-container a {
-  text-decoration: none;
-  color: #0a1f44;
-  margin-right: 5px;
-}
-.breadcrumb-container span {
-  color: #666;
-  font-weight: 500;
-}
-.job-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 16px;
-}
-.job-footer p {
-  margin: 0;
+  margin-top: 30px; 
 }
 </style>
 </head>
 <body>
-<header>
+      <header>
         <div class="logo">
             <a href="index.html">
                 <img src="images/Saasify logo.png" alt="Saasify Logo" />
             </a>
         </div>
-        <div class="hamburger" id="hamburgerIcon" onclick="toggleMobileMenu()" style="display:none">☰</div>
+        <div class="hamburger" id="hamburgerIcon" onclick="toggleMobileMenu()">☰</div>
         <nav>
            <div class="dropdown">
             <span style="color: white;">ManageEngine Expertise </span>
@@ -419,14 +110,14 @@ header {
                   </li>
                   <li>
                     <a href="UEM.html">UEMS</a>
-                    <span class="desc">Secure and manage endpoints to protect your IT assets effectively.</span>
-                </li>
+                   <span class="desc">Secure and manage endpoints to protect your IT assets effectively.</span>
+                 </li>
                 </ul>
                 <ul>
                   <li>
                     <a href="ITOM.html">ITOM</a>
                      <span class="desc">Achieve end-to-end visibility, proactive issue resolution, and enhanced security across the IT Infrastructure.</span>
-                  </li>
+                   </li>
                   <li>
                     <a href="SIEM.html">SIEM</a>
                     <span class="desc">Secure your network from cyberattacks and ensure compliance.</span>
@@ -446,7 +137,7 @@ header {
                   style="width: 16px; height: 16px; vertical-align: middle; margin-left: 6px;">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
                       d="M19 9l-7 7-7-7" />
-              </svg> 
+              </svg>
                 <div class="dropdown-content" style="min-width: 200px !important;">
                    <div class="dropdown-column">
                       <h4>Services</h4>
@@ -463,7 +154,7 @@ header {
              </div>
             <div class="dropdown">
                 <div class="dropdown-trigger">
-                  <span>About us</span>
+                  <span>Company Overview</span>
                   <svg xmlns="http://www.w3.org/2000/svg" 
                       fill="none" viewBox="0 0 24 24" stroke="white" 
                       style="width: 16px; height: 16px; vertical-align: middle; margin-left: 6px;">
@@ -473,14 +164,14 @@ header {
                 </div>
                 <div class="dropdown-content" style="min-width: 200px !important;">
                    <div class="dropdown-column">
-                      <h4>About Us</h4>
+                      <h4>About</h4>
                     <ul>
-                        <li><a href="about_us.html">Company Overview</a></li>
+                        <li><a href="about_us.html">About Saasify</a></li>
                         <li><a href="our-presence.html">Our Presence</a></li>
                     </ul>
                 </div>
               </div>
-            </div>         
+            </div>
             <ul>
                 <li><a href="saasify-careers.html" style="color: white;">Careers</a></li>
             </ul>
@@ -493,10 +184,10 @@ header {
                 <button>Contact Us</button>
             </a>
         </div>
-</header> 
+    </header>
 <div id="overlay" class="overlay" onclick="toggleMobileMenu()"> </div>
 <div id="mobileMenu">
-      <!-- Platform Proficiency -->  
+      <!-- Platform Proficiency -->
        <div class="submenu-toggle" onclick="toggleSubmenu(this)"> ManageEngine Expertise 
             <img src="images/Arrow.webp" alt="Arrow" style=" height: 24px;" />
        </div>
@@ -507,7 +198,7 @@ header {
             <a href="ITOM.html">ITOM</a>
             <a href="SIEM.html">SIEM</a>
             <a href="IT-Analysis.html">IT Analytics</a>
-        </div>
+             </div>
         <!-- Services -->
         <div class="submenu-toggle" onclick="toggleSubmenu(this)">Services 
            <img src="images/Arrow.webp" alt="Arrow" style=" height: 24px;" />
@@ -543,96 +234,12 @@ header {
             </a>
         </div>
 </div>
-<div class="hero-image">
-  <img src="images/careers_hero_resize.webp" alt="Careers" loading="lazy">
-</div>
-<section class="hero">
-  <div class="overlay"></div>
-  <div class="hero-content">
-    <p class="subtitle">Careers!</p>
-    <h1>Empower Your Career at Saasify</h1>
-    <a href="contact_us_page.html">
-      <button class="cta-button">Learn about us</button>
-    </a>
+  <div class="job-detail-container" id="jobDetails">
+    <h2>Loading...</h2>
   </div>
-</section>
-<main class="content">
-<section class="breadcrumb">
-  <div class="breadcrumb-container">
-    <a href="index.html">Home</a> &gt;
-    <a href="#">Careers</a> &gt;
-  </div>
-</section>
-<section class="why-work-section">
-   <p class="sub-heading">WHY WORK WITH US?</p>
-    <h2 class="main-heading">Where Passion Meets  <span style="color: #00c896">Purpose and Growth.</span></h2>
-  <div class="why-grid">
-    <!-- Card 1 - Background Image -->
-      <div class="why-card bg-image-card" style="background-image: url('images/three-engineers_opt.webp');">
-      <div class="card-text">
-        <h2 class="hover-underline">Continuous Learning</h2>
-        <p>Upskill through certifications, training programs, and mentorship opportunities.</p>
-      </div>
-    </div>
-    <!-- Card 2 - Soft background -->
-    <div class="why-card bg-image-card" style="background-image: url('images/corevalue_opt.webp');">
-      <div class="card-text">
-        <h2 class="hover-underline">Inclusive Culture</h2>
-        <p>We embrace diversity and unique perspectives to build a thriving, inclusive workplace.</p>
-      </div>
-    </div>
-    <!-- Card 3 - Soft background -->
-    <div class="why-card bg-image-card" style="background-image: url('images/corevalue-sal_opt.webp');">
-      <div class="card-text">
-        <h2 class="hover-underline">Fair Compensation</h2>
-        <p>Saasify offers fair, transparent, and performance-based pay.</p>
-      </div>
-    </div>    
-    <!-- Card 4 - Background Image -->
-   <div class="why-card bg-image-card" style="background-image: url('images/corevalues2_opt.webp');">
-      <div class="card-text">
-        <h2 class="hover-underline">Work-Life Balance</h2>
-        <p>Saasify promotes a healthy, flexible work-life balance for all team members.</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="apply-role">
-  <p class="sub-heading">WE ARE HIRING!</p>
-  <h2 class="main-heading">Our Current  <span style="color: #00c896">Job Openings.</span></h2>  
-  <div class="job-grid" id="jobList"></div> 
- 
-</section>
-<section class="apply-split-v2">
-  <div class="apply-content">
-    <p class="sub-heading">JOIN OUR TEAM!</p>
-      <h2 class="main-heading">Email your details to: <span style="color: #00c896">hr@saasifysolutions.com</span></h2>
-  </div>    
-  <div class="apply-image">
-    <img src="images/business-process-man-optimized.webp" alt="Apply Image">
-  </div>
-</section>
-<div id="footer-placeholder"></div>
-</main>
- <script>
-  window.addEventListener('scroll', function () {
-    const header = document.querySelector('header');
-    if (window.scrollY > 50) {
-      header.classList.remove('transparent');
-      header.classList.add('scrolled');
-    } else {
-      header.classList.add('transparent');
-      header.classList.remove('scrolled'); 
-    }
-  });
-  // Run once on load in case page starts scrolled
-  window.dispatchEvent(new Event('scroll'));
-  fetch('footer.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('footer-placeholder').innerHTML = data;
-    })
-    .catch(error => console.error('Error loading footer:', error));
+
+  <script>
+    // You can move this jobs array into jobs.json later
    const jobs = [
          {
   title: "Sales Manager",
@@ -713,23 +320,43 @@ header {
   ]
   }
     ];
-    const jobList = document.getElementById("jobList");
-    const modal = document.getElementById("jobModal");
-    jobs.forEach((job, i) => {
-      const card = document.createElement("div");
-      card.className = "job-card";
-      card.innerHTML = `
-      <h3>${job.title}</h3>
-      <p>${job.location}</p>
-      <p>${job.experience}</p>
-      <div class="job-footer">
-        <p>Posted: ${job.posted}</p>
-        <a href="careers_detail.html?id=${i}" class="view-dtls">View Details</a>
-      </div>
-    `;
-      jobList.appendChild(card);
-    });
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const jobId = urlParams.get("id");
+    const job = jobs[jobId];
+
+    if (job) {
+      document.getElementById("jobDetails").innerHTML = `
+        <h2>${job.title}</h2>
+        <p><strong>Location:</strong> ${job.location}</p>
+        <p><strong>Experience:</strong> ${job.experience}</p>
+        <p><strong>Posted:</strong> ${job.posted}</p>
+        <p><strong>Job Type:</strong> ${job.jobtype}</p>
+
+        <h3>Description</h3>
+        <ul>${job.description.map(d => `<li>${d}</li>`).join('')}</ul>
+
+        <h3>Requirements</h3>
+        <ul>${job.requirements.map(r => `<li>${r}</li>`).join('')}</ul>
+
+        <h3>Responsibilities</h3>
+        <ul>${job.responsibilities.map(r => `<li>${r}</li>`).join('')}</ul>
+
+        <p class="apply-email">📩 Apply via Email: 
+          <a href="mailto:hr@saasifysolutions.com?subject=Application for ${job.title}">
+            hr@saasifysolutions.com
+          </a>
+        </p>
+        <div class="btn-flex-center">
+            <a href="saasify-careers.html">
+            <button class="cta-button">Back to Job Openings</button>
+            </a>
+        </div>
+      `;
+    } else {
+      document.getElementById("jobDetails").innerHTML = "<p>Job not found.</p>";
+    }
   </script>
-  <script src="js/main.js"></script>
+   <script src="js/main.js"></script>
 </body>
 </html>
