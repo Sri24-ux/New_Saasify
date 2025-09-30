@@ -23,8 +23,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
         //Recipients
-        $mail->setFrom('hr@saasifysolutions.com', 'Saasify Solutions');
-        $mail->addAddress('hr@saasifysolutions.com'); // your receiving email
+        $mail->setFrom('dharshine@saasifysolutions.com', 'Saasify Solutions');
+        $mail->addAddress('sales@saasifysolutions.com'); // your receiving email
         $mail->addReplyTo($email, $name);
         // Content
         $mail->isHTML(true);
