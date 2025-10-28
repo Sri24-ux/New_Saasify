@@ -280,6 +280,105 @@
     margin-bottom: 10px;
     color: #ffffff;
   }
+
+  .video-testimonials {
+  text-align: center;
+  padding: 80px 20px;
+  background: #f9f9f9;
+}
+
+.video-testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.video-card {
+  position: relative;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+}
+
+.video-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.video-card h4 {
+  padding: 15px;
+  color: #555;
+  font-weight: 500;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.video-card:hover .overlay {
+  opacity: 1;
+}
+
+.play-btn {
+  font-size: 3rem;
+  color: white;
+}
+
+/* Popup Modal */
+.video-popup {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.video-container {
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+}
+
+.video-container video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
 </style>
 </head>
 <body>
@@ -437,6 +536,51 @@
             </a>
         </div>
 </div>
+
+<!-- ✅ Video Testimonials Section -->
+<section class="video-testimonials">
+  <h2>What Our Clients Say</h2>
+
+  <div class="video-grid">
+
+    <!-- Video 1 -->
+    <div class="video-card" data-video="videos/client1.mp4">
+      <img src="thumbnails/client1.png" alt="Client 1 Testimonial">
+      <div class="overlay">
+        <span class="play-btn">&#9658;</span>
+      </div>
+      <h4>– John D, CTO, TechNova</h4>
+    </div>
+
+    <!-- Video 2 -->
+    <div class="video-card" data-video="videos/client2.mov">
+      <img src="thumbnails/client2.png" alt="Client 2 Testimonial">
+      <div class="overlay">
+        <span class="play-btn">&#9658;</span>
+      </div>
+      <h4>– Priya S, HR Head, FinEdge</h4>
+    </div>
+
+    <!-- Video 3 -->
+    <div class="video-card" data-video="videos/client3.mp4">
+      <img src="thumbnails/client3.png" alt="Client 3 Testimonial">
+      <div class="overlay">
+        <span class="play-btn">&#9658;</span>
+      </div>
+      <h4>– Arjun K, Operations Manager</h4>
+    </div>
+
+  </div>
+</section>
+
+<!-- Popup Modal -->
+<div class="video-popup" id="videoPopup">
+  <div class="video-container">
+    <span class="close">&times;</span>
+    <video id="popupVideo" controls autoplay></video>
+  </div>
+</div>
+
 <section class="contact-hero">
   <div class="contact-hero-wrapper">
      <h2 class="contact-heading"><span style="color: #fff;">Contact Us</span></h2>
@@ -507,7 +651,7 @@
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.1708217693217!2d80.17392137418412!3d13.02479158729548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5261b7bada32b1%3A0x907911c0b5a58669!2sCenter%20Point%203!5e0!3m2!1sen!2sin!4v1750918698176!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <div class="map">
-      <h3>Bangalore Office</h3>
+      <h3>Bengaluru Office</h3>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.6141352211503!2d77.6094251702497!3d12.932503887866734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15ec696ff097%3A0xeb4b96b461b7e97e!2sWorkafella%20Koramangala%20-%20Coworking%20space%20in%20Bangalore!5e0!3m2!1sen!2sin!4v1750918567518!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </div>
@@ -561,6 +705,38 @@
     })
     .catch(error => console.error('Error loading footer:', error));
 </script>
+<script>
+  const videoCards = document.querySelectorAll('.video-card');
+  const popup = document.getElementById('videoPopup');
+  const popupVideo = document.getElementById('popupVideo');
+  const closeBtn = document.querySelector('.close');
+
+  // Open video popup
+  videoCards.forEach(card => {
+    card.addEventListener('click', () => {
+      const videoSrc = card.getAttribute('data-video');
+      popupVideo.src = videoSrc;
+      popup.style.display = 'flex';
+    });
+  });
+
+  // Close popup
+  closeBtn.addEventListener('click', () => {
+    popup.style.display = 'none';
+    popupVideo.pause();
+    popupVideo.src = '';
+  });
+
+  // Close when clicking outside video
+  popup.addEventListener('click', (e) => {
+    if (e.target === popup) {
+      popup.style.display = 'none';
+      popupVideo.pause();
+      popupVideo.src = '';
+    }
+  });
+</script>
+
 <div id="footer-placeholder"></div>
 <script src="js/main.js"></script>
 </body>

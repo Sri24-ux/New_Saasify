@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             . (!empty($company) ? "Company: $company\n" : "")
             . "Message:\n$message";
         $mail->send();
-        echo "Mail sent successfully!";
+        echo "Success! Mail sent successfully.";
         exit;
     } catch (Exception $e) {
         echo "Mailer Error: " . $mail->ErrorInfo;

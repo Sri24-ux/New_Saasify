@@ -115,10 +115,12 @@
   width: max-content;
 }
 .logo-slider img {
-  height: 60px;
-  object-fit: contain;
-  flex-shrink: 0;
+  height: 60px;          /* sets consistent visual height */
+  object-fit: contain;   /* keeps logo proportions */
+  margin: 10px 20px;     /* spacing between logos */
+  background: transparent;
 }
+
 .left-to-right {
   animation: scroll-left 30s linear infinite;
 }
@@ -522,8 +524,18 @@ header {
 }
 .insight-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* exactly 4 columns */
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+}
+@media (max-width: 992px) {
+  .insight-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .insight-grid {
+    grid-template-columns: 1fr;
+  }
 }
 .insight-overlay {
   position: relative;
@@ -577,11 +589,20 @@ header {
   background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.2)); /* darker overlay */
 }
 .insights-header {
-  display: flex;
-  align-items: center;     
+  display: flex;   
   justify-content: space-between; 
   gap: 20px;               
 }
+
+@media (max-width: 600px) {
+  .insights-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0px;
+    padding-bottom: 20px;
+  }
+}
+
 .card-number {
   font-size: 47px;
   color: white;
@@ -589,6 +610,83 @@ header {
   top: 16px;
   left: 15px;
 }
+
+.video-testimonials {
+  text-align: center;
+  padding: 80px 20px;
+  background: #f9f9f9;
+  position: relative;
+  overflow: hidden;
+}
+
+.video-testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.video-slider {
+  max-width: 900px;
+  margin: auto;
+  position: relative;
+}
+
+.video-wrapper {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+.video-card {
+  min-width: 100%;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.video-card video {
+  width: 100%;
+  height: 400px;
+  border-radius: 12px;
+  outline: none;
+}
+
+.video-card h4 {
+  margin-top: 15px;
+  color: #555;
+  font-weight: 500;
+}
+
+/* Navigation */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.prev:hover, .next:hover {
+  background: #555;
+}
+
+.prev { left: -60px; }
+.next { right: -60px; }
+
+@media (max-width: 768px) {
+  .video-card video { height: 240px; }
+  .prev { left: 10px; }
+  .next { right: 10px; }
+}
+
 </style>
 </head>
 <body>
@@ -820,6 +918,58 @@ header {
       <h2>Real experiences. Real impact. <span style="color: #00c896"> Coming soon!</span></h2>
   </div>
 </section>
+
+<!-- ✅ Local Video Testimonials Section -->
+<section class="video-testimonials">
+  <h2>What Our Clients Say</h2>
+
+  <div class="video-slider">
+    <div class="video-wrapper">
+
+      <!-- Video 1 -->
+      <div class="video-card">
+        <video controls poster="thumbnails/client1.png">
+          <source src="videos/client1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h4>– John D, CTO, TechNova</h4>
+      </div>
+
+      <!-- Video 2 -->
+      <div class="video-card">
+        <video controls poster="thumbnails/client2.png">
+          <source src="videos/client2.mov" type="video/mov">
+          Your browser does not support the video tag.
+        </video>
+        <h4>– Priya S, HR Head, FinEdge</h4>
+      </div>
+
+      <!-- Video 3 -->
+      <div class="video-card">
+        <video controls poster="thumbnails/client3.png">
+          <source src="videos/client3.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h4>– Arjun K, Operations Manager</h4>
+      </div>
+
+      <!-- Video 4 -->
+      <!-- <div class="video-card">
+        <video controls poster="thumbnails/client4.jpg">
+          <source src="videos/client4.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h4>– Meera P, CEO, CloudEdge</h4>
+      </div> -->
+
+    </div>
+
+    <!-- Navigation Buttons -->
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+</section>
+
 <section class="insight-section">
   <p class="sub-heading">RESOURCES</p>
   <div class="insights-header">
@@ -985,7 +1135,7 @@ window.addEventListener('scroll', function () {
   const partnerLogos = [
     { src: "logos/S1.png", alt: "Partner 1" },
     { src: "logos/S2.png", alt: "Partner 2" },
-    { src: "logos/S3.png", alt: "Partner 3" },
+    { src: "logos/S3.jpeg", alt: "Partner 3" },
     { src: "logos/S4.png", alt: "Partner 4" },
     { src: "logos/S5.png", alt: "Partner 5" },
     { src: "logos/S6.png", alt: "Partner 6" },
@@ -997,7 +1147,16 @@ window.addEventListener('scroll', function () {
     { src: "logos/S12.png", alt: "Partner 12" },
     { src: "logos/S13.png", alt: "Partner 13" },
     { src: "logos/S14.png", alt: "Partner 14" },
-    { src: "logos/S15.png", alt: "Partner 15" }
+    { src: "logos/S15.png", alt: "Partner 15" },
+    { src: "logos/S16.jpeg", alt: "Partner 16" },
+    { src: "logos/S17.png", alt: "Partner 17" },
+    { src: "logos/S18.png", alt: "Partner 18" },
+    { src: "logos/S19.png", alt: "Partner 19" },
+    { src: "logos/S20.png", alt: "Partner 20" },
+    { src: "logos/S21.png", alt: "Partner 21" },
+    { src: "logos/S22.png", alt: "Partner 22" },
+    { src: "logos/S23.png", alt: "Partner 23" },
+    { src: "logos/S24.png", alt: "Partner 24" }
   ];
   const mid = Math.ceil(partnerLogos.length / 2);
   const row1 = [...partnerLogos.slice(0, mid), ...partnerLogos.slice(0, mid)];
@@ -1017,6 +1176,32 @@ window.addEventListener('scroll', function () {
     row2Container.appendChild(img);
   });
 </script>
+
+<script>
+  const videoWrapper = document.querySelector('.video-wrapper');
+  const videoCards = document.querySelectorAll('.video-card');
+  const prev = document.querySelector('.prev');
+  const next = document.querySelector('.next');
+  let index = 0;
+
+  function showVideo(i) {
+    if (i >= videoCards.length) index = 0;
+    if (i < 0) index = videoCards.length - 1;
+    videoWrapper.style.transform = `translateX(${-index * 100}%)`;
+  }
+
+  next.addEventListener('click', () => {
+    index++;
+    showVideo(index);
+  });
+
+  prev.addEventListener('click', () => {
+    index--;
+    showVideo(index);
+  });
+
+</script>
+
 <script src="js/main.js"></script>
 </body>
 </html>
